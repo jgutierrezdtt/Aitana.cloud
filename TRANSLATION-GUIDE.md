@@ -186,21 +186,23 @@ export default function SqlInjectionAvanzadaContentEN({ locale }: { locale: stri
 
 ## Estado Actual
 
-### ✅ Artículos traducidos a inglés: 5/27 (19%)
+### ✅ Artículos traducidos a inglés: 10/27 (37%)
 
-**Completadas**:
+**Completadas - Batch 1-2** (5):
 - [x] sql-injection-avanzada.en.tsx (~325 líneas)
 - [x] xss-stored.en.tsx (~490 líneas)
 - [x] csrf-advanced.en.tsx (~841 líneas)
 - [x] ssrf-basico.en.tsx (~448 líneas)
 - [x] cors-misconfiguration.en.tsx (~642 líneas)
 
-**Pendientes Alta Prioridad** (6):
-- [ ] mongodb-injection
-- [ ] xss-dom-based
-- [ ] jwt-vulnerabilities
-- [ ] idor
-- [ ] subdomain-takeover
+**Completadas - Batch 3** (5):
+- [x] mongodb-injection.en.tsx (~535 líneas)
+- [x] xss-dom-based.en.tsx (~564 líneas)
+- [x] jwt-vulnerabilities.en.tsx (~600 líneas)
+- [x] idor.en.tsx (~464 líneas)
+- [x] subdomain-takeover.en.tsx (~701 líneas)
+
+**Pendientes Alta Prioridad** (1):
 - [ ] open-redirect
 
 **Pendientes Media Prioridad** (10):
