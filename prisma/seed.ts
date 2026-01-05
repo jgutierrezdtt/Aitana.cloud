@@ -5,9 +5,11 @@ const prisma = new PrismaClient();
 async function main() {
   console.log('🚨 Seeding database with vulnerable data...');
 
-  // Create vulnerable users with plain text passwords
-  const adminUser = await prisma.user.create({
-    data: {
+  // Create vulnerable users with plain text passwords (usando upsert para evitar duplicados)
+  const adminUser = await prisma.user.upsert({
+    where: { email: 'admin@vulnerable-app.com' },
+    update: {},
+    create: {
       email: 'admin@vulnerable-app.com',
       password: 'admin123', // Plain text password - VULNERABLE!
       role: 'admin',
@@ -15,8 +17,10 @@ async function main() {
     },
   });
 
-  const regularUser = await prisma.user.create({
-    data: {
+  const regularUser = await prisma.user.upsert({
+    where: { email: 'user@example.com' },
+    update: {},
+    create: {
       email: 'user@example.com',
       password: 'password123', // Plain text password - VULNERABLE!
       role: 'user',
@@ -24,14 +28,21 @@ async function main() {
     },
   });
 
-  const testUser = await prisma.user.create({
-    data: {
+  const testUser = await prisma.user.upsert({
+    where: { email: 'test@test.com' },
+    update: {},
+    create: {
       email: 'test@test.com',
       password: 'test', // Very weak password - VULNERABLE!
       role: 'user',
       isAdmin: false,
     },
   });
+
+  // Limpiar datos previos (excepto usuarios)
+  await prisma.comment.deleteMany({});
+  await prisma.userSession.deleteMany({});
+  await prisma.note.deleteMany({});
 
   // Create vulnerable notes with XSS payloads
   await prisma.note.create({
