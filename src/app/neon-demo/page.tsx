@@ -19,7 +19,7 @@ async function create(formData: FormData) {
 // ❌ VULNERABILIDAD: Función para obtener comentarios sin cache
 async function getComments() {
   try {
-    const comments = await sql`SELECT * FROM comments ORDER BY rowid DESC LIMIT 10`;
+    const comments = await sql`SELECT * FROM comments ORDER BY id DESC LIMIT 10`;
     return comments;
   } catch (error) {
     console.error('Error fetching comments:', error);

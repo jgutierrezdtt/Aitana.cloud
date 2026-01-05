@@ -4,7 +4,7 @@ import { sql } from '@/lib/neon';
 export async function GET() {
   try {
     // ❌ VULNERABILIDAD: Sin autenticación para leer comentarios
-    const comments = await sql`SELECT * FROM comments ORDER BY rowid DESC`;
+    const comments = await sql`SELECT * FROM comments ORDER BY id DESC`;
     
     return NextResponse.json({
       success: true,
@@ -47,7 +47,7 @@ export async function POST(request: Request) {
     await sql`INSERT INTO comments (comment) VALUES (${comment})`;
     
     // Obtener todos los comentarios después de insertar
-    const allComments = await sql`SELECT * FROM comments ORDER BY rowid DESC`;
+    const allComments = await sql`SELECT * FROM comments ORDER BY id DESC`;
     
     return NextResponse.json({
       success: true,
