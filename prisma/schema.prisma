@@ -51,3 +51,11 @@ model UserSession {
 
   @@map("user_sessions")
 }
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  comment   String
+  createdAt DateTime @default(now())
+
+  @@map("comments")
+}
