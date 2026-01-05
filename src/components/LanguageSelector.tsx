@@ -2,14 +2,16 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useParams, usePathname, useRouter } from 'next/navigation';
-import { locales, localeNames, localeFlags, type Locale } from '@/i18n/config';
+import { locales, localeNames, localeFlags, localeCategories, type Locale } from '@/i18n/config';
 import { Globe } from 'lucide-react';
 
 /**
- * Componente selector de idioma
+ * Componente selector de idioma mejorado
  * 
- * Permite cambiar entre los idiomas soportados (es, en, fr, de)
- * Persiste la selección en cookie y actualiza la URL
+ * Permite cambiar entre 9 idiomas organizados por categorías:
+ * - Español (es)
+ * - Idiomas de España (eu, ca, gl, ic)
+ * - Internacional (en, fr, de, zh)
  */
 export default function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +51,7 @@ export default function LanguageSelector() {
 
   return (
     <div className="relative" ref={dropdownRef}>
-      {/* Botón selector */}
+      {/* Botón selector compacto */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-2 rounded-lg transition-colors
@@ -75,13 +77,15 @@ export default function LanguageSelector() {
         </svg>
       </button>
 
-      {/* Dropdown de idiomas */}
+      {/* Dropdown organizado por categorías */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 rounded-lg shadow-xl z-[100]
+        <div className="absolute right-0 mt-2 w-64 rounded-lg shadow-xl z-[100]
                        bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700
-                       overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                       overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200
+                       max-h-[80vh] overflow-y-auto">
           <div className="py-1">
-            {locales.map((locale) => (
+            {/* Español Principal */}
+            {localeCategories.spanish.locales.map((locale) => (
               <button
                 key={locale}
                 onClick={() => handleLocaleChange(locale)}
@@ -100,6 +104,71 @@ export default function LanguageSelector() {
                 )}
               </button>
             ))}
+
+            {/* Separador */}
+            <div className="border-t border-gray-200 dark:border-gray-700 my-1"></div>
+
+            {/* Idiomas de España */}
+            <div className="px-4 py-2">
+              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                {localeCategories.regionalSpanish.label}
+              </span>
+            </div>
+            {localeCategories.regionalSpanish.locales.map((locale) => (
+              <button
+                key={locale}
+                onClick={() => handleLocaleChange(locale)}
+                className={`w-full flex items-center gap-3 px-4 py-2 text-sm transition-colors
+                           ${currentLocale === locale
+                             ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 font-medium'
+                             : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                           }`}
+              >
+                <span className="text-lg">{localeFlags[locale]}</span>
+                <span className="text-sm">{localeNames[locale]}</span>
+                {currentLocale === locale && (
+                  <svg className="w-4 h-4 ml-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                )}
+              </button>
+            ))}
+
+            {/* Separador */}
+            <div className="border-t border-gray-200 dark:border-gray-700 my-1"></div>
+
+            {/* Internacional */}
+            <div className="px-4 py-2">
+              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                {localeCategories.international.label}
+              </span>
+            </div>
+            {localeCategories.international.locales.map((locale) => (
+              <button
+                key={locale}
+                onClick={() => handleLocaleChange(locale)}
+                className={`w-full flex items-center gap-3 px-4 py-2 text-sm transition-colors
+                           ${currentLocale === locale
+                             ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 font-medium'
+                             : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                           }`}
+              >
+                <span className="text-lg">{localeFlags[locale]}</span>
+                <span className="text-sm">{localeNames[locale]}</span>
+                {currentLocale === locale && (
+                  <svg className="w-4 h-4 ml-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                )}
+              </button>
+            ))}
+          </div>
+
+          {/* Footer informativo */}
+          <div className="border-t border-gray-200 dark:border-gray-700 px-4 py-2 bg-gray-50 dark:bg-gray-900/50">
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              9 idiomas disponibles
+            </p>
           </div>
         </div>
       )}
