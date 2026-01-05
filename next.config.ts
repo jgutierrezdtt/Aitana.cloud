@@ -4,9 +4,6 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  // Configuración de Turbopack (requerido en Next.js 16+)
-  turbopack: {},
-  
   // Configurar dominios de imágenes permitidos
   images: {
     remotePatterns: [
