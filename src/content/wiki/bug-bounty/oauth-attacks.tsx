@@ -31,185 +31,397 @@ export default function OAuthAttacksContent({ locale }: ArticleContentProps): Re
     <>
       <Section id="introduccion" title="OAuth 2.0 - El Protocolo Más Malinterpretado">
         <Paragraph>
-          <Strong>OAuth 2.0</Strong> es un framework de autorización que permite a aplicaciones obtener 
-          acceso limitado a recursos de usuario sin exponer contraseñas. Sin embargo, implementaciones 
-          incorrectas pueden llevar a <Strong>account takeover</Strong>, robo de tokens y bypass de autorización.
+          Imagina que quieres usar una aplicación web que te permite "Iniciar sesión con Google". 
+          En lugar de crear una nueva cuenta y contraseña, simplemente haces clic en un botón y 
+          Google le dice a la aplicación: <em>"Sí, conozco a este usuario y autorizo que accedas 
+          a su email y nombre"</em>.
         </Paragraph>
 
-        <AlertDanger title="Ataques Comunes OAuth">
-          <ul className="mt-2 space-y-1">
-            <ListItem>🔓 Open Redirect en redirect_uri</ListItem>
-            <ListItem>🎭 CSRF en OAuth flow</ListItem>
-            <ListItem>🔐 Authorization code interception</ListItem>
-            <ListItem>⏰ Replay de tokens sin validación</ListItem>
-            <ListItem>🚪 State parameter bypass</ListItem>
-            <ListItem>📧 Email scope abuse para account takeover</ListItem>
+        <Paragraph>
+          Esto es <Strong>OAuth 2.0</Strong>: un sistema de <Strong>delegación de autorización</Strong>. 
+          No estás compartiendo tu contraseña de Google con la aplicación, sino que Google actúa como 
+          intermediario de confianza.
+        </Paragraph>
+
+        <AlertInfo title="¿Por qué se usa OAuth?">
+          <ul className="mt-2 space-y-2">
+            <ListItem><Strong>No expones contraseñas:</Strong> La app nunca ve tu contraseña de Google</ListItem>
+            <ListItem><Strong>Acceso limitado:</Strong> Solo das los permisos necesarios (email, perfil, etc.)</ListItem>
+            <ListItem><Strong>Revocable:</Strong> Puedes quitar el acceso cuando quieras desde tu cuenta de Google</ListItem>
           </ul>
-        </AlertDanger>
+        </AlertInfo>
+
+        <Subsection title="¿Qué puede salir mal?">
+          <Paragraph>
+            Aunque OAuth es seguro en teoría, las <Strong>implementaciones incorrectas</Strong> son 
+            extremadamente comunes y pueden causar:
+          </Paragraph>
+
+          <HighlightBox>
+            <ul className="space-y-2">
+              <ListItem>🔓 <Strong>Account Takeover:</Strong> Atacante toma control total de tu cuenta</ListItem>
+              <ListItem>📧 <Strong>Robo de datos personales:</Strong> Email, nombre, foto de perfil expuestos</ListItem>
+              <ListItem>🎭 <Strong>Suplantación de identidad:</Strong> Atacante se hace pasar por ti</ListItem>
+              <ListItem>💳 <Strong>Acceso a recursos privados:</Strong> Tus documentos, fotos, contactos comprometidos</ListItem>
+            </ul>
+          </HighlightBox>
+        </Subsection>
+
+        <AlertWarning title="Vulnerabilidades más comunes que aprenderás">
+          <ol className="mt-2 space-y-2 list-decimal list-inside">
+            <ListItem><Strong>Redirect URI Manipulation:</Strong> Redirigir el código de autorización a un sitio del atacante</ListItem>
+            <ListItem><Strong>CSRF en OAuth:</Strong> Vincular la cuenta del atacante a tu sesión</ListItem>
+            <ListItem><Strong>Code Interception:</Strong> Interceptar códigos en apps móviles sin protección</ListItem>
+            <ListItem><Strong>Email Hijacking:</Strong> Cambiar el email verificado para tomar la cuenta</ListItem>
+            <ListItem><Strong>Token Replay:</Strong> Reutilizar tokens en servicios no autorizados</ListItem>
+          </ol>
+        </AlertWarning>
       </Section>
 
-      <Section id="flujo-oauth" title="1. Flujo OAuth 2.0 Authorization Code">
-        <CodeBlock
-          language="text"
-          title="Flujo normal de OAuth"
-          code={`1. User → Client App: Click "Login with Google"
+      <Section id="flujo-oauth" title="1. Entendiendo el Flujo OAuth (Sin Tecnicismos)">
+        <Paragraph>
+          Antes de ver los ataques, necesitas entender cómo funciona OAuth en la vida real. 
+          Usemos una analogía simple:
+        </Paragraph>
 
-2. Client → Authorization Server (Google):
-   GET https://accounts.google.com/o/oauth2/v2/auth?
-     client_id=abc123
-     &redirect_uri=https://client-app.com/callback
-     &response_type=code
-     &scope=email profile
-     &state=random-csrf-token
+        <HighlightBox>
+          <Paragraph>
+            <Strong>Analogía del Hotel 🏨</Strong>
+          </Paragraph>
+          <ul className="mt-3 space-y-2">
+            <ListItem><Strong>Tú</Strong> = El huésped (usuario)</ListItem>
+            <ListItem><Strong>Hotel</Strong> = Google/Facebook (proveedor OAuth)</ListItem>
+            <ListItem><Strong>Servicio de Limpieza</Strong> = Aplicación que quiere acceder a tu habitación</ListItem>
+            <ListItem><Strong>Tarjeta de acceso temporal</Strong> = Access Token</ListItem>
+          </ul>
+          <Paragraph className="mt-3">
+            El servicio de limpieza no necesita tu llave maestra (contraseña). En su lugar, 
+            el hotel te da una <em>tarjeta temporal</em> que solo abre tu habitación y solo 
+            funciona durante unas horas. Cuando termina el servicio, la tarjeta deja de funcionar.
+          </Paragraph>
+        </HighlightBox>
 
-3. User → Authorization Server: Login + Consent
+        <Subsection title="Flujo OAuth Paso a Paso (Versión Simple)">
+          <AlertInfo title="Paso 1: Usuario hace clic en 'Login with Google'">
+            <Paragraph className="mt-2">
+              La aplicación te redirige a Google diciendo: <em>"Hola Google, necesito acceso 
+              al email y nombre de este usuario. ¿Me das permiso?"</em>
+            </Paragraph>
+          </AlertInfo>
 
-4. Authorization Server → Client:
-   302 Redirect to: https://client-app.com/callback?
-     code=AUTH_CODE_HERE
-     &state=random-csrf-token
+          <AlertInfo title="Paso 2: Google te pregunta si estás de acuerdo">
+            <Paragraph className="mt-2">
+              Ves una pantalla como: <em>"¿Permitir que MyApp acceda a tu email y perfil?"</em> 
+              con botones Permitir/Cancelar.
+            </Paragraph>
+          </AlertInfo>
 
-5. Client → Authorization Server:
-   POST https://oauth2.googleapis.com/token
-   {
-     "client_id": "abc123",
-     "client_secret": "secret456",
-     "code": "AUTH_CODE_HERE",
-     "grant_type": "authorization_code",
-     "redirect_uri": "https://client-app.com/callback"
-   }
+          <AlertInfo title="Paso 3: Si aceptas, Google genera un código temporal">
+            <Paragraph className="mt-2">
+              Google te redirige de vuelta a la aplicación con un <InlineCode>code</InlineCode> 
+              especial en la URL. Este código solo funciona <Strong>una vez</Strong> y expira 
+              en <Strong>10 minutos</Strong>.
+            </Paragraph>
+          </AlertInfo>
 
-6. Authorization Server → Client:
-   {
-     "access_token": "ya29.xxx",
-     "refresh_token": "1//xxx",
-     "expires_in": 3600,
-     "scope": "email profile"
-   }
+          <AlertInfo title="Paso 4: La aplicación intercambia el código por un token">
+            <Paragraph className="mt-2">
+              La aplicación le dice a Google en secreto: <em>"Dame el token real, aquí está mi 
+              código temporal"</em>. Google verifica que el código sea válido y devuelve el 
+              <InlineCode>access_token</InlineCode>.
+            </Paragraph>
+          </AlertInfo>
 
-7. Client → Resource Server (Google API):
-   GET https://www.googleapis.com/oauth2/v1/userinfo
-   Authorization: Bearer ya29.xxx
+          <AlertInfo title="Paso 5: La aplicación usa el token para obtener tus datos">
+            <Paragraph className="mt-2">
+              Ahora la aplicación puede preguntar a Google: <em>"¿Cuál es el email de este usuario?"</em> 
+              y Google responde con tu información.
+            </Paragraph>
+          </AlertInfo>
+        </Subsection>
 
-8. Resource Server → Client:
-   {
-     "email": "user@gmail.com",
-     "name": "John Doe",
-     "id": "123456"
-   }`}
-        />
+        <AlertTip title="Datos Técnicos Clave (Para Bug Bounty)">
+          <ul className="mt-2 space-y-2">
+            <ListItem><InlineCode>client_id</InlineCode>: Identificador público de la app (como un nombre de usuario)</ListItem>
+            <ListItem><InlineCode>client_secret</InlineCode>: Contraseña secreta de la app (NO debe filtrarse)</ListItem>
+            <ListItem><InlineCode>redirect_uri</InlineCode>: URL donde Google devuelve el código (objetivo principal de ataques)</ListItem>
+            <ListItem><InlineCode>state</InlineCode>: Token anti-CSRF para validar que el flujo no fue manipulado</ListItem>
+            <ListItem><InlineCode>scope</InlineCode>: Permisos solicitados (email, perfil, archivos de Drive, etc.)</ListItem>
+          </ul>
+        </AlertTip>
       </Section>
 
-      <Section id="redirect-uri-manipulation" title="2. Redirect URI Manipulation">
-        <Subsection title="Escenario Vulnerable">
+      <Section id="redirect-uri-manipulation" title="2. Ataque: Redirect URI Manipulation (Robo de Código)">
+        <Subsection title="¿Qué es este ataque?">
+          <Paragraph>
+            Recuerda que cuando autorizas una app, Google te redirige de vuelta a ella con el 
+            código temporal en la URL. ¿Pero qué pasa si un atacante puede <Strong>cambiar esa URL</Strong> 
+            para que el código se envíe a <em>su servidor</em> en lugar del legítimo?
+          </Paragraph>
+
+          <HighlightBox>
+            <Paragraph className="text-lg">
+              💡 <Strong>Analogía:</Strong> Es como si un ladrón modificara la dirección de entrega 
+              de tu paquete mientras está en tránsito. El paquete (código OAuth) termina en su casa, 
+              no en la tuya.
+            </Paragraph>
+          </HighlightBox>
+        </Subsection>
+
+        <Subsection title="¿Cómo funciona el ataque?">
+          <AlertWarning title="Paso 1: Atacante manipula el redirect_uri">
+            <Paragraph className="mt-2">
+              La URL normal de autorización es:
+            </Paragraph>
+            <CodeBlock
+              language="text"
+              code={`https://google.com/oauth/authorize?
+  client_id=abc123
+  &redirect_uri=https://legitapp.com/callback  ✅ Legítima
+  &response_type=code`}
+            />
+            <Paragraph className="mt-2">
+              El atacante la modifica a:
+            </Paragraph>
+            <CodeBlock
+              language="text"
+              code={`https://google.com/oauth/authorize?
+  client_id=abc123
+  &redirect_uri=https://attacker.com/steal  ❌ Maliciosa
+  &response_type=code`}
+            />
+          </AlertWarning>
+
+          <AlertDanger title="Paso 2: Víctima autoriza sin darse cuenta">
+            <Paragraph className="mt-2">
+              La víctima ve la pantalla normal de Google preguntando: <em>"¿Permitir acceso a MyApp?"</em> 
+              Todo se ve legítimo porque la pantalla es real de Google. Hace clic en <Strong>Permitir</Strong>.
+            </Paragraph>
+          </AlertDanger>
+
+          <AlertDanger title="Paso 3: Código se envía al servidor del atacante">
+            <Paragraph className="mt-2">
+              Google redirige a la URL maliciosa:
+            </Paragraph>
+            <CodeBlock
+              language="text"
+              code={`https://attacker.com/steal?code=CODIGO_SECRETO_AQUI`}
+            />
+            <Paragraph className="mt-2">
+              El atacante ahora tiene el código. Puede intercambiarlo por el token de acceso y 
+              <Strong>tomar control de la cuenta de la víctima</Strong>.
+            </Paragraph>
+          </AlertDanger>
+        </Subsection>
+
+        <Subsection title="¿Por qué funciona este ataque?">
+          <Paragraph>
+            Muchos desarrolladores validan el <InlineCode>redirect_uri</InlineCode> incorrectamente. 
+            En lugar de hacer una comparación exacta, usan lógica débil como:
+          </Paragraph>
+
+          <HighlightBox>
+            <ul className="space-y-3">
+              <ListItem>
+                ❌ <Strong>Validación por substring:</Strong> Solo verifican que la URL <em>"contenga"</em> 
+                el dominio legítimo.
+                <CodeBlock
+                  language="text"
+                  code={`Payload: redirect_uri=https://legitapp.com.evil.com
+La validación ve "legitapp.com" y la acepta ✅ (PERO ES FALSA)`}
+                />
+              </ListItem>
+              <ListItem>
+                ❌ <Strong>Sin validación del path:</Strong> Aceptan cualquier path del dominio.
+                <CodeBlock
+                  language="text"
+                  code={`Si legitapp.com tiene un open redirect:
+redirect_uri=https://legitapp.com/redirect?url=https://attacker.com`}
+                />
+              </ListItem>
+              <ListItem>
+                ❌ <Strong>Subdominios no validados:</Strong> Aceptan cualquier subdominio.
+                <CodeBlock
+                  language="text"
+                  code={`redirect_uri=https://attacker.legitapp.com  (si controlas el subdominio)`}
+                />
+              </ListItem>
+            </ul>
+          </HighlightBox>
+        </Subsection>
+
+        <Subsection title="¿Cómo detectar esta vulnerabilidad en Bug Bounty?">
+          <AlertTip title="Checklist de pruebas">
+            <ol className="mt-2 space-y-2 list-decimal list-inside">
+              <ListItem>Inicia el flujo OAuth y captura la URL de autorización en Burp Suite</ListItem>
+              <ListItem>Modifica el parámetro <InlineCode>redirect_uri</InlineCode> a:
+                <ul className="ml-6 mt-2 space-y-1 list-disc">
+                  <ListItem><InlineCode>https://yourserver.com</InlineCode></ListItem>
+                  <ListItem><InlineCode>https://legitapp.com.evil.com</InlineCode></ListItem>
+                  <ListItem><InlineCode>https://legitapp.com@attacker.com</InlineCode></ListItem>
+                  <ListItem><InlineCode>https://legitapp.com/callback?next=https://attacker.com</InlineCode></ListItem>
+                </ul>
+              </ListItem>
+              <ListItem>Si el proveedor acepta la URL modificada y te redirige ahí con el código → <Strong>VULNERABLE</Strong></ListItem>
+            </ol>
+          </AlertTip>
+        </Subsection>
+
+        <Subsection title="Mitigación (Cómo debe implementarse correctamente)">
           <CodeBlock
             language="javascript"
-            title="❌ Validación insuficiente de redirect_uri"
-            code={`// Authorization server vulnerable
+            title="✅ Validación segura de redirect_uri"
+            code={`// Lista blanca exacta de URIs permitidas
+const ALLOWED_REDIRECTS = [
+  'https://legitapp.com/callback',
+  'https://legitapp.com/oauth/callback'
+];
+
 app.get('/oauth/authorize', (req, res) => {
-  const { client_id, redirect_uri, state } = req.query;
+  const { redirect_uri } = req.query;
   
-  // ❌ VULNERABLE - Solo valida que redirect_uri CONTENGA el dominio
-  const client = db.clients.findOne({ id: client_id });
-  
-  if (redirect_uri.includes(client.redirect_uri)) {
-    // Generar código y redirigir
-    const code = generateAuthCode();
-    res.redirect(\`\${redirect_uri}?code=\${code}&state=\${state}\`);
+  // Comparación EXACTA (no substring)
+  if (!ALLOWED_REDIRECTS.includes(redirect_uri)) {
+    return res.status(400).json({ 
+      error: 'invalid_redirect_uri',
+      message: 'Redirect URI no autorizada'
+    });
   }
+  
+  // Continuar flujo OAuth...
 });`}
           />
         </Subsection>
-
-        <Subsection title="Ataque - Open Redirect">
-          <CodeBlock
-            language="text"
-            title="Payload - Robo de authorization code"
-            code={`# URL legítima esperada:
-https://oauth-provider.com/authorize?
-  client_id=abc123
-  &redirect_uri=https://client-app.com/callback
-  &response_type=code
-  &state=xyz
-
-# Payload malicioso:
-https://oauth-provider.com/authorize?
-  client_id=abc123
-  &redirect_uri=https://client-app.com/callback@attacker.com
-  &response_type=code
-  &state=xyz
-
-# O con subdirectorio:
-&redirect_uri=https://client-app.com.evil.com/callback
-
-# O con open redirect en client-app:
-&redirect_uri=https://client-app.com/redirect?url=https://attacker.com`}
-          />
-
-          <AlertDanger>
-            Si la validación solo verifica que el string contenga el dominio legítimo, 
-            el atacante puede redirigir el <InlineCode>code</InlineCode> a su servidor 
-            y completar el flujo para obtener el access token.
-          </AlertDanger>
-        </Subsection>
       </Section>
 
-      <Section id="csrf-oauth" title="3. CSRF en OAuth Flow">
-        <Paragraph>
-          Si el <InlineCode>state</InlineCode> parameter no se valida correctamente, 
-          un atacante puede vincular su cuenta OAuth a la cuenta de la víctima.
-        </Paragraph>
+      <Section id="csrf-oauth" title="3. Ataque: CSRF en OAuth Flow (Account Linking Attack)">
+        <Subsection title="¿Qué es este ataque?">
+          <Paragraph>
+            Este es uno de los ataques OAuth más peligrosos y menos conocidos. El atacante logra 
+            <Strong>vincular su propia cuenta de Google/Facebook</Strong> a tu cuenta en la aplicación 
+            víctima. Cuando inicies sesión con OAuth, ¡estarás usando la cuenta del atacante!
+          </Paragraph>
 
-        <CodeBlock
-          language="javascript"
-          title="❌ Código vulnerable sin validación de state"
-          code={`// Client app callback vulnerable
+          <HighlightBox>
+            <Paragraph className="text-lg">
+              💡 <Strong>Analogía:</Strong> Es como si un ladrón lograra asociar su tarjeta bancaria 
+              con tu cuenta de Netflix. Cuando pagas la suscripción, se cobra a su tarjeta, pero él 
+              tiene acceso total a tu perfil, historial y configuración.
+            </Paragraph>
+          </HighlightBox>
+        </Subsection>
+
+        <Subsection title="¿Cómo funciona el ataque?">
+          <AlertWarning title="Paso 1: Atacante prepara la trampa">
+            <Paragraph className="mt-2">
+              El atacante inicia un flujo OAuth normal con <Strong>su propia cuenta de Google</Strong>. 
+              Pero en lugar de completarlo, captura la URL del callback que contiene el código de autorización.
+            </Paragraph>
+            <CodeBlock
+              language="text"
+              code={`URL que el atacante intercepta:
+https://vulnerable-app.com/oauth/callback?code=CODIGO_DEL_ATACANTE`}
+            />
+          </AlertWarning>
+
+          <AlertDanger title="Paso 2: Víctima hace clic en el enlace malicioso">
+            <Paragraph className="mt-2">
+              El atacante envía esta URL a la víctima por email, redes sociales o la inserta en un 
+              sitio web. La víctima hace clic mientras está logueada en la aplicación vulnerable.
+            </Paragraph>
+          </AlertDanger>
+
+          <AlertDanger title="Paso 3: Cuenta del atacante se vincula a la víctima">
+            <Paragraph className="mt-2">
+              Cuando la víctima visita la URL, la aplicación procesa el código OAuth <Strong>sin validar</Strong> 
+              que el flujo lo inició la misma persona. Resultado:
+            </Paragraph>
+            <ul className="mt-2 space-y-1">
+              <ListItem>✅ Cuenta de Google del <Strong>atacante</Strong> se asocia al perfil de la <Strong>víctima</Strong></ListItem>
+              <ListItem>🚨 Ahora el atacante puede iniciar sesión en la cuenta de la víctima usando OAuth</ListItem>
+              <ListItem>💀 La víctima no se da cuenta hasta que es tarde</ListItem>
+            </ul>
+          </AlertDanger>
+        </Subsection>
+
+        <Subsection title="¿Por qué funciona?">
+          <Paragraph>
+            El flujo OAuth tiene un parámetro llamado <InlineCode>state</InlineCode> que está diseñado 
+            <Strong>específicamente para prevenir este ataque</Strong>. El problema es que muchos 
+            desarrolladores:
+          </Paragraph>
+
+          <HighlightBox>
+            <ul className="space-y-2">
+              <ListItem>❌ No envían el parámetro <InlineCode>state</InlineCode></ListItem>
+              <ListItem>❌ Lo envían pero no lo validan en el callback</ListItem>
+              <ListItem>❌ Usan un valor estático en lugar de uno aleatorio por sesión</ListItem>
+              <ListItem>❌ No vinculan el <InlineCode>state</InlineCode> con la sesión del usuario</ListItem>
+            </ul>
+          </HighlightBox>
+        </Subsection>
+
+        <Subsection title="¿Cómo detectar esta vulnerabilidad?">
+          <AlertTip title="Prueba manual en Bug Bounty">
+            <ol className="mt-2 space-y-2 list-decimal list-inside">
+              <ListItem>Inicia sesión en la app vulnerable con tu cuenta (Usuario A)</ListItem>
+              <ListItem>Haz clic en "Conectar con Google" y captura la URL del callback en Burp Suite</ListItem>
+              <ListItem>Guarda esa URL (contiene el código OAuth)</ListItem>
+              <ListItem>Abre un navegador en modo incógnito e inicia sesión con otra cuenta (Usuario B)</ListItem>
+              <ListItem>Pega la URL del paso 3 en el navegador incógnito</ListItem>
+              <ListItem>Si la cuenta de Google del Usuario A se vincula al Usuario B → <Strong>VULNERABLE A CSRF</Strong></ListItem>
+            </ol>
+          </AlertTip>
+
+          <Paragraph>
+            También puedes verificar si el parámetro <InlineCode>state</InlineCode> está presente y 
+            si eliminarlo o modificarlo causa error. Si la app acepta cualquier valor → vulnerable.
+          </Paragraph>
+        </Subsection>
+
+        <Subsection title="Mitigación correcta">
+          <CodeBlock
+            language="javascript"
+            title="✅ Implementación segura con validación de state"
+            code={`// Al iniciar el flujo OAuth
+app.get('/oauth/start', (req, res) => {
+  // Generar token anti-CSRF aleatorio
+  const state = crypto.randomBytes(32).toString('hex');
+  
+  // Guardar en sesión del usuario
+  req.session.oauthState = state;
+  
+  // Incluir en URL de autorización
+  const authUrl = \`https://google.com/oauth/authorize?
+    client_id=\${CLIENT_ID}
+    &redirect_uri=\${REDIRECT_URI}
+    &response_type=code
+    &scope=email profile
+    &state=\${state}\`;  // 👈 Token único por sesión
+  
+  res.redirect(authUrl);
+});
+
+// En el callback
 app.get('/oauth/callback', async (req, res) => {
   const { code, state } = req.query;
   
-  // ❌ VULNERABLE - No valida state parameter
+  // ✅ VALIDAR state contra la sesión
+  if (!state || state !== req.session.oauthState) {
+    return res.status(403).json({ 
+      error: 'invalid_state',
+      message: 'Posible ataque CSRF detectado'
+    });
+  }
+  
+  // Limpiar el state usado (one-time use)
+  delete req.session.oauthState;
+  
+  // Continuar con el flujo OAuth...
   const tokens = await exchangeCodeForTokens(code);
-  const userInfo = await getUserInfo(tokens.access_token);
-  
-  // Asociar cuenta OAuth con usuario actual
-  req.session.user.oauthEmail = userInfo.email;
-  
-  res.redirect('/dashboard');
+  // ...
 });`}
-        />
-
-        <Subsection title="Ataque - Account Linking CSRF">
-          <CodeBlock
-            language="html"
-            title="Página maliciosa del atacante"
-            code={`<!DOCTYPE html>
-<html>
-<body>
-  <h1>Win a free iPhone!</h1>
-  
-  <script>
-    // Atacante inicia flujo OAuth con SU cuenta
-    window.location = 'https://oauth-provider.com/authorize?client_id=abc123&redirect_uri=https://client-app.com/callback&response_type=code&state=ignored';
-  </script>
-</body>
-</html>
-
-<!-- 
-FLUJO DEL ATAQUE:
-1. Víctima visita página del atacante
-2. Redirigida a OAuth provider
-3. Authorization code generado para cuenta del ATACANTE
-4. Code enviado a client-app/callback
-5. Client app NO valida state
-6. Cuenta del atacante se VINCULA a sesión de la víctima
-7. Atacante puede ahora acceder a cuenta de la víctima
--->`}
           />
-
-          <AlertWarning>
-            Resultado: La cuenta OAuth del atacante queda vinculada al perfil de la víctima. 
-            Atacante puede iniciar sesión y acceder a todos los datos de la víctima.
-          </AlertWarning>
         </Subsection>
       </Section>
 
