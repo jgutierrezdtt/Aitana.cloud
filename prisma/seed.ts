@@ -98,6 +98,25 @@ async function main() {
     },
   });
 
+  // Create vulnerable comments for demos
+  await prisma.comment.create({
+    data: {
+      comment: 'Welcome to the vulnerable app!',
+    },
+  });
+
+  await prisma.comment.create({
+    data: {
+      comment: '<script>alert("XSS in comments!")</script>',
+    },
+  });
+
+  await prisma.comment.create({
+    data: {
+      comment: 'This database contains intentional vulnerabilities for educational purposes',
+    },
+  });
+
   console.log('✅ Database seeded with vulnerable data!');
   console.log('🚨 Created users:');
   console.log('   Admin: admin@vulnerable-app.com / admin123');
