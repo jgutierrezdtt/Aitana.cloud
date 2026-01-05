@@ -186,18 +186,42 @@ export default function SqlInjectionAvanzadaContentEN({ locale }: { locale: stri
 
 ## Estado Actual
 
-### Artículos con traducciones: 0/25
-- [ ] sql-injection-avanzada
+### ✅ Artículos traducidos a inglés: 5/27 (19%)
+
+**Completadas**:
+- [x] sql-injection-avanzada.en.tsx (~325 líneas)
+- [x] xss-stored.en.tsx (~490 líneas)
+- [x] csrf-advanced.en.tsx (~841 líneas)
+- [x] ssrf-basico.en.tsx (~448 líneas)
+- [x] cors-misconfiguration.en.tsx (~642 líneas)
+
+**Pendientes Alta Prioridad** (6):
 - [ ] mongodb-injection
+- [ ] xss-dom-based
+- [ ] jwt-vulnerabilities
+- [ ] idor
+- [ ] subdomain-takeover
+- [ ] open-redirect
+
+**Pendientes Media Prioridad** (10):
 - [ ] redis-rce
 - [ ] cassandra-injection
 - [ ] sqlite-local-injection
 - [ ] firebase-misconfiguration
-- [ ] ssrf-basico
-- [ ] idor
+- [ ] ssrf-to-rce
 - [ ] race-conditions
-- [ ] xss-stored
-- [ ] (15 artículos más pendientes...)
+- [ ] csp-bypass
+- [ ] xxe
+- [ ] ssti
+- [ ] command-injection
+
+**Pendientes Baja Prioridad** (6):
+- [ ] path-traversal
+- [ ] file-upload
+- [ ] graphql-injection
+- [ ] prototype-pollution
+- [ ] websocket-hijacking
+- [ ] http-request-smuggling
 
 ## Contribuir
 
