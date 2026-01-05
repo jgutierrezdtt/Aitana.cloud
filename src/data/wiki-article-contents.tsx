@@ -55,6 +55,7 @@ import OpenRedirectContent from '@/content/wiki/bug-bounty/open-redirect';
 import CSRFAdvancedContent from '@/content/wiki/bug-bounty/csrf-advanced';
 import WebSocketHijackingContent from '@/content/wiki/bug-bounty/websocket-hijacking';
 import HTTPRequestSmugglingContent from '@/content/wiki/bug-bounty/http-request-smuggling';
+import OAuthAttacksContent from '@/content/wiki/bug-bounty/oauth-attacks';
 
 // ============================================================================
 // IMPORTACIONES - INGLÉS (EN) - Cuando estén disponibles
@@ -209,6 +210,11 @@ export const articleContentMapByLocale: Record<string, Record<string, ArticleCon
   // Bug Bounty - HTTP Advanced (1/4)
   'http-request-smuggling': {
     es: HTTPRequestSmugglingContent,
+  },
+  
+  // Bug Bounty - Authentication & Authorization (1/1) ✅
+  'oauth-attacks': {
+    es: OAuthAttacksContent,
   },
 };
 

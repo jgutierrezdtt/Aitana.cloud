@@ -11,34 +11,57 @@ export default function WikiPage() {
   // Solo artículos que existen (los que hemos creado)
   const categories = [
     {
-      id: 'fundamentos',
-      title: 'Fundamentos de Seguridad Web',
-      icon: BookOpen,
-      color: 'from-blue-600 to-cyan-600',
-      description: 'Conceptos básicos necesarios para entender la seguridad en aplicaciones web',
+      id: 'bug-bounty',
+      title: 'Bug Bounty Techniques',
+      icon: Terminal,
+      color: 'from-orange-600 to-red-600',
+      description: 'Técnicas avanzadas de Bug Bounty y explotación de vulnerabilidades',
       articles: [
-        { slug: 'http-basico', title: 'HTTP: El Protocolo de la Web', level: 'Principiante', time: '10 min' },
-        { slug: 'cookies-sesiones', title: 'Cookies y Sesiones', level: 'Principiante', time: '15 min' },
-      ]
-    },
-    {
-      id: 'vulnerabilidades',
-      title: 'Vulnerabilidades Comunes',
-      icon: AlertTriangle,
-      color: 'from-red-600 to-orange-600',
-      description: 'Explicación de las vulnerabilidades más frecuentes en aplicaciones web',
-      articles: [
-        { slug: 'sql-injection', title: 'SQL Injection (SQLi)', level: 'Principiante', time: '20 min' },
-      ]
-    },
-    {
-      id: 'defensas',
-      title: 'Defensas y Mitigaciones',
-      icon: Shield,
-      color: 'from-green-600 to-emerald-600',
-      description: 'Técnicas y mejores prácticas para proteger tus aplicaciones',
-      articles: [
-        { slug: 'input-validation', title: 'Validación de Entrada', level: 'Principiante', time: '15 min' },
+        // Database Attacks
+        { slug: 'sql-injection-avanzada', title: 'SQL Injection Manual Avanzada', level: 'Pentester', time: '25 min' },
+        { slug: 'mongodb-injection', title: 'MongoDB Operator Injection', level: 'Pentester', time: '20 min' },
+        { slug: 'redis-rce', title: 'Redis RCE via Lua Sandboxing', level: 'Pentester', time: '22 min' },
+        { slug: 'cassandra-injection', title: 'Cassandra (CQL) Injection', level: 'Pentester', time: '18 min' },
+        { slug: 'sqlite-local-injection', title: 'SQLite Local Injections', level: 'Pentester', time: '16 min' },
+        { slug: 'firebase-misconfiguration', title: 'Firebase Realtime DB Misconfiguration', level: 'Pentester', time: '14 min' },
+        
+        // SSRF Attacks
+        { slug: 'ssrf-basico', title: 'SSRF Básico', level: 'Pentester', time: '18 min' },
+        { slug: 'ssrf-to-rce', title: 'SSRF to RCE', level: 'Pentester', time: '24 min' },
+        
+        // Access Control
+        { slug: 'idor', title: 'IDOR (Insecure Direct Object References)', level: 'Pentester', time: '16 min' },
+        { slug: 'race-conditions', title: 'Race Conditions', level: 'Pentester', time: '20 min' },
+        { slug: 'jwt-vulnerabilities', title: 'JWT Vulnerabilities', level: 'Pentester', time: '22 min' },
+        { slug: 'oauth-attacks', title: 'OAuth 2.0 Attacks', level: 'Pentester', time: '28 min' },
+        
+        // XSS Variants
+        { slug: 'xss-stored', title: 'XSS Stored (Persistente)', level: 'Pentester', time: '20 min' },
+        { slug: 'xss-dom-based', title: 'XSS DOM-based', level: 'Pentester', time: '22 min' },
+        { slug: 'csp-bypass', title: 'CSP Bypass Techniques', level: 'Pentester', time: '26 min' },
+        
+        // Template & Injection
+        { slug: 'xxe', title: 'XXE (XML External Entity)', level: 'Pentester', time: '20 min' },
+        { slug: 'ssti', title: 'SSTI (Server-Side Template Injection)', level: 'Pentester', time: '24 min' },
+        { slug: 'command-injection', title: 'Command Injection', level: 'Pentester', time: '18 min' },
+        { slug: 'path-traversal', title: 'Path Traversal', level: 'Pentester', time: '16 min' },
+        
+        // File Upload
+        { slug: 'file-upload', title: 'File Upload Vulnerabilities', level: 'Pentester', time: '22 min' },
+        
+        // API Security
+        { slug: 'graphql-injection', title: 'GraphQL Injection', level: 'Pentester', time: '20 min' },
+        { slug: 'prototype-pollution', title: 'Prototype Pollution', level: 'Pentester', time: '24 min' },
+        
+        // Web Security
+        { slug: 'cors-misconfiguration', title: 'CORS Misconfiguration', level: 'Pentester', time: '18 min' },
+        { slug: 'subdomain-takeover', title: 'Subdomain Takeover', level: 'Pentester', time: '20 min' },
+        { slug: 'open-redirect', title: 'Open Redirect', level: 'Pentester', time: '14 min' },
+        { slug: 'csrf-advanced', title: 'CSRF Advanced', level: 'Pentester', time: '22 min' },
+        { slug: 'websocket-hijacking', title: 'WebSocket Hijacking', level: 'Pentester', time: '20 min' },
+        
+        // HTTP Advanced
+        { slug: 'http-request-smuggling', title: 'HTTP Request Smuggling', level: 'Pentester', time: '26 min' },
       ]
     },
   ];
@@ -69,10 +92,10 @@ export default function WikiPage() {
       <div className="max-w-7xl mx-auto px-6 -mt-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
-            { icon: BookOpen, label: 'Artículos', value: '4', color: 'blue' },
-            { icon: Code, label: 'Ejemplos de Código', value: '20+', color: 'purple' },
-            { icon: Lock, label: 'Vulnerabilidades', value: '1', color: 'red' },
-            { icon: Shield, label: 'Defensas', value: '1', color: 'green' }
+            { icon: BookOpen, label: 'Artículos', value: '28', color: 'blue' },
+            { icon: Code, label: 'Ejemplos de Código', value: '100+', color: 'purple' },
+            { icon: Lock, label: 'Técnicas Bug Bounty', value: '28', color: 'red' },
+            { icon: Shield, label: 'Traducciones EN', value: '10', color: 'green' }
           ].map((stat, idx) => (
             <div key={idx} className="bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl p-6 text-center shadow-lg">
               <div className={`w-12 h-12 rounded-xl bg-gradient-to-br from-${stat.color}-500 to-${stat.color}-600 flex items-center justify-center mx-auto mb-3`}>
