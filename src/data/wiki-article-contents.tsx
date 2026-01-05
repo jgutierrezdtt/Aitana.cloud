@@ -64,7 +64,11 @@ import XSSStoredContentEN from '@/content/wiki/bug-bounty/xss-stored.en';
 import CSRFAdvancedContentEN from '@/content/wiki/bug-bounty/csrf-advanced.en';
 import SSRFBasicoContentEN from '@/content/wiki/bug-bounty/ssrf-basico.en';
 import CORSMisconfigurationContentEN from '@/content/wiki/bug-bounty/cors-misconfiguration.en';
-// import MongodbInjectionContentEN from '@/content/wiki/bug-bounty/mongodb-injection.en';
+import MongodbInjectionContentEN from '@/content/wiki/bug-bounty/mongodb-injection.en';
+import XSSDOMBasedContentEN from '@/content/wiki/bug-bounty/xss-dom-based.en';
+import JWTVulnerabilitiesContentEN from '@/content/wiki/bug-bounty/jwt-vulnerabilities.en';
+import IDORContentEN from '@/content/wiki/bug-bounty/idor.en';
+import SubdomainTakeoverContentEN from '@/content/wiki/bug-bounty/subdomain-takeover.en';
 // ... etc
 
 // ============================================================================
@@ -105,6 +109,7 @@ export const articleContentMapByLocale: Record<string, Record<string, ArticleCon
   },
   'mongodb-injection': {
     es: MongodbInjectionContent,
+    en: MongodbInjectionContentEN,
   },
   'redis-rce': {
     es: RedisRCEContent,
@@ -131,12 +136,14 @@ export const articleContentMapByLocale: Record<string, Record<string, ArticleCon
   // Bug Bounty - Lógica de Negocio (3/4)
   'idor': {
     es: IDORContent,
+    en: IDORContentEN,
   },
   'race-conditions': {
     es: RaceConditionsContent,
   },
   'jwt-vulnerabilities': {
     es: JWTVulnerabilitiesContent,
+    en: JWTVulnerabilitiesContentEN,
   },
   
   // Bug Bounty - XSS (3/3) ✅
@@ -146,6 +153,7 @@ export const articleContentMapByLocale: Record<string, Record<string, ArticleCon
   },
   'xss-dom-based': {
     es: XSSDOMBasedContent,
+    en: XSSDOMBasedContentEN,
   },
   'csp-bypass': {
     es: CSPBypassContent,
@@ -185,6 +193,7 @@ export const articleContentMapByLocale: Record<string, Record<string, ArticleCon
   },
   'subdomain-takeover': {
     es: SubdomainTakeoverContent,
+    en: SubdomainTakeoverContentEN,
   },
   'open-redirect': {
     es: OpenRedirectContent,
