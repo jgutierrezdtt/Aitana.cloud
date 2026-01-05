@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run vercel-build",
+  "functions": {
+    "app/**/*": {
+      "maxDuration": 10
+    },
+    "api/**/*": {
+      "maxDuration": 10
+    }
+  }
+}

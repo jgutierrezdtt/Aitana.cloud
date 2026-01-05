@@ -4,9 +4,6 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  // Optimización para despliegues en Vercel (reduce tamaño y evita errores de symlinks)
-  output: 'standalone',
-
   // Configuración de Turbopack (requerido en Next.js 16+)
   turbopack: {},
   
