@@ -3,13 +3,16 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { ArrowLeft, BookOpen, Code, AlertCircle, CheckCircle, Cookie } from 'lucide-react';
+import Navigation from '@/components/Navigation';
 
 export default function CookiesSesionesPage() {
   const params = useParams();
   const locale = params.locale as string;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       {/* Breadcrumb */}
       <div className="bg-white/5 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 py-4">
@@ -389,15 +392,16 @@ Set-Cookie: session_id=abc123; HttpOnly; Secure; SameSite=Strict`}
           <section className="border-t border-white/10 pt-8">
             <h2 className="text-2xl font-bold text-white mb-4">Siguiente Paso</h2>
             <Link
-              href={`/${locale}/wiki/fundamentos/autenticacion`}
+              href={`/${locale}/wiki/vulnerabilidades/sql-injection`}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:scale-105 transition-transform"
             >
-              <span>Autenticación vs Autorización</span>
+              <span>SQL Injection (Vulnerabilidad)</span>
               <Code className="w-5 h-5" />
             </Link>
           </section>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

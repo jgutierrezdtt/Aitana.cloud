@@ -3,13 +3,16 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { ArrowLeft, Shield, Code, CheckCircle, AlertTriangle, Lock } from 'lucide-react';
+import Navigation from '@/components/Navigation';
 
 export default function InputValidationPage() {
   const params = useParams();
   const locale = params.locale as string;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       {/* Breadcrumb */}
       <div className="bg-white/5 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 py-4">
@@ -431,22 +434,23 @@ app.post('/user',
             <h2 className="text-2xl font-bold text-white mb-4">Siguiente Paso</h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href={`/${locale}/wiki/defensas/output-encoding`}
+                href={`/${locale}/wiki/vulnerabilidades/sql-injection`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-xl font-semibold hover:scale-105 transition-transform"
               >
                 <Lock className="w-5 h-5" />
-                <span>Codificación de Salida</span>
+                <span>SQL Injection (Vulnerabilidad)</span>
               </Link>
               <Link
-                href={`/${locale}/wiki/vulnerabilidades/xss`}
+                href={`/${locale}/lab/xss`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-white/20 transition-all border border-white/20"
               >
-                <span>Ver XSS (Vulnerabilidad)</span>
+                <span>Practicar XSS en el Lab</span>
               </Link>
             </div>
           </section>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

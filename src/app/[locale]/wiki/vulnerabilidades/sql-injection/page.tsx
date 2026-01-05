@@ -3,13 +3,16 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { ArrowLeft, Database, AlertTriangle, Code, Shield, Terminal } from 'lucide-react';
+import Navigation from '@/components/Navigation';
 
 export default function SqlInjectionPage() {
   const params = useParams();
   const locale = params.locale as string;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       {/* Breadcrumb */}
       <div className="bg-white/5 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 py-4">
@@ -423,6 +426,7 @@ const user = await prisma.user.findFirst({
           </section>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

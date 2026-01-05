@@ -3,11 +3,13 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { BookOpen, Shield, Code, Lock, Database, AlertTriangle, CheckCircle, Terminal } from 'lucide-react';
+import Navigation from '@/components/Navigation';
 
 export default function WikiPage() {
   const params = useParams();
   const locale = params.locale as string;
 
+  // Solo artículos que existen (los que hemos creado)
   const categories = [
     {
       id: 'fundamentos',
@@ -18,10 +20,6 @@ export default function WikiPage() {
       articles: [
         { slug: 'http-basico', title: 'HTTP: El Protocolo de la Web', level: 'Principiante', time: '10 min' },
         { slug: 'cookies-sesiones', title: 'Cookies y Sesiones', level: 'Principiante', time: '15 min' },
-        { slug: 'autenticacion', title: 'Autenticación vs Autorización', level: 'Principiante', time: '12 min' },
-        { slug: 'apis-rest', title: 'APIs REST y JSON', level: 'Principiante', time: '15 min' },
-        { slug: 'cliente-servidor', title: 'Modelo Cliente-Servidor', level: 'Principiante', time: '10 min' },
-        { slug: 'cors', title: 'CORS: Control de Acceso entre Dominios', level: 'Intermedio', time: '20 min' },
       ]
     },
     {
@@ -32,13 +30,6 @@ export default function WikiPage() {
       description: 'Explicación de las vulnerabilidades más frecuentes en aplicaciones web',
       articles: [
         { slug: 'sql-injection', title: 'SQL Injection (SQLi)', level: 'Principiante', time: '20 min' },
-        { slug: 'xss', title: 'Cross-Site Scripting (XSS)', level: 'Principiante', time: '18 min' },
-        { slug: 'csrf', title: 'Cross-Site Request Forgery (CSRF)', level: 'Intermedio', time: '15 min' },
-        { slug: 'idor', title: 'IDOR: Acceso Directo a Objetos', level: 'Principiante', time: '12 min' },
-        { slug: 'xxe', title: 'XML External Entities (XXE)', level: 'Intermedio', time: '18 min' },
-        { slug: 'command-injection', title: 'Command Injection', level: 'Intermedio', time: '15 min' },
-        { slug: 'ssti', title: 'Server-Side Template Injection', level: 'Avanzado', time: '25 min' },
-        { slug: 'broken-auth', title: 'Autenticación Rota', level: 'Intermedio', time: '20 min' },
       ]
     },
     {
@@ -49,32 +40,15 @@ export default function WikiPage() {
       description: 'Técnicas y mejores prácticas para proteger tus aplicaciones',
       articles: [
         { slug: 'input-validation', title: 'Validación de Entrada', level: 'Principiante', time: '15 min' },
-        { slug: 'output-encoding', title: 'Codificación de Salida', level: 'Principiante', time: '12 min' },
-        { slug: 'parameterized-queries', title: 'Consultas Parametrizadas', level: 'Principiante', time: '10 min' },
-        { slug: 'csp', title: 'Content Security Policy', level: 'Intermedio', time: '20 min' },
-        { slug: 'security-headers', title: 'Cabeceras de Seguridad HTTP', level: 'Intermedio', time: '18 min' },
-        { slug: 'password-hashing', title: 'Hashing de Contraseñas', level: 'Intermedio', time: '15 min' },
-        { slug: 'secure-sessions', title: 'Gestión Segura de Sesiones', level: 'Intermedio', time: '20 min' },
       ]
     },
-    {
-      id: 'herramientas',
-      title: 'Herramientas de Seguridad',
-      icon: Terminal,
-      color: 'from-purple-600 to-pink-600',
-      description: 'Herramientas esenciales para testing y auditoría de seguridad',
-      articles: [
-        { slug: 'burp-suite', title: 'Burp Suite: Proxy de Intercepción', level: 'Intermedio', time: '25 min' },
-        { slug: 'owasp-zap', title: 'OWASP ZAP: Scanner Automático', level: 'Principiante', time: '20 min' },
-        { slug: 'sqlmap', title: 'SQLMap: Explotación de SQLi', level: 'Intermedio', time: '18 min' },
-        { slug: 'nikto', title: 'Nikto: Web Server Scanner', level: 'Principiante', time: '15 min' },
-      ]
-    }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-      {/* Hero Section */}
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+        {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 py-20">
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-6">
@@ -98,10 +72,10 @@ export default function WikiPage() {
       <div className="max-w-7xl mx-auto px-6 -mt-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
-            { icon: BookOpen, label: 'Artículos', value: '25+', color: 'blue' },
-            { icon: Code, label: 'Ejemplos de Código', value: '100+', color: 'purple' },
-            { icon: Lock, label: 'Vulnerabilidades', value: '15+', color: 'red' },
-            { icon: Shield, label: 'Defensas', value: '20+', color: 'green' }
+            { icon: BookOpen, label: 'Artículos', value: '4', color: 'blue' },
+            { icon: Code, label: 'Ejemplos de Código', value: '20+', color: 'purple' },
+            { icon: Lock, label: 'Vulnerabilidades', value: '1', color: 'red' },
+            { icon: Shield, label: 'Defensas', value: '1', color: 'green' }
           ].map((stat, idx) => (
             <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center">
               <div className={`w-12 h-12 rounded-xl bg-gradient-to-br from-${stat.color}-500 to-${stat.color}-600 flex items-center justify-center mx-auto mb-3`}>
@@ -195,6 +169,7 @@ export default function WikiPage() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
