@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { BookOpen, Shield, Code, Lock, Database, AlertTriangle, CheckCircle, Terminal } from 'lucide-react';
-import Navigation from '@/components/Navigation';
 
 export default function WikiPage() {
   const params = useParams();
@@ -45,11 +44,9 @@ export default function WikiPage() {
   ];
 
   return (
-    <>
-      <Navigation />
-      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-        {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 py-20">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      {/* Hero Section */}
+      <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900 py-20">
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-center">
@@ -60,7 +57,7 @@ export default function WikiPage() {
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Wiki de Seguridad
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-blue-100 dark:text-purple-200 max-w-3xl mx-auto leading-relaxed">
               Aprende los conceptos fundamentales de ciberseguridad desde cero. Guías estructuradas, 
               ejemplos prácticos y explicaciones claras para todos los niveles.
             </p>
@@ -77,12 +74,12 @@ export default function WikiPage() {
             { icon: Lock, label: 'Vulnerabilidades', value: '1', color: 'red' },
             { icon: Shield, label: 'Defensas', value: '1', color: 'green' }
           ].map((stat, idx) => (
-            <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center">
+            <div key={idx} className="bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl p-6 text-center shadow-lg">
               <div className={`w-12 h-12 rounded-xl bg-gradient-to-br from-${stat.color}-500 to-${stat.color}-600 flex items-center justify-center mx-auto mb-3`}>
                 <stat.icon className="w-6 h-6 text-white" />
               </div>
-              <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-              <div className="text-sm text-slate-400">{stat.label}</div>
+              <div className="text-3xl font-bold text-slate-900 dark:text-white mb-1">{stat.value}</div>
+              <div className="text-sm text-slate-600 dark:text-slate-400">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -101,8 +98,8 @@ export default function WikiPage() {
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h2 className="text-3xl font-bold text-white mb-2">{category.title}</h2>
-                    <p className="text-slate-400 text-lg">{category.description}</p>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">{category.title}</h2>
+                    <p className="text-slate-600 dark:text-slate-400 text-lg">{category.description}</p>
                   </div>
                 </div>
 
@@ -112,26 +109,26 @@ export default function WikiPage() {
                     <Link
                       key={article.slug}
                       href={`/${locale}/wiki/${category.id}/${article.slug}`}
-                      className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105"
+                      className="group bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl p-6 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:border-slate-300 dark:hover:border-slate-600 transition-all duration-300 hover:scale-105"
                     >
                       <div className="flex items-start justify-between mb-4">
                         <div className={`px-3 py-1 rounded-lg text-xs font-medium ${
                           article.level === 'Principiante' 
-                            ? 'bg-green-500/20 text-green-300' 
+                            ? 'bg-green-500/20 text-green-700 dark:text-green-300' 
                             : article.level === 'Intermedio'
-                            ? 'bg-yellow-500/20 text-yellow-300'
-                            : 'bg-red-500/20 text-red-300'
+                            ? 'bg-yellow-500/20 text-yellow-700 dark:text-yellow-300'
+                            : 'bg-red-500/20 text-red-700 dark:text-red-300'
                         }`}>
                           {article.level}
                         </div>
-                        <div className="text-xs text-slate-400">{article.time}</div>
+                        <div className="text-xs text-slate-600 dark:text-slate-400">{article.time}</div>
                       </div>
                       
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                         {article.title}
                       </h3>
                       
-                      <div className="flex items-center gap-2 text-sm text-slate-400">
+                      <div className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
                         <BookOpen className="w-4 h-4" />
                         <span>Leer artículo</span>
                       </div>
@@ -146,11 +143,11 @@ export default function WikiPage() {
 
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-6 pb-20">
-        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-12 text-center">
+        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900 rounded-3xl p-12 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             ¿Listo para practicar?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-100 dark:text-purple-200 mb-8 max-w-2xl mx-auto">
             Aplica lo aprendido en nuestros laboratorios prácticos de vulnerabilidades
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -169,7 +166,6 @@ export default function WikiPage() {
           </div>
         </div>
       </div>
-      </div>
-    </>
+    </div>
   );
 }

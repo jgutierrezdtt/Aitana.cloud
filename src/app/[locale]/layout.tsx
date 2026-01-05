@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Urbanist, DM_Sans } from "next/font/google";
+// import "../design-system.css";  // ← TEMPORALMENTE DESACTIVADO - Tailwind v4 incompatibilidad con @apply
 import "../globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import EnvironmentBadge from "@/components/EnvironmentBadge";

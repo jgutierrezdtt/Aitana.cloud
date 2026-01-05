@@ -1,0 +1,234 @@
+/**
+ * Aitana.cloud Design System
+ * Centralized theme configuration with CSS variables
+ */
+
+@import "tailwindcss";
+
+/* ================================================== */
+/* Design Tokens - Light & Dark Mode */
+/* ================================================== */
+
+:root {
+  /* Color Palette - Semantic tokens */
+  --color-bg-primary: 255 255 255;           /* White */
+  --color-bg-secondary: 248 250 252;         /* slate-50 */
+  --color-bg-tertiary: 241 245 249;          /* slate-100 */
+  
+  --color-surface-primary: 255 255 255;      /* White */
+  --color-surface-secondary: 248 250 252;    /* slate-50 */
+  --color-surface-elevated: 241 245 249;     /* slate-100 */
+  
+  --color-text-primary: 15 23 42;            /* slate-900 */
+  --color-text-secondary: 51 65 85;          /* slate-700 */
+  --color-text-tertiary: 100 116 139;        /* slate-500 */
+  
+  --color-border-primary: 226 232 240;       /* slate-200 */
+  --color-border-secondary: 203 213 225;     /* slate-300 */
+  
+  --color-accent-blue: 37 99 235;            /* blue-600 */
+  --color-accent-purple: 147 51 234;         /* purple-600 */
+  --color-accent-pink: 219 39 119;           /* pink-600 */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  
+  /* Spacing scale */
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-sm: 0.5rem;     /* 8px */
+  --spacing-md: 1rem;       /* 16px */
+  --spacing-lg: 1.5rem;     /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  
+  /* Border radius */
+  --radius-sm: 0.375rem;    /* 6px */
+  --radius-md: 0.5rem;      /* 8px */
+  --radius-lg: 0.75rem;     /* 12px */
+  --radius-xl: 1rem;        /* 16px */
+}
+
+/* Dark Mode Overrides */
+.dark {
+  --color-bg-primary: 15 23 42;              /* slate-900 */
+  --color-bg-secondary: 30 41 59;            /* slate-800 */
+  --color-bg-tertiary: 51 65 85;             /* slate-700 */
+  
+  --color-surface-primary: 30 41 59;         /* slate-800 */
+  --color-surface-secondary: 51 65 85;       /* slate-700 */
+  --color-surface-elevated: 71 85 105;       /* slate-600 */
+  
+  --color-text-primary: 248 250 252;         /* slate-50 */
+  --color-text-secondary: 226 232 240;       /* slate-200 */
+  --color-text-tertiary: 203 213 225;        /* slate-300 */
+  
+  --color-border-primary: 51 65 85;          /* slate-700 */
+  --color-border-secondary: 71 85 105;       /* slate-600 */
+  
+  --color-accent-blue: 59 130 246;           /* blue-500 */
+  --color-accent-purple: 168 85 247;         /* purple-500 */
+  --color-accent-pink: 236 72 153;           /* pink-500 */
+}
+
+/* ================================================== */
+/* Utility Classes - Reusable Components */
+/* ================================================== */
+
+/* Backgrounds */
+.bg-primary {
+  background-color: rgb(var(--color-bg-primary));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--color-bg-secondary));
+}
+
+.bg-tertiary {
+  background-color: rgb(var(--color-bg-tertiary));
+}
+
+/* Surfaces (for cards, panels, etc) */
+.surface-primary {
+  background-color: rgb(var(--color-surface-primary));
+  border: 1px solid rgb(var(--color-border-primary));
+}
+
+.surface-secondary {
+  background-color: rgb(var(--color-surface-secondary));
+  border: 1px solid rgb(var(--color-border-primary));
+}
+
+.surface-elevated {
+  background-color: rgb(var(--color-surface-elevated));
+  border: 1px solid rgb(var(--color-border-secondary));
+  box-shadow: var(--shadow-md);
+}
+
+/* Text */
+.text-primary {
+  color: rgb(var(--color-text-primary));
+}
+
+.text-secondary {
+  color: rgb(var(--color-text-secondary));
+}
+
+.text-tertiary {
+  color: rgb(var(--color-text-tertiary));
+}
+
+/* Borders */
+.border-primary {
+  border-color: rgb(var(--color-border-primary));
+}
+
+.border-secondary {
+  border-color: rgb(var(--color-border-secondary));
+}
+
+/* ================================================== */
+/* Component Patterns - Wiki Specific */
+/* ================================================== */
+
+/* Wiki Sidebar */
+.wiki-sidebar {
+  @apply w-80 sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto;
+  background-color: rgb(var(--color-bg-primary));
+  border-right: 1px solid rgb(var(--color-border-primary));
+}
+
+/* Wiki Search Input */
+.wiki-search-input {
+  @apply w-full pl-10 pr-10 py-3 rounded-xl;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500/50;
+  background-color: rgb(var(--color-surface-secondary));
+  border: 1px solid rgb(var(--color-border-primary));
+  color: rgb(var(--color-text-primary));
+}
+
+.wiki-search-input::placeholder {
+  color: rgb(var(--color-text-tertiary));
+}
+
+/* Wiki Filter Button */
+.wiki-filter-btn {
+  @apply px-3 py-1 rounded-lg text-xs font-medium border transition-all;
+  background-color: rgb(var(--color-surface-secondary));
+  border-color: rgb(var(--color-border-primary));
+  color: rgb(var(--color-text-secondary));
+}
+
+.wiki-filter-btn:hover {
+  background-color: rgb(var(--color-surface-elevated));
+}
+
+.wiki-filter-btn.active {
+  @apply ring-2 ring-offset-1;
+}
+
+/* Wiki Category Button */
+.wiki-category-btn {
+  @apply w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all;
+  background-color: rgb(var(--color-surface-secondary));
+  color: rgb(var(--color-text-primary));
+}
+
+.wiki-category-btn:hover {
+  background-color: rgb(var(--color-surface-elevated));
+}
+
+/* Wiki Article Card */
+.wiki-article-card {
+  @apply group rounded-2xl p-6 transition-all duration-300 hover:scale-105;
+  background-color: rgb(var(--color-surface-primary));
+  border: 1px solid rgb(var(--color-border-primary));
+}
+
+.wiki-article-card:hover {
+  background-color: rgb(var(--color-surface-secondary));
+  border-color: rgb(var(--color-border-secondary));
+}
+
+/* Stats Card */
+.stats-card {
+  @apply rounded-2xl p-6 text-center;
+  background-color: rgb(var(--color-surface-primary));
+  border: 1px solid rgb(var(--color-border-primary));
+  box-shadow: var(--shadow-lg);
+}
+
+/* ================================================== */
+/* Role Colors - Maintain existing system */
+/* ================================================== */
+
+.role-estudiante { @apply bg-blue-500/20 text-blue-700 dark:text-blue-300 border-blue-500/30; }
+.role-junior { @apply bg-green-400/20 text-green-700 dark:text-green-300 border-green-400/30; }
+.role-mid { @apply bg-green-500/20 text-green-700 dark:text-green-300 border-green-500/30; }
+.role-senior { @apply bg-green-600/20 text-green-700 dark:text-green-300 border-green-600/30; }
+.role-lead { @apply bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border-cyan-500/30; }
+.role-devsecops { @apply bg-teal-500/20 text-teal-700 dark:text-teal-300 border-teal-500/30; }
+.role-champion { @apply bg-yellow-500/20 text-yellow-700 dark:text-yellow-300 border-yellow-500/30; }
+.role-pentester { @apply bg-red-500/20 text-red-700 dark:text-red-300 border-red-500/30; }
+.role-expert { @apply bg-orange-500/20 text-orange-700 dark:text-orange-300 border-orange-500/30; }
+.role-ciso { @apply bg-purple-500/20 text-purple-700 dark:text-purple-300 border-purple-500/30; }
+.role-manager { @apply bg-pink-500/20 text-pink-700 dark:text-pink-300 border-pink-500/30; }
+.role-bounty { @apply bg-rose-500/20 text-rose-700 dark:text-rose-300 border-rose-500/30; }
+
+/* ================================================== */
+/* Typography - From existing system */
+/* ================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+  color: rgb(var(--color-text-primary));
+  background-color: rgb(var(--color-bg-primary));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Urbanist", system-ui, -apple-system, sans-serif;
+  color: rgb(var(--color-text-primary));
+}
