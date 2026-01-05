@@ -123,6 +123,14 @@ export default function Navigation() {
                   Guías SSDLC
                 </Link>
               )}
+              
+              {/* Wiki de Seguridad */}
+              <Link 
+                href={`/${locale}/wiki`}
+                className="font-urbanist text-[17px] font-semibold text-secondary hover:text-primary transition-colors"
+              >
+                Wiki
+              </Link>
             </nav>
 
             {/* CTA Buttons - Desktop */}
@@ -201,6 +209,11 @@ export default function Navigation() {
                   Guías SSDLC
                 </Link>
               )}
+              
+              {/* Wiki de Seguridad */}
+              <Link href={`/${locale}/wiki`} className="block py-2 text-primary font-urbanist font-semibold border-t border-border pt-3">
+                Wiki
+              </Link>
               
               {/* API Docs */}
               {isFeatureEnabled('API_DOCS') && (
