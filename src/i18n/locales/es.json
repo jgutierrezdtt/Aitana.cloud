@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "labs": "Laboratorios",
+    "docs": "Documentación",
+    "about": "Acerca de"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "Laboratorios de Seguridad",
+      "title": "Domina las Vulnerabilidades Web",
+      "teaser": "Aprende a identificar y explotar las vulnerabilidades más críticas del OWASP Top 10",
+      "cta": "Explorar Laboratorios"
+    },
+    "slide2": {
+      "subtitle": "AI Red Team Lab",
+      "title": "Hackea Sistemas de Inteligencia Artificial",
+      "teaser": "Domina técnicas avanzadas de prompt injection, jailbreaking y ataques adversariales",
+      "cta": "Entrenar en AI Lab"
+    }
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "Pruebas de Penetración",
+      "description": "Entrenamiento de seguridad ofensiva con escenarios de ataque del mundo real"
+    },
+    "dataProtection": {
+      "title": "Protección de Datos",
+      "description": "Aprende cifrado, gestión de claves y prácticas de almacenamiento seguro"
+    },
+    "incidentResponse": {
+      "title": "Respuesta a Incidentes",
+      "description": "Domina técnicas de detección, análisis y remediación de amenazas"
+    }
+  },
+  "ctaBanner": {
+    "title": "¿Listo para Probar tus Habilidades de Seguridad?",
+    "button": "Comenzar Entrenamiento"
+  },
+  "about": {
+    "badge": "Plataforma de Entrenamiento Empresarial",
+    "title": "Laboratorios Prácticos de Seguridad para Vulnerabilidades Modernas",
+    "description": "Domina vulnerabilidades de seguridad del mundo real a través de práctica práctica en nuestro entorno de laboratorio controlado. Desde OWASP Top 10 hasta desafíos avanzados de seguridad de IA, desarrolla habilidades prácticas que importan en entornos de producción.",
+    "features": [
+      "14+ Escenarios de Vulnerabilidad del Mundo Real",
+      "Cobertura Completa de OWASP Top 10",
+      "Laboratorios de AI Red Team y Prompt Injection",
+      "Entorno de Aprendizaje Interactivo",
+      "Seguimiento de Progreso y Logros",
+      "Entrenamiento de Seguridad de Nivel Empresarial"
+    ],
+    "button": "Explorar Laboratorios",
+    "badgeText": "Laboratorios de Vulnerabilidad"
+  },
+  "services": {
+    "badge": "Lo Que Proporcionamos",
+    "title": "Servicios Robustos de Ciberseguridad para las Amenazas de Hoy",
+    "description": "Protege tu negocio de riesgos cibernéticos en constante evolución con nuestras soluciones de seguridad de extremo a extremo. Ofrecemos detección avanzada de amenazas, monitoreo en tiempo real y estrategias de defensa proactivas adaptadas a tu infraestructura.",
+    "items": {
+      "sqli": {
+        "title": "SQL Injection",
+        "description": "Manipulación de consultas a base de datos mediante entrada de usuario no validada"
+      },
+      "xss": {
+        "title": "Cross-Site Scripting",
+        "description": "Inyección de código del lado del cliente habilitando secuestro de sesión"
+      },
+      "brokenAuth": {
+        "title": "Autenticación Rota",
+        "description": "Mecanismos de autenticación débiles que permiten acceso no autorizado"
+      },
+      "dataExposure": {
+        "title": "Exposición de Datos Sensibles",
+        "description": "Protección inadecuada de información sensible"
+      },
+      "accessControl": {
+        "title": "Control de Acceso Roto",
+        "description": "Aplicación insuficiente de límites de permisos de usuario"
+      },
+      "misconfig": {
+        "title": "Configuración Incorrecta de Seguridad",
+        "description": "Configuraciones predeterminadas inseguras y endurecimiento incompleto"
+      }
+    },
+    "exploreButton": "Explorar"
+  },
+  "stats": {
+    "scenarios": "Escenarios de Vulnerabilidad",
+    "coverage": "Cobertura OWASP",
+    "frameworks": "Marcos de Cumplimiento",
+    "cvssScore": "Puntuación CVSS Promedio"
+  },
+  "aiLab": {
+    "badge": "NUEVO LABORATORIO",
+    "title": "AI Red Team Lab",
+    "description": "Aprende a atacar y defender sistemas de IA con {promptInjection}, {jailbreaking} y técnicas de {redTeaming} avanzadas.",
+    "promptInjection": "prompt injection",
+    "jailbreaking": "jailbreaking",
+    "redTeaming": "red teaming",
+    "stats": {
+      "levels": "Niveles",
+      "points": "Puntos",
+      "badges": "Badges"
+    },
+    "button": "Empezar Entrenamiento",
+    "features": {
+      "jailbreak": {
+        "title": "Jailbreak de Seguridad",
+        "description": "Bypass de filtros de contenido y restricciones de IA"
+      },
+      "extraction": {
+        "title": "Extracción de Prompts",
+        "description": "Técnicas para robar system prompts y datos secretos"
+      },
+      "adversarial": {
+        "title": "Ataques Adversariales",
+        "description": "Confunde modelos con encoding y multi-step attacks"
+      }
+    }
+  },
+  "footer": {
+    "description": "Plataforma de entrenamiento en ciberseguridad para profesionales y equipos de seguridad.",
+    "labs": {
+      "title": "Laboratorios",
+      "items": {
+        "sqli": "SQL Injection",
+        "xss": "Cross-Site Scripting",
+        "auth": "Autenticación Rota",
+        "sensitiveData": "Datos Sensibles",
+        "aiLab": "AI Red Team Lab"
+      }
+    },
+    "resources": {
+      "title": "Recursos",
+      "items": {
+        "docs": "Documentación",
+        "guides": "Guías",
+        "blog": "Blog",
+        "support": "Soporte"
+      }
+    },
+    "copyright": "Aitana.cloud - Plataforma de Entrenamiento en Ciberseguridad",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "warning": "Solo para Propósitos Educativos"
+  }
+}

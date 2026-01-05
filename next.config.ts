@@ -1,11 +1,24 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  // Configuración básica para evitar errores de Turbopack
-  eslint: {
-    // Ignorar errores de ESLint durante el build (vulnerable by design)
-    ignoreDuringBuilds: true,
+  // Configuración de Turbopack (requerido en Next.js 16+)
+  turbopack: {},
+  
+  // Configurar dominios de imágenes permitidos
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
+  
   typescript: {
     // Ignorar errores de TypeScript durante el build si es necesario
     ignoreBuildErrors: true,
@@ -45,30 +58,7 @@ const nextConfig: NextConfig = {
         ],
       },
     ]
-  },
-
-  // Configuración webpack para evitar problemas de build
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        net: false,
-        tls: false,
-      };
-    }
-    return config;
-  },
-
-  // ❌ VULNERABILIDAD: CORS muy permisivo
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: '/api/:path*',
-      },
-    ]
   }
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

@@ -33,6 +33,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example
+!.env.local.example
+!.env.development
+!.env.production
+
+# Never commit .env.local (contains sensitive local config)
+.env.local
 
 # vercel
 .vercel
@@ -61,3 +67,6 @@ public/uploads/*
 public/uploads/*eval*
 public/uploads/*script*
 public/uploads/*compile*
+
+# Design Assets
+CyberGuard HTML/

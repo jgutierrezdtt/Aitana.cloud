@@ -1,10 +1,10 @@
 import { neon } from '@neondatabase/serverless';
 
 // ❌ VULNERABILIDAD: Configuración de base de datos expuesta
-export const sql = neon(process.env.DATABASE_URL!);
+export const sql = neon(process.env.NEON_DATABASE_URL || process.env.DATABASE_URL!);
 
 // ❌ VULNERABILIDAD: Log de connection string en producción
-console.log('🚨 Connecting to Neon DB:', process.env.DATABASE_URL?.substring(0, 50) + '...');
+console.log('🚨 Connecting to Neon DB:', (process.env.NEON_DATABASE_URL || process.env.DATABASE_URL)?.substring(0, 50) + '...');
 
 // ❌ VULNERABILIDAD: Función para ejecutar SQL crudo sin validación usando template literals
 export const executeVulnerableQuery = async (query: string) => {

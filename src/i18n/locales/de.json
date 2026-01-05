@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "labs": "Labore",
+    "docs": "Dokumentation",
+    "about": "Über uns"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "Sicherheitslabore",
+      "title": "Meistern Sie Web-Schwachstellen",
+      "teaser": "Lernen Sie die kritischsten OWASP Top 10 Schwachstellen zu identifizieren und auszunutzen",
+      "cta": "Labore Erkunden"
+    },
+    "slide2": {
+      "subtitle": "AI Red Team Labor",
+      "title": "Hacken Sie Künstliche Intelligenz Systeme",
+      "teaser": "Meistern Sie fortgeschrittene Prompt-Injection, Jailbreaking und adversariale Angriffstechniken",
+      "cta": "Im AI Labor Trainieren"
+    }
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "Penetrationstests",
+      "description": "Offensive Sicherheitsschulung mit realen Angriffsszenarien"
+    },
+    "dataProtection": {
+      "title": "Datenschutz",
+      "description": "Lernen Sie Verschlüsselung, Schlüsselverwaltung und sichere Speicherpraktiken"
+    },
+    "incidentResponse": {
+      "title": "Vorfallreaktion",
+      "description": "Meistern Sie Bedrohungserkennung, Analyse und Behebungstechniken"
+    }
+  },
+  "ctaBanner": {
+    "title": "Bereit, Ihre Sicherheitsfähigkeiten zu Testen?",
+    "button": "Training Starten"
+  },
+  "about": {
+    "badge": "Unternehmens-Trainingsplattform",
+    "title": "Praxisnahe Sicherheitslabore für Moderne Schwachstellen",
+    "description": "Meistern Sie reale Sicherheitsschwachstellen durch praktisches Üben in unserer kontrollierten Laborumgebung. Von OWASP Top 10 bis zu fortgeschrittenen KI-Sicherheitsherausforderungen entwickeln Sie praktische Fähigkeiten, die in Produktionsumgebungen wichtig sind.",
+    "features": [
+      "14+ Reale Schwachstellenszenarien",
+      "Vollständige OWASP Top 10 Abdeckung",
+      "AI Red Team und Prompt-Injection Labore",
+      "Interaktive Lernumgebung",
+      "Fortschrittsverfolgung und Erfolge",
+      "Sicherheitsschulung auf Unternehmensniveau"
+    ],
+    "button": "Labore Erkunden",
+    "badgeText": "Schwachstellenlabore"
+  },
+  "services": {
+    "badge": "Was Wir Bieten",
+    "title": "Robuste Cybersicherheitsdienste für Heutige Bedrohungen",
+    "description": "Schützen Sie Ihr Unternehmen vor sich entwickelnden Cyber-Risiken mit unseren End-to-End-Sicherheitslösungen. Wir bieten fortgeschrittene Bedrohungserkennung, Echtzeitüberwachung und proaktive Verteidigungsstrategien, die auf Ihre Infrastruktur zugeschnitten sind.",
+    "items": {
+      "sqli": {
+        "title": "SQL-Injection",
+        "description": "Manipulation von Datenbankabfragen durch unvalidierte Benutzereingaben"
+      },
+      "xss": {
+        "title": "Cross-Site Scripting",
+        "description": "Clientseitige Code-Injection, die Session-Hijacking ermöglicht"
+      },
+      "brokenAuth": {
+        "title": "Fehlerhafte Authentifizierung",
+        "description": "Schwache Authentifizierungsmechanismen, die unbefugten Zugriff ermöglichen"
+      },
+      "dataExposure": {
+        "title": "Exposition Sensibler Daten",
+        "description": "Unzureichender Schutz sensibler Informationen"
+      },
+      "accessControl": {
+        "title": "Fehlerhafte Zugriffskontrolle",
+        "description": "Unzureichende Durchsetzung von Benutzerberechtigungsgrenzen"
+      },
+      "misconfig": {
+        "title": "Sicherheitsfehlkonfiguration",
+        "description": "Unsichere Standardkonfigurationen und unvollständige Härtung"
+      }
+    },
+    "exploreButton": "Erkunden"
+  },
+  "stats": {
+    "scenarios": "Schwachstellenszenarien",
+    "coverage": "OWASP-Abdeckung",
+    "frameworks": "Compliance-Frameworks",
+    "cvssScore": "Durchschnittlicher CVSS-Score"
+  },
+  "aiLab": {
+    "badge": "NEUES LABOR",
+    "title": "AI Red Team Labor",
+    "description": "Lernen Sie KI-Systeme mit {promptInjection}, {jailbreaking} und fortgeschrittenen {redTeaming}-Techniken anzugreifen und zu verteidigen.",
+    "promptInjection": "Prompt-Injection",
+    "jailbreaking": "Jailbreaking",
+    "redTeaming": "Red Teaming",
+    "stats": {
+      "levels": "Stufen",
+      "points": "Punkte",
+      "badges": "Abzeichen"
+    },
+    "button": "Training Starten",
+    "features": {
+      "jailbreak": {
+        "title": "Sicherheits-Jailbreak",
+        "description": "Umgehung von Inhaltsfiltern und KI-Beschränkungen"
+      },
+      "extraction": {
+        "title": "Prompt-Extraktion",
+        "description": "Techniken zum Diebstahl von System-Prompts und geheimen Daten"
+      },
+      "adversarial": {
+        "title": "Adversariale Angriffe",
+        "description": "Modelle mit Codierung und mehrstufigen Angriffen verwirren"
+      }
+    }
+  },
+  "footer": {
+    "description": "Cybersicherheits-Trainingsplattform für Fachleute und Sicherheitsteams.",
+    "labs": {
+      "title": "Labore",
+      "items": {
+        "sqli": "SQL-Injection",
+        "xss": "Cross-Site Scripting",
+        "auth": "Fehlerhafte Authentifizierung",
+        "sensitiveData": "Sensible Daten",
+        "aiLab": "AI Red Team Labor"
+      }
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "items": {
+        "docs": "Dokumentation",
+        "guides": "Anleitungen",
+        "blog": "Blog",
+        "support": "Support"
+      }
+    },
+    "copyright": "Aitana.cloud - Cybersicherheits-Trainingsplattform",
+    "terms": "Bedingungen",
+    "privacy": "Datenschutz",
+    "warning": "Nur für Bildungszwecke"
+  }
+}

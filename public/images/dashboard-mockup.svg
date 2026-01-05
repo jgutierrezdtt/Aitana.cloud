@@ -1,0 +1,58 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#grad1)"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  
+  <!-- Dashboard mockup -->
+  <g opacity="0.9">
+    <!-- Main panel -->
+    <rect x="50" y="50" width="700" height="500" rx="10" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="50" y="50" width="700" height="60" rx="10" fill="rgba(255,255,255,0.15)"/>
+    <circle cx="80" cy="80" r="15" fill="rgba(255,255,255,0.3)"/>
+    <rect x="110" y="70" width="200" height="10" rx="5" fill="rgba(255,255,255,0.3)"/>
+    <rect x="110" y="90" width="150" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+    
+    <!-- Stats cards -->
+    <rect x="70" y="140" width="150" height="100" rx="8" fill="rgba(255,255,255,0.2)"/>
+    <rect x="240" y="140" width="150" height="100" rx="8" fill="rgba(255,255,255,0.2)"/>
+    <rect x="410" y="140" width="150" height="100" rx="8" fill="rgba(255,255,255,0.2)"/>
+    <rect x="580" y="140" width="150" height="100" rx="8" fill="rgba(255,255,255,0.2)"/>
+    
+    <!-- Chart area -->
+    <rect x="70" y="260" width="490" height="260" rx="8" fill="rgba(255,255,255,0.15)"/>
+    
+    <!-- Chart lines -->
+    <polyline points="90,450 150,420 210,440 270,380 330,400 350,360 410,380 470,340 530,360" 
+              fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+    <polyline points="90,480 150,460 210,470 270,430 330,450 350,410 410,430 470,390 530,410" 
+              fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    
+    <!-- Side panel -->
+    <rect x="580" y="260" width="150" height="260" rx="8" fill="rgba(255,255,255,0.15)"/>
+    <rect x="600" y="280" width="110" height="40" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="600" y="335" width="110" height="40" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="600" y="390" width="110" height="40" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="600" y="445" width="110" height="40" rx="6" fill="rgba(255,255,255,0.2)"/>
+  </g>
+  
+  <!-- Security icons -->
+  <g transform="translate(350, 280)" opacity="0.6">
+    <circle cx="0" cy="0" r="40" fill="rgba(255,255,255,0.2)"/>
+    <path d="M -15,-10 L 0,-25 L 15,-10 L 15,10 Q 15,20 0,25 Q -15,20 -15,10 Z" 
+          fill="none" stroke="white" stroke-width="3"/>
+  </g>
+</svg>

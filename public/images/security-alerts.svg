@@ -1,0 +1,41 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" rx="10" fill="url(#grad2)"/>
+  
+  <!-- Alert panel -->
+  <g opacity="0.9">
+    <rect x="20" y="20" width="360" height="260" rx="8" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    
+    <!-- Alert items -->
+    <g transform="translate(40, 40)">
+      <!-- Alert 1 - Critical -->
+      <rect width="320" height="50" rx="6" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="20" cy="25" r="8" fill="#ff5555"/>
+      <rect x="40" y="10" width="200" height="12" rx="6" fill="rgba(255,255,255,0.6)"/>
+      <rect x="40" y="28" width="150" height="8" rx="4" fill="rgba(255,255,255,0.4)"/>
+    </g>
+    
+    <g transform="translate(40, 105)">
+      <!-- Alert 2 - Warning -->
+      <rect width="320" height="50" rx="6" fill="rgba(255,255,255,0.15)"/>
+      <circle cx="20" cy="25" r="8" fill="#ffaa00"/>
+      <rect x="40" y="10" width="180" height="12" rx="6" fill="rgba(255,255,255,0.5)"/>
+      <rect x="40" y="28" width="120" height="8" rx="4" fill="rgba(255,255,255,0.3)"/>
+    </g>
+    
+    <g transform="translate(40, 170)">
+      <!-- Alert 3 - Info -->
+      <rect width="320" height="50" rx="6" fill="rgba(255,255,255,0.1)"/>
+      <circle cx="20" cy="25" r="8" fill="#55aaff"/>
+      <rect x="40" y="10" width="160" height="12" rx="6" fill="rgba(255,255,255,0.4)"/>
+      <rect x="40" y="28" width="100" height="8" rx="4" fill="rgba(255,255,255,0.3)"/>
+    </g>
+  </g>
+</svg>
