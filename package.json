@@ -26,7 +26,8 @@
     "setup:production": "npm run db:generate && npm run db:push && npm run db:seed",
     "vercel-build": "npm run db:generate && next build",
     "deploy:preview": "vercel --env NEXT_PUBLIC_ENV=development",
-    "deploy:production": "vercel --prod --env NEXT_PUBLIC_ENV=production"
+    "deploy:production": "vercel --prod --env NEXT_PUBLIC_ENV=production",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
