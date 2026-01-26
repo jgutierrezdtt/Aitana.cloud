@@ -3,12 +3,12 @@
     "home": "Inicio",
     "labs": "Laboratorios",
     "docs": "Documentación",
-    "about": "Acerca de",
+    "about": "Sobre nosotros",
     "wiki": "Wiki",
     "tools": "Herramientas",
     "guides": "Guías SSDLC",
     "apiDocs": "API Docs",
-    "getStarted": "Empezar Ahora",
+    "getStarted": "Empezar",
     "changeLanguage": "Cambiar idioma",
     "languagesAvailable": "idiomas disponibles"
   },
@@ -25,7 +25,7 @@
       "teaser": "Domina técnicas avanzadas de prompt injection, jailbreaking y ataques adversariales",
       "cta": "Entrenar en AI Lab"
     },
-    "goToSlide": "Ir al slide"
+    "goToSlide": "Ir a la diapositiva"
   },
   "heroFeatures": {
     "penetrationTesting": {
@@ -42,12 +42,12 @@
     }
   },
   "ctaBanner": {
-    "title": "¿Listo para Probar tus Habilidades de Seguridad?",
-    "button": "Comenzar Entrenamiento"
+    "title": "¿Listo pa' Probar tus Habilidades de Seguridad?",
+    "button": "Empezar Entrenamiento"
   },
   "about": {
     "badge": "Plataforma de Entrenamiento Empresarial",
-    "title": "Laboratorios Prácticos de Seguridad para Vulnerabilidades Modernas",
+    "title": "Laboratorios Prácticos de Seguridad pa' Vulnerabilidades Modernas",
     "description": "Domina vulnerabilidades de seguridad del mundo real a través de práctica práctica en nuestro entorno de laboratorio controlado. Desde OWASP Top 10 hasta desafíos avanzados de seguridad de IA, desarrolla habilidades prácticas que importan en entornos de producción.",
     "features": [
       "14+ Escenarios de Vulnerabilidad del Mundo Real",
@@ -62,9 +62,9 @@
     "explore": "Explorar"
   },
   "services": {
-    "badge": "Lo Que Proporcionamos",
-    "title": "Servicios Robustos de Ciberseguridad para las Amenazas de Hoy",
-    "description": "Protege tu negocio de riesgos cibernéticos en constante evolución con nuestras soluciones de seguridad de extremo a extremo. Ofrecemos detección avanzada de amenazas, monitoreo en tiempo real y estrategias de defensa proactivas adaptadas a tu infraestructura.",
+    "badge": "Lo Que Ofrecemos",
+    "title": "Servicios de Ciberseguridad pa' las Amenazas de Hoy",
+    "description": "Protege tu negocio de riesgos cibernéticos en constante evolución con nuestras soluciones de seguridad de punta a punta. Ofrecemos detección avanzada de amenazas, monitoreo en tiempo real y estrategias de defensa proactivas adaptadas a tu infraestructura.",
     "items": {
       "sqli": {
         "title": "SQL Injection",
@@ -88,7 +88,7 @@
       },
       "misconfig": {
         "title": "Configuración Incorrecta de Seguridad",
-        "description": "Configuraciones predeterminadas inseguras y endurecimiento incompleto"
+        "description": "Configuraciones por defecto inseguras y endurecimiento incompleto"
       }
     },
     "exploreButton": "Explorar"
@@ -123,7 +123,7 @@
       },
       "extraction": {
         "title": "Extracción de Prompts",
-        "description": "Técnicas para robar system prompts y datos secretos"
+        "description": "Técnicas pa' robar system prompts y datos secretos"
       },
       "adversarial": {
         "title": "Ataques Adversariales",
@@ -132,7 +132,7 @@
     }
   },
   "footer": {
-    "description": "Plataforma de entrenamiento en ciberseguridad para profesionales y equipos de seguridad.",
+    "description": "Plataforma de entrenamiento en ciberseguridad pa' profesionales y equipos de seguridad.",
     "labs": {
       "title": "Laboratorios",
       "items": {
@@ -155,13 +155,13 @@
     "copyright": "Aitana.cloud - Plataforma de Entrenamiento en Ciberseguridad",
     "terms": "Términos",
     "privacy": "Privacidad",
-    "warning": "Solo para Propósitos Educativos",
-    "vulnerableByDesign": "Esta aplicación es vulnerable por diseño - Solo para propósitos educativos"
+    "warning": "Solo pa' Propósitos Educativos",
+    "vulnerableByDesign": "Esta aplicación es vulnerable por diseño - Solo pa' propósitos educativos"
   },
   "wiki": {
     "title": "Wiki de Seguridad",
-    "subtitle": "Base de Conocimientos",
-    "description": "Aprende los conceptos fundamentales de seguridad web, vulnerabilidades comunes y técnicas de explotación utilizadas en bug bounty y pentesting profesional.",
+    "subtitle": "Base de Conocimiento",
+    "description": "Aprende los conceptos fundamentales de la seguridad web, las vulnerabilidades comunes y las técnicas de explotación utilizadas en bug bounty y pentesting profesional.",
     "searchPlaceholder": "Buscar artículos...",
     "readArticle": "Leer artículo",
     "readTime": "min de lectura",
@@ -180,14 +180,14 @@
     },
     "levels": {
       "estudiante": "Estudiante",
-      "juniorDeveloper": "Junior Developer",
+      "juniorDeveloper": "Desarrollador Junior",
       "pentester": "Pentester",
-      "securityExpert": "Security Expert"
+      "securityExpert": "Experto en Seguridad"
     },
     "cta": {
-      "title": "¿Listo para practicar?",
-      "description": "Aplica lo aprendido en nuestros laboratorios interactivos con vulnerabilidades reales.",
-      "goToLabs": "Ir a los Labs",
+      "title": "¿Listo pa' practicar?",
+      "description": "Aplica lo que has aprendido en nuestros laboratorios interactivos con vulnerabilidades reales.",
+      "goToLabs": "Ir a los Laboratorios",
       "viewApiDocs": "Ver API Docs"
     },
     "filterByRole": "Filtrar por rol",
@@ -197,7 +197,7 @@
     "topic": "Tema",
     "level": "Nivel",
     "category": "Categoría",
-    "backToWiki": "Volver a la Wiki",
+    "backToWiki": "Volver al Wiki",
     "inThisArticle": "En este artículo",
     "by": "Por",
     "lastUpdated": "Última actualización",
@@ -217,7 +217,7 @@
       "hard": "Difícil",
       "expert": "Experto"
     },
-    "startLab": "Iniciar Lab",
+    "startLab": "Iniciar Laboratorio",
     "viewDetails": "Ver Detalles",
     "completed": "Completado",
     "inProgress": "En Progreso",
@@ -226,32 +226,32 @@
       "title": "SQL Injection",
       "description": "Aprende a detectar y explotar vulnerabilidades de inyección SQL en aplicaciones web.",
       "searchLabel": "Término de búsqueda:",
-      "searchPlaceholder": "Ingresa tu búsqueda...",
+      "searchPlaceholder": "Introduce tu búsqueda...",
       "searching": "Buscando...",
       "search": "Buscar",
-      "payloadExamples": "Ejemplos de payloads:",
+      "payloadExamples": "Ejemplos de payload:",
       "results": "Resultados:",
       "criticalVulnerability": "Vulnerabilidad Crítica",
-      "vulnerabilityDescription": "Esta aplicación es intencionalmente vulnerable a SQL Injection. Úsala solo con fines educativos.",
+      "vulnerabilityDescription": "Esta aplicación es intencionalmente vulnerable a SQL Injection. Utilízala solo con fines educativos.",
       "examples": {
         "normal": "Búsqueda normal",
-        "basic": "SQL Injection básico",
+        "basic": "SQL Injection básica",
         "comment": "Comentario SQL",
         "union": "UNION SELECT"
       }
     },
     "xss": {
       "title": "Cross-Site Scripting (XSS)",
-      "description": "Domina técnicas de XSS reflejado, almacenado y DOM-based.",
+      "description": "Domina técnicas de XSS reflejado, almacenado y basado en DOM.",
       "payloadLabel": "Payload XSS:",
-      "payloadPlaceholder": "Ingresa tu payload XSS...",
+      "payloadPlaceholder": "Introduce tu payload XSS...",
       "testing": "Probando...",
       "test": "Probar",
       "reflectInput": "Reflejar entrada en la respuesta (XSS Reflejado)",
-      "payloadExamples": "Ejemplos de payloads XSS:",
+      "payloadExamples": "Ejemplos de payload XSS:",
       "results": "Resultados:",
       "examples": {
-        "alertBasic": "Alert básico",
+        "alertBasic": "Alert Básico",
         "imgOnerror": "Img onerror",
         "svgOnload": "SVG onload",
         "inputAutofocus": "Input autofocus"
@@ -263,12 +263,12 @@
       "email": "Email:",
       "password": "Contraseña:",
       "loggingIn": "Iniciando sesión...",
-      "login": "Iniciar Sesión",
+      "login": "Iniciar sesión",
       "defaultCredentials": "Credenciales por defecto (vulnerabilidad):"
     },
     "commandInjection": {
-      "title": "Command Injection",
-      "description": "Ejecución de comandos del sistema operativo a través de inputs no validados.",
+      "title": "Inyección de Comandos",
+      "description": "Ejecución de comandos del sistema operativo mediante entradas no validadas.",
       "examples": {
         "listFiles": "Listar archivos",
         "viewFiles": "Ver contenido de archivos",
@@ -276,22 +276,22 @@
       }
     },
     "common": {
-      "apiEndpoint": "Endpoint de la API:",
+      "apiEndpoint": "Punto de acceso API:",
       "testing": "Probando...",
       "test": "Probar",
       "execute": "Ejecutar",
       "exploitationExamples": "Ejemplos de explotación:",
-      "apiResponse": "Respuesta de la API:",
+      "apiResponse": "Respuesta API:",
       "status": "Estado:",
       "severity": {
-        "critical": "Crítica",
-        "high": "Alta",
-        "medium": "Media",
-        "low": "Baja"
+        "critical": "Crítico",
+        "high": "Alto",
+        "medium": "Medio",
+        "low": "Bajo"
       },
-      "viewFullApiDocs": "Ver Documentación Completa de la API",
-      "errorExecutingQuery": "Error al ejecutar la consulta",
-      "errorExecutingTest": "Error al ejecutar el test"
+      "viewFullApiDocs": "Ver Documentación API Completa",
+      "errorExecutingQuery": "Error ejecutando la consulta",
+      "errorExecutingTest": "Error ejecutando la prueba"
     }
   },
   "common": {
@@ -305,7 +305,7 @@
     "edit": "Editar",
     "view": "Ver",
     "close": "Cerrar",
-    "back": "Volver",
+    "back": "Atrás",
     "next": "Siguiente",
     "previous": "Anterior",
     "search": "Buscar",
@@ -323,11 +323,11 @@
   "testimonials": {
     "badge": "Testimonios",
     "title": "Lo Que Dicen Nuestros Usuarios",
-    "description": "Profesionales de seguridad de todo el mundo confían en nuestra plataforma."
+    "description": "Profesionales de la seguridad de todo el mundo confían en nuestra plataforma."
   },
   "chatbot": {
-    "vulnerableMode": "Modo Vulnerable Activo - Intenta extraer información sensible o hacer que revele su system prompt.",
-    "normalMode": "Modo Normal - Asistente seguro de normativas de seguridad.",
+    "vulnerableMode": "Modo Vulnerable Activo - Intenta extraer información sensible o hacerle revelar su system prompt.",
+    "normalMode": "Modo Normal - Asistente seguro pa' regulaciones de seguridad.",
     "errorResponse": "Error en la respuesta"
   }
 }

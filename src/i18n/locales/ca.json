@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "Inici",
+    "labs": "Laboratoris",
+    "docs": "Documentació",
+    "about": "Sobre nosaltres",
+    "wiki": "Wiki",
+    "tools": "Eines",
+    "guides": "Guies SSDLC",
+    "apiDocs": "API Docs",
+    "getStarted": "Començar",
+    "changeLanguage": "Canviar idioma",
+    "languagesAvailable": "idiomes disponibles"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "Laboratoris de Seguretat",
+      "title": "Domina les Vulnerabilitats Web",
+      "teaser": "Aprèn a identificar i explotar les vulnerabilitats més crítiques de l'OWASP Top 10",
+      "cta": "Explorar Laboratoris"
+    },
+    "slide2": {
+      "subtitle": "AI Red Team Lab",
+      "title": "Hackeja Sistemes d'Intel·ligència Artificial",
+      "teaser": "Domina tècniques avançades de prompt injection, jailbreaking i atacs adversaris",
+      "cta": "Entrenar a l'AI Lab"
+    },
+    "goToSlide": "Anar a la diapositiva"
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "Proves de Penetració",
+      "description": "Entrenament de seguretat ofensiva amb escenaris d'atac del món real"
+    },
+    "dataProtection": {
+      "title": "Protecció de Dades",
+      "description": "Aprèn xifrat, gestió de claus i pràctiques d'emmagatzematge segur"
+    },
+    "incidentResponse": {
+      "title": "Resposta a Incidents",
+      "description": "Domina tècniques de detecció, anàlisi i remediació d'amenaces"
+    }
+  },
+  "ctaBanner": {
+    "title": "Preparat per Provar les teves Habilitats de Seguretat?",
+    "button": "Començar Entrenament"
+  },
+  "about": {
+    "badge": "Plataforma d'Entrenament Empresarial",
+    "title": "Laboratoris Pràctics de Seguretat per a Vulnerabilitats Modernes",
+    "description": "Domina vulnerabilitats de seguretat del món real mitjançant pràctica pràctica al nostre entorn de laboratori controlat. Des de l'OWASP Top 10 fins a reptes avançats de seguretat d'IA, desenvolupa habilitats pràctiques que importen en entorns de producció.",
+    "features": [
+      "14+ Escenaris de Vulnerabilitat del Món Real",
+      "Cobertura Completa de l'OWASP Top 10",
+      "Laboratoris d'AI Red Team i Prompt Injection",
+      "Entorn d'Aprenentatge Interactiu",
+      "Seguiment de Progrés i Assoliments",
+      "Entrenament de Seguretat de Nivell Empresarial"
+    ],
+    "button": "Explorar Laboratoris",
+    "badgeText": "Laboratoris de Vulnerabilitat",
+    "explore": "Explorar"
+  },
+  "services": {
+    "badge": "El Que Proporcionem",
+    "title": "Serveis Robustos de Ciberseguretat per a les Amenaces d'Avui",
+    "description": "Protegeix el teu negoci dels riscos cibernètics en constant evolució amb les nostres solucions de seguretat d'extrem a extrem. Oferim detecció avançada d'amenaces, monitorització en temps real i estratègies de defensa proactives adaptades a la teva infraestructura.",
+    "items": {
+      "sqli": {
+        "title": "SQL Injection",
+        "description": "Manipulació de consultes a base de dades mitjançant entrada d'usuari no validada"
+      },
+      "xss": {
+        "title": "Cross-Site Scripting",
+        "description": "Injecció de codi del costat del client habilitant segrest de sessió"
+      },
+      "brokenAuth": {
+        "title": "Autenticació Trencada",
+        "description": "Mecanismes d'autenticació febles que permeten accés no autoritzat"
+      },
+      "dataExposure": {
+        "title": "Exposició de Dades Sensibles",
+        "description": "Protecció inadequada d'informació sensible"
+      },
+      "accessControl": {
+        "title": "Control d'Accés Trencat",
+        "description": "Aplicació insuficient de límits de permisos d'usuari"
+      },
+      "misconfig": {
+        "title": "Configuració Incorrecta de Seguretat",
+        "description": "Configuracions predeterminades insegures i enduriment incomplet"
+      }
+    },
+    "exploreButton": "Explorar"
+  },
+  "stats": {
+    "scenarios": "Escenaris de Vulnerabilitat",
+    "coverage": "Cobertura OWASP",
+    "frameworks": "Marcs de Compliment",
+    "cvssScore": "Puntuació CVSS Mitjana",
+    "vulnerabilityLabs": "Laboratoris de Vulnerabilitat",
+    "threatDetection": "Detecció d'Amenaces",
+    "securityDashboard": "Tauler de Seguretat",
+    "securityAlerts": "Alertes de Seguretat"
+  },
+  "aiLab": {
+    "badge": "NOU LABORATORI",
+    "title": "AI Red Team Lab",
+    "description": "Aprèn a atacar i defensar sistemes d'IA amb {promptInjection}, {jailbreaking} i tècniques de {redTeaming} avançades.",
+    "promptInjection": "prompt injection",
+    "jailbreaking": "jailbreaking",
+    "redTeaming": "red teaming",
+    "stats": {
+      "levels": "Nivells",
+      "points": "Punts",
+      "badges": "Badges"
+    },
+    "button": "Començar Entrenament",
+    "features": {
+      "jailbreak": {
+        "title": "Jailbreak de Seguretat",
+        "description": "Bypass de filtres de contingut i restriccions d'IA"
+      },
+      "extraction": {
+        "title": "Extracció de Prompts",
+        "description": "Tècniques per robar system prompts i dades secretes"
+      },
+      "adversarial": {
+        "title": "Atacs Adversaris",
+        "description": "Confon models amb encoding i atacs de múltiples passos"
+      }
+    }
+  },
+  "footer": {
+    "description": "Plataforma d'entrenament en ciberseguretat per a professionals i equips de seguretat.",
+    "labs": {
+      "title": "Laboratoris",
+      "items": {
+        "sqli": "SQL Injection",
+        "xss": "Cross-Site Scripting",
+        "auth": "Autenticació Trencada",
+        "sensitiveData": "Dades Sensibles",
+        "aiLab": "AI Red Team Lab"
+      }
+    },
+    "resources": {
+      "title": "Recursos",
+      "items": {
+        "docs": "Documentació",
+        "guides": "Guies",
+        "blog": "Blog",
+        "support": "Suport"
+      }
+    },
+    "copyright": "Aitana.cloud - Plataforma d'Entrenament en Ciberseguretat",
+    "terms": "Termes",
+    "privacy": "Privacitat",
+    "warning": "Només per a Propòsits Educatius",
+    "vulnerableByDesign": "Aquesta aplicació és vulnerable per disseny - Només per a propòsits educatius"
+  },
+  "wiki": {
+    "title": "Wiki de Seguretat",
+    "subtitle": "Base de Coneixement",
+    "description": "Aprèn els conceptes fonamentals de la seguretat web, les vulnerabilitats comunes i les tècniques d'explotació utilitzades en bug bounty i pentesting professional.",
+    "searchPlaceholder": "Cercar articles...",
+    "readArticle": "Llegir article",
+    "readTime": "min de lectura",
+    "stats": {
+      "articles": "Articles",
+      "codeExamples": "Exemples de Codi",
+      "bugBountyTechniques": "Tècniques Bug Bounty",
+      "translations": "Traduccions EN"
+    },
+    "categories": {
+      "fundamentos": "Fonaments",
+      "vulnerabilidades": "Vulnerabilitats",
+      "defensas": "Defenses",
+      "herramientas": "Eines",
+      "bugBounty": "Bug Bounty"
+    },
+    "levels": {
+      "estudiante": "Estudiant",
+      "juniorDeveloper": "Desenvolupador Junior",
+      "pentester": "Pentester",
+      "securityExpert": "Expert en Seguretat"
+    },
+    "cta": {
+      "title": "Preparat per practicar?",
+      "description": "Aplica el que has après als nostres laboratoris interactius amb vulnerabilitats reals.",
+      "goToLabs": "Anar als Laboratoris",
+      "viewApiDocs": "Veure API Docs"
+    },
+    "filterByRole": "Filtrar per rol",
+    "allLevels": "Tots els nivells",
+    "contentUnderConstruction": "Contingut en Construcció",
+    "articlePlanned": "Aquest article està planificat però el contingut encara no s'ha escrit.",
+    "topic": "Tema",
+    "level": "Nivell",
+    "category": "Categoria",
+    "backToWiki": "Tornar al Wiki",
+    "inThisArticle": "En aquest article",
+    "by": "Per",
+    "lastUpdated": "Última actualització",
+    "availableIn": "Disponible en",
+    "contentInSpanishOnly": "Contingut disponible només en castellà",
+    "workingOnTranslations": "Estem treballant en les traduccions.",
+    "useBrowserTranslation": "Utilitza la funció de traducció del teu navegador o visita la",
+    "spanishVersion": "versió en castellà"
+  },
+  "labs": {
+    "title": "Laboratoris de Seguretat",
+    "subtitle": "Entrenament Pràctic",
+    "description": "Practica amb vulnerabilitats reals en un entorn controlat i segur.",
+    "difficulty": {
+      "easy": "Fàcil",
+      "medium": "Mitjà",
+      "hard": "Difícil",
+      "expert": "Expert"
+    },
+    "startLab": "Iniciar Laboratori",
+    "viewDetails": "Veure Detalls",
+    "completed": "Completat",
+    "inProgress": "En Progrés",
+    "notStarted": "No Iniciat",
+    "sqli": {
+      "title": "SQL Injection",
+      "description": "Aprèn a detectar i explotar vulnerabilitats d'injecció SQL en aplicacions web.",
+      "searchLabel": "Terme de cerca:",
+      "searchPlaceholder": "Introdueix la teva cerca...",
+      "searching": "Cercant...",
+      "search": "Cercar",
+      "payloadExamples": "Exemples de payload:",
+      "results": "Resultats:",
+      "criticalVulnerability": "Vulnerabilitat Crítica",
+      "vulnerabilityDescription": "Aquesta aplicació és intencionalment vulnerable a SQL Injection. Utilitza-la només amb finalitats educatives.",
+      "examples": {
+        "normal": "Cerca normal",
+        "basic": "SQL Injection bàsica",
+        "comment": "Comentari SQL",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "Cross-Site Scripting (XSS)",
+      "description": "Domina tècniques de XSS reflectit, emmagatzemat i basat en DOM.",
+      "payloadLabel": "Payload XSS:",
+      "payloadPlaceholder": "Introdueix el teu payload XSS...",
+      "testing": "Provant...",
+      "test": "Provar",
+      "reflectInput": "Reflectir entrada a la resposta (XSS Reflectit)",
+      "payloadExamples": "Exemples de payload XSS:",
+      "results": "Resultats:",
+      "examples": {
+        "alertBasic": "Alert Bàsic",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "Autenticació Trencada",
+      "description": "Explota vulnerabilitats en mecanismes d'autenticació i gestió de sessions.",
+      "email": "Email:",
+      "password": "Contrasenya:",
+      "loggingIn": "Iniciant sessió...",
+      "login": "Iniciar sessió",
+      "defaultCredentials": "Credencials per defecte (vulnerabilitat):"
+    },
+    "commandInjection": {
+      "title": "Injecció de Comandes",
+      "description": "Execució de comandes del sistema operatiu mitjançant entrades no validades.",
+      "examples": {
+        "listFiles": "Llistar fitxers",
+        "viewFiles": "Veure contingut de fitxers",
+        "systemInfo": "Informació del sistema"
+      }
+    },
+    "common": {
+      "apiEndpoint": "Punt d'accés API:",
+      "testing": "Provant...",
+      "test": "Provar",
+      "execute": "Executar",
+      "exploitationExamples": "Exemples d'explotació:",
+      "apiResponse": "Resposta API:",
+      "status": "Estat:",
+      "severity": {
+        "critical": "Crític",
+        "high": "Alt",
+        "medium": "Mitjà",
+        "low": "Baix"
+      },
+      "viewFullApiDocs": "Veure Documentació API Completa",
+      "errorExecutingQuery": "Error executant la consulta",
+      "errorExecutingTest": "Error executant la prova"
+    }
+  },
+  "common": {
+    "loading": "Carregant...",
+    "error": "Error",
+    "success": "Èxit",
+    "cancel": "Cancel·lar",
+    "confirm": "Confirmar",
+    "save": "Desar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Veure",
+    "close": "Tancar",
+    "back": "Enrere",
+    "next": "Següent",
+    "previous": "Anterior",
+    "search": "Cercar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "all": "Tots",
+    "none": "Cap",
+    "yes": "Sí",
+    "no": "No",
+    "or": "o",
+    "and": "i",
+    "of": "de",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "Testimonis",
+    "title": "Què Diuen els Nostres Usuaris",
+    "description": "Professionals de la seguretat de tot el món confien en la nostra plataforma."
+  },
+  "chatbot": {
+    "vulnerableMode": "Mode Vulnerable Actiu - Intenta extreure informació sensible o fer-li revelar el seu system prompt.",
+    "normalMode": "Mode Normal - Assistent segur per a regulacions de seguretat.",
+    "errorResponse": "Error en la resposta"
+  }
+}

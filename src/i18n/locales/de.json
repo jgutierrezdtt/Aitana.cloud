@@ -3,7 +3,14 @@
     "home": "Startseite",
     "labs": "Labore",
     "docs": "Dokumentation",
-    "about": "Über uns"
+    "about": "Über uns",
+    "wiki": "Wiki",
+    "tools": "Werkzeuge",
+    "guides": "SSDLC-Leitfäden",
+    "apiDocs": "API-Docs",
+    "getStarted": "Loslegen",
+    "changeLanguage": "Sprache ändern",
+    "languagesAvailable": "Sprachen verfügbar"
   },
   "hero": {
     "slide1": {
@@ -17,7 +24,8 @@
       "title": "Hacken Sie Künstliche Intelligenz Systeme",
       "teaser": "Meistern Sie fortgeschrittene Prompt-Injection, Jailbreaking und adversariale Angriffstechniken",
       "cta": "Im AI Labor Trainieren"
-    }
+    },
+    "goToSlide": "Zur Folie gehen"
   },
   "heroFeatures": {
     "penetrationTesting": {
@@ -50,7 +58,8 @@
       "Sicherheitsschulung auf Unternehmensniveau"
     ],
     "button": "Labore Erkunden",
-    "badgeText": "Schwachstellenlabore"
+    "badgeText": "Schwachstellenlabore",
+    "explore": "Erkunden"
   },
   "services": {
     "badge": "Was Wir Bieten",
@@ -88,7 +97,11 @@
     "scenarios": "Schwachstellenszenarien",
     "coverage": "OWASP-Abdeckung",
     "frameworks": "Compliance-Frameworks",
-    "cvssScore": "Durchschnittlicher CVSS-Score"
+    "cvssScore": "Durchschnittlicher CVSS-Score",
+    "vulnerabilityLabs": "Schwachstellen-Labore",
+    "threatDetection": "Bedrohungserkennung",
+    "securityDashboard": "Sicherheits-Dashboard",
+    "securityAlerts": "Sicherheitswarnungen"
   },
   "aiLab": {
     "badge": "NEUES LABOR",
@@ -142,6 +155,179 @@
     "copyright": "Aitana.cloud - Cybersicherheits-Trainingsplattform",
     "terms": "Bedingungen",
     "privacy": "Datenschutz",
-    "warning": "Nur für Bildungszwecke"
+    "warning": "Nur für Bildungszwecke",
+    "vulnerableByDesign": "Diese Anwendung ist absichtlich anfällig - Nur für Bildungszwecke"
+  },
+  "wiki": {
+    "title": "Sicherheits-Wiki",
+    "subtitle": "Wissensdatenbank",
+    "description": "Lernen Sie die grundlegenden Konzepte der Web-Sicherheit, häufige Schwachstellen und Exploitationstechniken, die im Bug Bounty und professionellen Pentesting verwendet werden.",
+    "searchPlaceholder": "Artikel suchen...",
+    "readArticle": "Artikel lesen",
+    "readTime": "Min. Lesezeit",
+    "stats": {
+      "articles": "Artikel",
+      "codeExamples": "Code-Beispiele",
+      "bugBountyTechniques": "Bug Bounty Techniken",
+      "translations": "EN-Übersetzungen"
+    },
+    "categories": {
+      "fundamentos": "Grundlagen",
+      "vulnerabilidades": "Schwachstellen",
+      "defensas": "Abwehrmaßnahmen",
+      "herramientas": "Werkzeuge",
+      "bugBounty": "Bug Bounty"
+    },
+    "levels": {
+      "estudiante": "Student",
+      "juniorDeveloper": "Junior-Entwickler",
+      "pentester": "Pentester",
+      "securityExpert": "Sicherheitsexperte"
+    },
+    "cta": {
+      "title": "Bereit zu üben?",
+      "description": "Wenden Sie das Gelernte in unseren interaktiven Laboren mit echten Schwachstellen an.",
+      "goToLabs": "Zu den Laboren",
+      "viewApiDocs": "API-Docs ansehen"
+    },
+    "filterByRole": "Nach Rolle filtern",
+    "allLevels": "Alle Stufen",
+    "contentUnderConstruction": "Inhalt in Bearbeitung",
+    "articlePlanned": "Dieser Artikel ist geplant, aber der Inhalt wurde noch nicht geschrieben.",
+    "topic": "Thema",
+    "level": "Stufe",
+    "category": "Kategorie",
+    "backToWiki": "Zurück zum Wiki",
+    "inThisArticle": "In diesem Artikel",
+    "by": "Von",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "availableIn": "Verfügbar in",
+    "contentInSpanishOnly": "Inhalt nur auf Spanisch verfügbar",
+    "workingOnTranslations": "Wir arbeiten an Übersetzungen.",
+    "useBrowserTranslation": "Verwenden Sie die Übersetzungsfunktion Ihres Browsers oder besuchen Sie die",
+    "spanishVersion": "spanische Version"
+  },
+  "labs": {
+    "title": "Sicherheitslabore",
+    "subtitle": "Praktisches Training",
+    "description": "Üben Sie mit echten Schwachstellen in einer kontrollierten und sicheren Umgebung.",
+    "difficulty": {
+      "easy": "Einfach",
+      "medium": "Mittel",
+      "hard": "Schwer",
+      "expert": "Experte"
+    },
+    "startLab": "Labor Starten",
+    "viewDetails": "Details Ansehen",
+    "completed": "Abgeschlossen",
+    "inProgress": "In Bearbeitung",
+    "notStarted": "Nicht Gestartet",
+    "sqli": {
+      "title": "SQL-Injection",
+      "description": "Lernen Sie, SQL-Injection-Schwachstellen in Webanwendungen zu erkennen und auszunutzen.",
+      "searchLabel": "Suchbegriff:",
+      "searchPlaceholder": "Geben Sie Ihre Suche ein...",
+      "searching": "Suche läuft...",
+      "search": "Suchen",
+      "payloadExamples": "Payload-Beispiele:",
+      "results": "Ergebnisse:",
+      "criticalVulnerability": "Kritische Schwachstelle",
+      "vulnerabilityDescription": "Diese Anwendung ist absichtlich für SQL-Injection anfällig. Verwenden Sie sie nur zu Bildungszwecken.",
+      "examples": {
+        "normal": "Normale Suche",
+        "basic": "Einfache SQL-Injection",
+        "comment": "SQL-Kommentar",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "Cross-Site Scripting (XSS)",
+      "description": "Meistern Sie reflektierte, gespeicherte und DOM-basierte XSS-Techniken.",
+      "payloadLabel": "XSS-Payload:",
+      "payloadPlaceholder": "Geben Sie Ihren XSS-Payload ein...",
+      "testing": "Teste...",
+      "test": "Testen",
+      "reflectInput": "Eingabe in Antwort reflektieren (Reflektiertes XSS)",
+      "payloadExamples": "XSS-Payload-Beispiele:",
+      "results": "Ergebnisse:",
+      "examples": {
+        "alertBasic": "Einfacher Alert",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "Fehlerhafte Authentifizierung",
+      "description": "Nutzen Sie Schwachstellen in Authentifizierungsmechanismen und Session-Management aus.",
+      "email": "E-Mail:",
+      "password": "Passwort:",
+      "loggingIn": "Anmeldung...",
+      "login": "Anmelden",
+      "defaultCredentials": "Standard-Anmeldedaten (Schwachstelle):"
+    },
+    "commandInjection": {
+      "title": "Befehlsinjektion",
+      "description": "Ausführung von Betriebssystembefehlen durch unvalidierte Eingaben.",
+      "examples": {
+        "listFiles": "Dateien auflisten",
+        "viewFiles": "Dateiinhalt anzeigen",
+        "systemInfo": "Systeminformationen"
+      }
+    },
+    "common": {
+      "apiEndpoint": "API-Endpunkt:",
+      "testing": "Teste...",
+      "test": "Testen",
+      "execute": "Ausführen",
+      "exploitationExamples": "Ausnutzungsbeispiele:",
+      "apiResponse": "API-Antwort:",
+      "status": "Status:",
+      "severity": {
+        "critical": "Kritisch",
+        "high": "Hoch",
+        "medium": "Mittel",
+        "low": "Niedrig"
+      },
+      "viewFullApiDocs": "Vollständige API-Dokumentation ansehen",
+      "errorExecutingQuery": "Fehler bei der Abfrageausführung",
+      "errorExecutingTest": "Fehler bei der Testausführung"
+    }
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Ansehen",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "sort": "Sortieren",
+    "all": "Alle",
+    "none": "Keine",
+    "yes": "Ja",
+    "no": "Nein",
+    "or": "oder",
+    "and": "und",
+    "of": "von",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Was Unsere Nutzer Sagen",
+    "description": "Sicherheitsexperten aus aller Welt vertrauen unserer Plattform."
+  },
+  "chatbot": {
+    "vulnerableMode": "Verwundbarer Modus Aktiv - Versuchen Sie, sensible Informationen zu extrahieren oder den System-Prompt aufzudecken.",
+    "normalMode": "Normaler Modus - Sicherer Assistent für Sicherheitsvorschriften.",
+    "errorResponse": "Fehler in der Antwort"
   }
 }

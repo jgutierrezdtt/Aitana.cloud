@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "Home",
+    "labs": "Laboratori",
+    "docs": "Documentazione",
+    "about": "Chi siamo",
+    "wiki": "Wiki",
+    "tools": "Strumenti",
+    "guides": "Guide SSDLC",
+    "apiDocs": "API Docs",
+    "getStarted": "Inizia Ora",
+    "changeLanguage": "Cambia lingua",
+    "languagesAvailable": "lingue disponibili"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "Laboratori di Sicurezza",
+      "title": "Padroneggia le Vulnerabilità Web",
+      "teaser": "Impara a identificare e sfruttare le vulnerabilità più critiche dell'OWASP Top 10",
+      "cta": "Esplora i Laboratori"
+    },
+    "slide2": {
+      "subtitle": "AI Red Team Lab",
+      "title": "Hackera Sistemi di Intelligenza Artificiale",
+      "teaser": "Padroneggia tecniche avanzate di prompt injection, jailbreaking e attacchi avversari",
+      "cta": "Allenati nel AI Lab"
+    },
+    "goToSlide": "Vai alla slide"
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "Penetration Testing",
+      "description": "Formazione sulla sicurezza offensiva con scenari di attacco reali"
+    },
+    "dataProtection": {
+      "title": "Protezione dei Dati",
+      "description": "Impara crittografia, gestione delle chiavi e pratiche di archiviazione sicura"
+    },
+    "incidentResponse": {
+      "title": "Risposta agli Incidenti",
+      "description": "Padroneggia tecniche di rilevamento, analisi e rimedio delle minacce"
+    }
+  },
+  "ctaBanner": {
+    "title": "Pronto a Testare le tue Competenze di Sicurezza?",
+    "button": "Inizia la Formazione"
+  },
+  "about": {
+    "badge": "Piattaforma di Formazione Aziendale",
+    "title": "Laboratori Pratici di Sicurezza per Vulnerabilità Moderne",
+    "description": "Padroneggia le vulnerabilità di sicurezza del mondo reale attraverso la pratica nel nostro ambiente di laboratorio controllato. Dall'OWASP Top 10 alle sfide avanzate di sicurezza IA, sviluppa competenze pratiche che contano negli ambienti di produzione.",
+    "features": [
+      "14+ Scenari di Vulnerabilità Reali",
+      "Copertura Completa OWASP Top 10",
+      "Laboratori AI Red Team e Prompt Injection",
+      "Ambiente di Apprendimento Interattivo",
+      "Tracciamento Progressi e Risultati",
+      "Formazione sulla Sicurezza di Livello Enterprise"
+    ],
+    "button": "Esplora i Laboratori",
+    "badgeText": "Laboratori di Vulnerabilità",
+    "explore": "Esplora"
+  },
+  "services": {
+    "badge": "Cosa Offriamo",
+    "title": "Servizi di Cybersecurity Robusti per le Minacce di Oggi",
+    "description": "Proteggi la tua azienda dai rischi informatici in continua evoluzione con le nostre soluzioni di sicurezza end-to-end. Offriamo rilevamento avanzato delle minacce, monitoraggio in tempo reale e strategie di difesa proattive su misura per la tua infrastruttura.",
+    "items": {
+      "sqli": {
+        "title": "SQL Injection",
+        "description": "Manipolazione delle query del database tramite input utente non validato"
+      },
+      "xss": {
+        "title": "Cross-Site Scripting",
+        "description": "Iniezione di codice lato client che abilita il dirottamento della sessione"
+      },
+      "brokenAuth": {
+        "title": "Autenticazione Compromessa",
+        "description": "Meccanismi di autenticazione deboli che consentono accessi non autorizzati"
+      },
+      "dataExposure": {
+        "title": "Esposizione Dati Sensibili",
+        "description": "Protezione inadeguata delle informazioni sensibili"
+      },
+      "accessControl": {
+        "title": "Controllo Accessi Compromesso",
+        "description": "Applicazione insufficiente dei limiti di permesso utente"
+      },
+      "misconfig": {
+        "title": "Configurazione Errata della Sicurezza",
+        "description": "Configurazioni predefinite non sicure e hardening incompleto"
+      }
+    },
+    "exploreButton": "Esplora"
+  },
+  "stats": {
+    "scenarios": "Scenari di Vulnerabilità",
+    "coverage": "Copertura OWASP",
+    "frameworks": "Framework di Conformità",
+    "cvssScore": "Punteggio CVSS Medio",
+    "vulnerabilityLabs": "Laboratori di Vulnerabilità",
+    "threatDetection": "Rilevamento Minacce",
+    "securityDashboard": "Dashboard di Sicurezza",
+    "securityAlerts": "Avvisi di Sicurezza"
+  },
+  "aiLab": {
+    "badge": "NUOVO LABORATORIO",
+    "title": "AI Red Team Lab",
+    "description": "Impara ad attaccare e difendere sistemi IA con {promptInjection}, {jailbreaking} e tecniche avanzate di {redTeaming}.",
+    "promptInjection": "prompt injection",
+    "jailbreaking": "jailbreaking",
+    "redTeaming": "red teaming",
+    "stats": {
+      "levels": "Livelli",
+      "points": "Punti",
+      "badges": "Badge"
+    },
+    "button": "Inizia la Formazione",
+    "features": {
+      "jailbreak": {
+        "title": "Jailbreak di Sicurezza",
+        "description": "Bypass dei filtri di contenuto e restrizioni IA"
+      },
+      "extraction": {
+        "title": "Estrazione di Prompt",
+        "description": "Tecniche per rubare system prompt e dati segreti"
+      },
+      "adversarial": {
+        "title": "Attacchi Avversari",
+        "description": "Confondere modelli con encoding e attacchi multi-step"
+      }
+    }
+  },
+  "footer": {
+    "description": "Piattaforma di formazione sulla cybersecurity per professionisti e team di sicurezza.",
+    "labs": {
+      "title": "Laboratori",
+      "items": {
+        "sqli": "SQL Injection",
+        "xss": "Cross-Site Scripting",
+        "auth": "Autenticazione Compromessa",
+        "sensitiveData": "Dati Sensibili",
+        "aiLab": "AI Red Team Lab"
+      }
+    },
+    "resources": {
+      "title": "Risorse",
+      "items": {
+        "docs": "Documentazione",
+        "guides": "Guide",
+        "blog": "Blog",
+        "support": "Supporto"
+      }
+    },
+    "copyright": "Aitana.cloud - Piattaforma di Formazione sulla Cybersecurity",
+    "terms": "Termini",
+    "privacy": "Privacy",
+    "warning": "Solo per Scopi Educativi",
+    "vulnerableByDesign": "Questa applicazione è vulnerabile per design - Solo per scopi educativi"
+  },
+  "wiki": {
+    "title": "Wiki sulla Sicurezza",
+    "subtitle": "Base di Conoscenza",
+    "description": "Impara i concetti fondamentali della sicurezza web, vulnerabilità comuni e tecniche di sfruttamento utilizzate nel bug bounty e pentesting professionale.",
+    "searchPlaceholder": "Cerca articoli...",
+    "readArticle": "Leggi articolo",
+    "readTime": "min di lettura",
+    "stats": {
+      "articles": "Articoli",
+      "codeExamples": "Esempi di Codice",
+      "bugBountyTechniques": "Tecniche Bug Bounty",
+      "translations": "Traduzioni EN"
+    },
+    "categories": {
+      "fundamentos": "Fondamenti",
+      "vulnerabilidades": "Vulnerabilità",
+      "defensas": "Difese",
+      "herramientas": "Strumenti",
+      "bugBounty": "Bug Bounty"
+    },
+    "levels": {
+      "estudiante": "Studente",
+      "juniorDeveloper": "Junior Developer",
+      "pentester": "Pentester",
+      "securityExpert": "Security Expert"
+    },
+    "cta": {
+      "title": "Pronto a praticare?",
+      "description": "Applica ciò che hai imparato nei nostri laboratori interattivi con vulnerabilità reali.",
+      "goToLabs": "Vai ai Labs",
+      "viewApiDocs": "Vedi API Docs"
+    },
+    "filterByRole": "Filtra per ruolo",
+    "allLevels": "Tutti i livelli",
+    "contentUnderConstruction": "Contenuto in Costruzione",
+    "articlePlanned": "Questo articolo è pianificato ma il contenuto non è ancora stato scritto.",
+    "topic": "Argomento",
+    "level": "Livello",
+    "category": "Categoria",
+    "backToWiki": "Torna alla Wiki",
+    "inThisArticle": "In questo articolo",
+    "by": "Di",
+    "lastUpdated": "Ultimo aggiornamento",
+    "availableIn": "Disponibile in",
+    "contentInSpanishOnly": "Contenuto disponibile solo in spagnolo",
+    "workingOnTranslations": "Stiamo lavorando alle traduzioni.",
+    "useBrowserTranslation": "Usa la funzione di traduzione del tuo browser o visita la",
+    "spanishVersion": "versione spagnola"
+  },
+  "labs": {
+    "title": "Laboratori di Sicurezza",
+    "subtitle": "Formazione Pratica",
+    "description": "Pratica con vulnerabilità reali in un ambiente controllato e sicuro.",
+    "difficulty": {
+      "easy": "Facile",
+      "medium": "Medio",
+      "hard": "Difficile",
+      "expert": "Esperto"
+    },
+    "startLab": "Inizia Lab",
+    "viewDetails": "Vedi Dettagli",
+    "completed": "Completato",
+    "inProgress": "In Corso",
+    "notStarted": "Non Iniziato",
+    "sqli": {
+      "title": "SQL Injection",
+      "description": "Impara a rilevare e sfruttare vulnerabilità SQL injection nelle applicazioni web.",
+      "searchLabel": "Termine di ricerca:",
+      "searchPlaceholder": "Inserisci la tua ricerca...",
+      "searching": "Ricerca in corso...",
+      "search": "Cerca",
+      "payloadExamples": "Esempi di payload:",
+      "results": "Risultati:",
+      "criticalVulnerability": "Vulnerabilità Critica",
+      "vulnerabilityDescription": "Questa applicazione è intenzionalmente vulnerabile a SQL Injection. Usala solo per scopi educativi.",
+      "examples": {
+        "normal": "Ricerca normale",
+        "basic": "SQL Injection base",
+        "comment": "Commento SQL",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "Cross-Site Scripting (XSS)",
+      "description": "Padroneggia tecniche XSS riflesso, memorizzato e DOM-based.",
+      "payloadLabel": "Payload XSS:",
+      "payloadPlaceholder": "Inserisci il tuo payload XSS...",
+      "testing": "Test in corso...",
+      "test": "Testa",
+      "reflectInput": "Rifletti input nella risposta (XSS Riflesso)",
+      "payloadExamples": "Esempi di payload XSS:",
+      "results": "Risultati:",
+      "examples": {
+        "alertBasic": "Alert base",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "Autenticazione Compromessa",
+      "description": "Sfrutta vulnerabilità nei meccanismi di autenticazione e gestione delle sessioni.",
+      "email": "Email:",
+      "password": "Password:",
+      "loggingIn": "Accesso in corso...",
+      "login": "Accedi",
+      "defaultCredentials": "Credenziali predefinite (vulnerabilità):"
+    },
+    "commandInjection": {
+      "title": "Command Injection",
+      "description": "Esecuzione di comandi del sistema operativo tramite input non validati.",
+      "examples": {
+        "listFiles": "Elenca file",
+        "viewFiles": "Visualizza contenuto file",
+        "systemInfo": "Informazioni di sistema"
+      }
+    },
+    "common": {
+      "apiEndpoint": "Endpoint API:",
+      "testing": "Test in corso...",
+      "test": "Testa",
+      "execute": "Esegui",
+      "exploitationExamples": "Esempi di sfruttamento:",
+      "apiResponse": "Risposta API:",
+      "status": "Stato:",
+      "severity": {
+        "critical": "Critica",
+        "high": "Alta",
+        "medium": "Media",
+        "low": "Bassa"
+      },
+      "viewFullApiDocs": "Vedi Documentazione API Completa",
+      "errorExecutingQuery": "Errore nell'esecuzione della query",
+      "errorExecutingTest": "Errore nell'esecuzione del test"
+    }
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "cancel": "Annulla",
+    "confirm": "Conferma",
+    "save": "Salva",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "view": "Visualizza",
+    "close": "Chiudi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "search": "Cerca",
+    "filter": "Filtra",
+    "sort": "Ordina",
+    "all": "Tutti",
+    "none": "Nessuno",
+    "yes": "Sì",
+    "no": "No",
+    "or": "o",
+    "and": "e",
+    "of": "di",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "Testimonianze",
+    "title": "Cosa Dicono i Nostri Utenti",
+    "description": "Professionisti della sicurezza di tutto il mondo si fidano della nostra piattaforma."
+  },
+  "chatbot": {
+    "vulnerableMode": "Modalità Vulnerabile Attiva - Prova a estrarre informazioni sensibili o farlo rivelare il suo system prompt.",
+    "normalMode": "Modalità Normale - Assistente sicuro per normative di sicurezza.",
+    "errorResponse": "Errore nella risposta"
+  }
+}

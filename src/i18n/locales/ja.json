@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "labs": "ラボ",
+    "docs": "ドキュメント",
+    "about": "概要",
+    "wiki": "Wiki",
+    "tools": "ツール",
+    "guides": "SSDLCガイド",
+    "apiDocs": "API Docs",
+    "getStarted": "今すぐ始める",
+    "changeLanguage": "言語を変更",
+    "languagesAvailable": "言語が利用可能"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "セキュリティラボ",
+      "title": "Webの脆弱性をマスター",
+      "teaser": "OWASP Top 10の最も重要な脆弱性を特定し、悪用する方法を学ぶ",
+      "cta": "ラボを探索"
+    },
+    "slide2": {
+      "subtitle": "AI Red Team Lab",
+      "title": "人工知能システムをハック",
+      "teaser": "高度なプロンプトインジェクション、ジェイルブレイク、敵対的攻撃技術をマスター",
+      "cta": "AI Labでトレーニング"
+    },
+    "goToSlide": "スライドへ移動"
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "ペネトレーションテスト",
+      "description": "実世界の攻撃シナリオによる攻撃的セキュリティトレーニング"
+    },
+    "dataProtection": {
+      "title": "データ保護",
+      "description": "暗号化、鍵管理、安全なストレージプラクティスを学ぶ"
+    },
+    "incidentResponse": {
+      "title": "インシデント対応",
+      "description": "脅威の検出、分析、修復技術をマスター"
+    }
+  },
+  "ctaBanner": {
+    "title": "セキュリティスキルをテストする準備はできましたか？",
+    "button": "トレーニングを開始"
+  },
+  "about": {
+    "badge": "エンタープライズトレーニングプラットフォーム",
+    "title": "現代の脆弱性のための実践的セキュリティラボ",
+    "description": "制御されたラボ環境での実践を通じて、実世界のセキュリティ脆弱性をマスターします。OWASP Top 10から高度なAIセキュリティチャレンジまで、本番環境で重要な実践的スキルを開発します。",
+    "features": [
+      "14以上の実世界の脆弱性シナリオ",
+      "完全なOWASP Top 10カバレッジ",
+      "AI Red TeamとPrompt Injectionラボ",
+      "インタラクティブな学習環境",
+      "進捗と達成の追跡",
+      "エンタープライズレベルのセキュリティトレーニング"
+    ],
+    "button": "ラボを探索",
+    "badgeText": "脆弱性ラボ",
+    "explore": "探索"
+  },
+  "services": {
+    "badge": "提供するもの",
+    "title": "今日の脅威に対する堅牢なサイバーセキュリティサービス",
+    "description": "エンドツーエンドのセキュリティソリューションで、進化し続けるサイバーリスクからビジネスを保護します。高度な脅威検出、リアルタイム監視、インフラストラクチャに合わせたプロアクティブな防御戦略を提供します。",
+    "items": {
+      "sqli": {
+        "title": "SQLインジェクション",
+        "description": "未検証のユーザー入力によるデータベースクエリの操作"
+      },
+      "xss": {
+        "title": "クロスサイトスクリプティング",
+        "description": "セッションハイジャックを可能にするクライアントサイドコードインジェクション"
+      },
+      "brokenAuth": {
+        "title": "認証の破損",
+        "description": "不正アクセスを許可する弱い認証メカニズム"
+      },
+      "dataExposure": {
+        "title": "機密データの漏洩",
+        "description": "機密情報の不適切な保護"
+      },
+      "accessControl": {
+        "title": "アクセス制御の破損",
+        "description": "ユーザー権限境界の不十分な適用"
+      },
+      "misconfig": {
+        "title": "セキュリティの設定ミス",
+        "description": "安全でないデフォルト設定と不完全なハードニング"
+      }
+    },
+    "exploreButton": "探索"
+  },
+  "stats": {
+    "scenarios": "脆弱性シナリオ",
+    "coverage": "OWASPカバレッジ",
+    "frameworks": "コンプライアンスフレームワーク",
+    "cvssScore": "平均CVSSスコア",
+    "vulnerabilityLabs": "脆弱性ラボ",
+    "threatDetection": "脅威検出",
+    "securityDashboard": "セキュリティダッシュボード",
+    "securityAlerts": "セキュリティアラート"
+  },
+  "aiLab": {
+    "badge": "新しいラボ",
+    "title": "AI Red Team Lab",
+    "description": "{promptInjection}、{jailbreaking}、高度な{redTeaming}技術でAIシステムの攻撃と防御を学ぶ。",
+    "promptInjection": "プロンプトインジェクション",
+    "jailbreaking": "ジェイルブレイク",
+    "redTeaming": "レッドチーミング",
+    "stats": {
+      "levels": "レベル",
+      "points": "ポイント",
+      "badges": "バッジ"
+    },
+    "button": "トレーニングを開始",
+    "features": {
+      "jailbreak": {
+        "title": "セキュリティジェイルブレイク",
+        "description": "コンテンツフィルターとAI制限のバイパス"
+      },
+      "extraction": {
+        "title": "プロンプト抽出",
+        "description": "システムプロンプトと秘密データを盗む技術"
+      },
+      "adversarial": {
+        "title": "敵対的攻撃",
+        "description": "エンコーディングとマルチステップ攻撃でモデルを混乱させる"
+      }
+    }
+  },
+  "footer": {
+    "description": "専門家とセキュリティチームのためのサイバーセキュリティトレーニングプラットフォーム。",
+    "labs": {
+      "title": "ラボ",
+      "items": {
+        "sqli": "SQLインジェクション",
+        "xss": "クロスサイトスクリプティング",
+        "auth": "認証の破損",
+        "sensitiveData": "機密データ",
+        "aiLab": "AI Red Team Lab"
+      }
+    },
+    "resources": {
+      "title": "リソース",
+      "items": {
+        "docs": "ドキュメント",
+        "guides": "ガイド",
+        "blog": "ブログ",
+        "support": "サポート"
+      }
+    },
+    "copyright": "Aitana.cloud - サイバーセキュリティトレーニングプラットフォーム",
+    "terms": "利用規約",
+    "privacy": "プライバシー",
+    "warning": "教育目的のみ",
+    "vulnerableByDesign": "このアプリケーションは設計上脆弱です - 教育目的のみ"
+  },
+  "wiki": {
+    "title": "セキュリティWiki",
+    "subtitle": "ナレッジベース",
+    "description": "バグバウンティとプロフェッショナルなペネトレーションテストで使用されるWebセキュリティの基本概念、一般的な脆弱性、悪用技術を学びます。",
+    "searchPlaceholder": "記事を検索...",
+    "readArticle": "記事を読む",
+    "readTime": "分で読める",
+    "stats": {
+      "articles": "記事",
+      "codeExamples": "コード例",
+      "bugBountyTechniques": "バグバウンティ技術",
+      "translations": "EN翻訳"
+    },
+    "categories": {
+      "fundamentos": "基礎",
+      "vulnerabilidades": "脆弱性",
+      "defensas": "防御",
+      "herramientas": "ツール",
+      "bugBounty": "バグバウンティ"
+    },
+    "levels": {
+      "estudiante": "学生",
+      "juniorDeveloper": "ジュニア開発者",
+      "pentester": "ペンテスター",
+      "securityExpert": "セキュリティエキスパート"
+    },
+    "cta": {
+      "title": "練習する準備はできましたか？",
+      "description": "実際の脆弱性を持つインタラクティブなラボで学んだことを適用します。",
+      "goToLabs": "ラボへ",
+      "viewApiDocs": "API Docsを見る"
+    },
+    "filterByRole": "役割でフィルター",
+    "allLevels": "すべてのレベル",
+    "contentUnderConstruction": "コンテンツ作成中",
+    "articlePlanned": "この記事は計画されていますが、コンテンツはまだ書かれていません。",
+    "topic": "トピック",
+    "level": "レベル",
+    "category": "カテゴリ",
+    "backToWiki": "Wikiに戻る",
+    "inThisArticle": "この記事で",
+    "by": "著者",
+    "lastUpdated": "最終更新",
+    "availableIn": "利用可能な言語",
+    "contentInSpanishOnly": "コンテンツはスペイン語のみで利用可能",
+    "workingOnTranslations": "翻訳作業中です。",
+    "useBrowserTranslation": "ブラウザの翻訳機能を使用するか、",
+    "spanishVersion": "スペイン語版"
+  },
+  "labs": {
+    "title": "セキュリティラボ",
+    "subtitle": "実践トレーニング",
+    "description": "制御された安全な環境で実際の脆弱性を練習します。",
+    "difficulty": {
+      "easy": "簡単",
+      "medium": "中級",
+      "hard": "難しい",
+      "expert": "エキスパート"
+    },
+    "startLab": "ラボを開始",
+    "viewDetails": "詳細を見る",
+    "completed": "完了",
+    "inProgress": "進行中",
+    "notStarted": "未開始",
+    "sqli": {
+      "title": "SQLインジェクション",
+      "description": "WebアプリケーションのSQLインジェクション脆弱性を検出して悪用する方法を学びます。",
+      "searchLabel": "検索語:",
+      "searchPlaceholder": "検索を入力...",
+      "searching": "検索中...",
+      "search": "検索",
+      "payloadExamples": "ペイロードの例:",
+      "results": "結果:",
+      "criticalVulnerability": "重大な脆弱性",
+      "vulnerabilityDescription": "このアプリケーションは意図的にSQLインジェクションに脆弱です。教育目的のみに使用してください。",
+      "examples": {
+        "normal": "通常の検索",
+        "basic": "基本的なSQLインジェクション",
+        "comment": "SQLコメント",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "クロスサイトスクリプティング（XSS）",
+      "description": "反射型、格納型、DOMベースのXSS技術をマスターします。",
+      "payloadLabel": "XSSペイロード:",
+      "payloadPlaceholder": "XSSペイロードを入力...",
+      "testing": "テスト中...",
+      "test": "テスト",
+      "reflectInput": "レスポンスに入力を反映（反射型XSS）",
+      "payloadExamples": "XSSペイロードの例:",
+      "results": "結果:",
+      "examples": {
+        "alertBasic": "基本的なAlert",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "認証の破損",
+      "description": "認証メカニズムとセッション管理の脆弱性を悪用します。",
+      "email": "メール:",
+      "password": "パスワード:",
+      "loggingIn": "ログイン中...",
+      "login": "ログイン",
+      "defaultCredentials": "デフォルト認証情報（脆弱性）:"
+    },
+    "commandInjection": {
+      "title": "コマンドインジェクション",
+      "description": "未検証の入力によるオペレーティングシステムコマンドの実行。",
+      "examples": {
+        "listFiles": "ファイルを一覧",
+        "viewFiles": "ファイル内容を表示",
+        "systemInfo": "システム情報"
+      }
+    },
+    "common": {
+      "apiEndpoint": "APIエンドポイント:",
+      "testing": "テスト中...",
+      "test": "テスト",
+      "execute": "実行",
+      "exploitationExamples": "悪用例:",
+      "apiResponse": "APIレスポンス:",
+      "status": "ステータス:",
+      "severity": {
+        "critical": "重大",
+        "high": "高",
+        "medium": "中",
+        "low": "低"
+      },
+      "viewFullApiDocs": "完全なAPIドキュメントを見る",
+      "errorExecutingQuery": "クエリ実行エラー",
+      "errorExecutingTest": "テスト実行エラー"
+    }
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "view": "表示",
+    "close": "閉じる",
+    "back": "戻る",
+    "next": "次へ",
+    "previous": "前へ",
+    "search": "検索",
+    "filter": "フィルター",
+    "sort": "並び替え",
+    "all": "すべて",
+    "none": "なし",
+    "yes": "はい",
+    "no": "いいえ",
+    "or": "または",
+    "and": "と",
+    "of": "の",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "お客様の声",
+    "title": "ユーザーの声",
+    "description": "世界中のセキュリティ専門家が当社のプラットフォームを信頼しています。"
+  },
+  "chatbot": {
+    "vulnerableMode": "脆弱モードアクティブ - 機密情報を抽出するか、システムプロンプトを明らかにさせてみてください。",
+    "normalMode": "通常モード - セキュリティ規制の安全なアシスタント。",
+    "errorResponse": "レスポンスエラー"
+  }
+}

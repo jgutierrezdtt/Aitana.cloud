@@ -54,7 +54,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  // Cargar mensajes directamente según el locale
+  // Cargar mensajes directamente según el locale (16 idiomas)
   let messages;
   switch (locale) {
     case 'es':
@@ -68,6 +68,42 @@ export default async function LocaleLayout({
       break;
     case 'de':
       messages = (await import('@/i18n/locales/de.json')).default;
+      break;
+    case 'eu':
+      messages = (await import('@/i18n/locales/eu.json')).default;
+      break;
+    case 'ca':
+      messages = (await import('@/i18n/locales/ca.json')).default;
+      break;
+    case 'gl':
+      messages = (await import('@/i18n/locales/gl.json')).default;
+      break;
+    case 'ic':
+      messages = (await import('@/i18n/locales/ic.json')).default;
+      break;
+    case 'zh':
+      messages = (await import('@/i18n/locales/zh.json')).default;
+      break;
+    case 'it':
+      messages = (await import('@/i18n/locales/it.json')).default;
+      break;
+    case 'pt':
+      messages = (await import('@/i18n/locales/pt.json')).default;
+      break;
+    case 'hi':
+      messages = (await import('@/i18n/locales/hi.json')).default;
+      break;
+    case 'ja':
+      messages = (await import('@/i18n/locales/ja.json')).default;
+      break;
+    case 'ko':
+      messages = (await import('@/i18n/locales/ko.json')).default;
+      break;
+    case 'ar':
+      messages = (await import('@/i18n/locales/ar.json')).default;
+      break;
+    case 'ru':
+      messages = (await import('@/i18n/locales/ru.json')).default;
       break;
     default:
       notFound();

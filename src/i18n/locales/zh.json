@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "首页",
+    "labs": "实验室",
+    "docs": "文档",
+    "about": "关于我们",
+    "wiki": "百科",
+    "tools": "工具",
+    "guides": "SSDLC指南",
+    "apiDocs": "API文档",
+    "getStarted": "开始使用",
+    "changeLanguage": "切换语言",
+    "languagesAvailable": "种语言可用"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "安全实验室",
+      "title": "掌握Web漏洞",
+      "teaser": "学习识别和利用OWASP Top 10中最关键的漏洞",
+      "cta": "探索实验室"
+    },
+    "slide2": {
+      "subtitle": "AI红队实验室",
+      "title": "攻击人工智能系统",
+      "teaser": "掌握高级提示注入、越狱和对抗性攻击技术",
+      "cta": "在AI实验室训练"
+    },
+    "goToSlide": "跳转到幻灯片"
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "渗透测试",
+      "description": "使用真实世界攻击场景的攻击性安全培训"
+    },
+    "dataProtection": {
+      "title": "数据保护",
+      "description": "学习加密、密钥管理和安全存储实践"
+    },
+    "incidentResponse": {
+      "title": "事件响应",
+      "description": "掌握威胁检测、分析和补救技术"
+    }
+  },
+  "ctaBanner": {
+    "title": "准备好测试你的安全技能了吗？",
+    "button": "开始训练"
+  },
+  "about": {
+    "badge": "企业培训平台",
+    "title": "现代漏洞的实践安全实验室",
+    "description": "通过在我们受控的实验室环境中进行实践操作，掌握真实世界的安全漏洞。从OWASP Top 10到高级AI安全挑战，培养在生产环境中重要的实用技能。",
+    "features": [
+      "14+真实世界漏洞场景",
+      "完整的OWASP Top 10覆盖",
+      "AI红队和提示注入实验室",
+      "交互式学习环境",
+      "进度和成就追踪",
+      "企业级安全培训"
+    ],
+    "button": "探索实验室",
+    "badgeText": "漏洞实验室",
+    "explore": "探索"
+  },
+  "services": {
+    "badge": "我们提供什么",
+    "title": "应对当今威胁的强大网络安全服务",
+    "description": "通过我们端到端的安全解决方案，保护您的企业免受不断演变的网络风险。我们提供高级威胁检测、实时监控和根据您的基础设施定制的主动防御策略。",
+    "items": {
+      "sqli": {
+        "title": "SQL注入",
+        "description": "通过未验证的用户输入操纵数据库查询"
+      },
+      "xss": {
+        "title": "跨站脚本",
+        "description": "客户端代码注入，实现会话劫持"
+      },
+      "brokenAuth": {
+        "title": "身份验证失效",
+        "description": "允许未授权访问的弱身份验证机制"
+      },
+      "dataExposure": {
+        "title": "敏感数据泄露",
+        "description": "敏感信息保护不足"
+      },
+      "accessControl": {
+        "title": "访问控制失效",
+        "description": "用户权限边界执行不足"
+      },
+      "misconfig": {
+        "title": "安全配置错误",
+        "description": "不安全的默认配置和不完整的加固"
+      }
+    },
+    "exploreButton": "探索"
+  },
+  "stats": {
+    "scenarios": "漏洞场景",
+    "coverage": "OWASP覆盖率",
+    "frameworks": "合规框架",
+    "cvssScore": "平均CVSS评分",
+    "vulnerabilityLabs": "漏洞实验室",
+    "threatDetection": "威胁检测",
+    "securityDashboard": "安全仪表板",
+    "securityAlerts": "安全警报"
+  },
+  "aiLab": {
+    "badge": "新实验室",
+    "title": "AI红队实验室",
+    "description": "学习使用{promptInjection}、{jailbreaking}和高级{redTeaming}技术攻击和防御AI系统。",
+    "promptInjection": "提示注入",
+    "jailbreaking": "越狱",
+    "redTeaming": "红队",
+    "stats": {
+      "levels": "级别",
+      "points": "积分",
+      "badges": "徽章"
+    },
+    "button": "开始训练",
+    "features": {
+      "jailbreak": {
+        "title": "安全越狱",
+        "description": "绕过内容过滤器和AI限制"
+      },
+      "extraction": {
+        "title": "提示提取",
+        "description": "窃取系统提示和秘密数据的技术"
+      },
+      "adversarial": {
+        "title": "对抗性攻击",
+        "description": "使用编码和多步攻击混淆模型"
+      }
+    }
+  },
+  "footer": {
+    "description": "为专业人员和安全团队提供的网络安全培训平台。",
+    "labs": {
+      "title": "实验室",
+      "items": {
+        "sqli": "SQL注入",
+        "xss": "跨站脚本",
+        "auth": "身份验证失效",
+        "sensitiveData": "敏感数据",
+        "aiLab": "AI红队实验室"
+      }
+    },
+    "resources": {
+      "title": "资源",
+      "items": {
+        "docs": "文档",
+        "guides": "指南",
+        "blog": "博客",
+        "support": "支持"
+      }
+    },
+    "copyright": "Aitana.cloud - 网络安全培训平台",
+    "terms": "条款",
+    "privacy": "隐私",
+    "warning": "仅供教育目的",
+    "vulnerableByDesign": "此应用程序设计上存在漏洞 - 仅供教育目的"
+  },
+  "wiki": {
+    "title": "安全百科",
+    "subtitle": "知识库",
+    "description": "学习Web安全的基本概念、常见漏洞以及在漏洞赏金和专业渗透测试中使用的利用技术。",
+    "searchPlaceholder": "搜索文章...",
+    "readArticle": "阅读文章",
+    "readTime": "分钟阅读",
+    "stats": {
+      "articles": "文章",
+      "codeExamples": "代码示例",
+      "bugBountyTechniques": "漏洞赏金技术",
+      "translations": "英文翻译"
+    },
+    "categories": {
+      "fundamentos": "基础",
+      "vulnerabilidades": "漏洞",
+      "defensas": "防御",
+      "herramientas": "工具",
+      "bugBounty": "漏洞赏金"
+    },
+    "levels": {
+      "estudiante": "学生",
+      "juniorDeveloper": "初级开发者",
+      "pentester": "渗透测试员",
+      "securityExpert": "安全专家"
+    },
+    "cta": {
+      "title": "准备好练习了吗？",
+      "description": "在我们的交互式实验室中应用所学知识，体验真实漏洞。",
+      "goToLabs": "前往实验室",
+      "viewApiDocs": "查看API文档"
+    },
+    "filterByRole": "按角色筛选",
+    "allLevels": "所有级别",
+    "contentUnderConstruction": "内容建设中",
+    "articlePlanned": "此文章已计划但内容尚未编写。",
+    "topic": "主题",
+    "level": "级别",
+    "category": "类别",
+    "backToWiki": "返回百科",
+    "inThisArticle": "本文内容",
+    "by": "作者",
+    "lastUpdated": "最后更新",
+    "availableIn": "可用语言",
+    "contentInSpanishOnly": "内容仅提供西班牙语版本",
+    "workingOnTranslations": "我们正在进行翻译工作。",
+    "useBrowserTranslation": "使用浏览器的翻译功能或访问",
+    "spanishVersion": "西班牙语版本"
+  },
+  "labs": {
+    "title": "安全实验室",
+    "subtitle": "实践培训",
+    "description": "在受控安全的环境中练习真实漏洞。",
+    "difficulty": {
+      "easy": "简单",
+      "medium": "中等",
+      "hard": "困难",
+      "expert": "专家"
+    },
+    "startLab": "开始实验",
+    "viewDetails": "查看详情",
+    "completed": "已完成",
+    "inProgress": "进行中",
+    "notStarted": "未开始",
+    "sqli": {
+      "title": "SQL注入",
+      "description": "学习检测和利用Web应用程序中的SQL注入漏洞。",
+      "searchLabel": "搜索词：",
+      "searchPlaceholder": "输入搜索内容...",
+      "searching": "搜索中...",
+      "search": "搜索",
+      "payloadExamples": "有效载荷示例：",
+      "results": "结果：",
+      "criticalVulnerability": "严重漏洞",
+      "vulnerabilityDescription": "此应用程序故意存在SQL注入漏洞。仅供教育目的使用。",
+      "examples": {
+        "normal": "正常搜索",
+        "basic": "基本SQL注入",
+        "comment": "SQL注释",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "跨站脚本 (XSS)",
+      "description": "掌握反射型、存储型和基于DOM的XSS技术。",
+      "payloadLabel": "XSS有效载荷：",
+      "payloadPlaceholder": "输入XSS有效载荷...",
+      "testing": "测试中...",
+      "test": "测试",
+      "reflectInput": "在响应中反射输入（反射型XSS）",
+      "payloadExamples": "XSS有效载荷示例：",
+      "results": "结果：",
+      "examples": {
+        "alertBasic": "基本Alert",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "身份验证失效",
+      "description": "利用身份验证机制和会话管理中的漏洞。",
+      "email": "邮箱：",
+      "password": "密码：",
+      "loggingIn": "登录中...",
+      "login": "登录",
+      "defaultCredentials": "默认凭据（漏洞）："
+    },
+    "commandInjection": {
+      "title": "命令注入",
+      "description": "通过未验证的输入执行操作系统命令。",
+      "examples": {
+        "listFiles": "列出文件",
+        "viewFiles": "查看文件内容",
+        "systemInfo": "系统信息"
+      }
+    },
+    "common": {
+      "apiEndpoint": "API端点：",
+      "testing": "测试中...",
+      "test": "测试",
+      "execute": "执行",
+      "exploitationExamples": "利用示例：",
+      "apiResponse": "API响应：",
+      "status": "状态：",
+      "severity": {
+        "critical": "严重",
+        "high": "高",
+        "medium": "中",
+        "low": "低"
+      },
+      "viewFullApiDocs": "查看完整API文档",
+      "errorExecutingQuery": "执行查询时出错",
+      "errorExecutingTest": "执行测试时出错"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "view": "查看",
+    "close": "关闭",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "all": "全部",
+    "none": "无",
+    "yes": "是",
+    "no": "否",
+    "or": "或",
+    "and": "和",
+    "of": "的",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "用户评价",
+    "title": "用户怎么说",
+    "description": "来自世界各地的安全专业人员信任我们的平台。"
+  },
+  "chatbot": {
+    "vulnerableMode": "漏洞模式已激活 - 尝试提取敏感信息或让其暴露系统提示。",
+    "normalMode": "正常模式 - 安全的安全法规助手。",
+    "errorResponse": "响应错误"
+  }
+}

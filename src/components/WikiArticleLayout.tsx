@@ -3,10 +3,10 @@
 import { useState, useEffect, ReactNode } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { 
-  ArrowLeft, 
-  BookOpen, 
-  Clock, 
+import {
+  ArrowLeft,
+  BookOpen,
+  Clock,
   Calendar,
   User,
   Share2,
@@ -14,7 +14,7 @@ import {
   ChevronRight,
   AlertTriangle
 } from 'lucide-react';
-import Navigation from '@/components/Navigation';
+// Navigation is provided by WikiLayout - do not import here to avoid duplication
 
 interface WikiArticleLayoutProps {
   category: string;
@@ -105,8 +105,6 @@ export default function WikiArticleLayout({
 
   return (
     <>
-      <Navigation />
-      
       {/* Reading Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-slate-200 dark:bg-slate-800 z-50">
         <div 

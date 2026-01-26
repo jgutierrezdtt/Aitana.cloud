@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "labs": "المختبرات",
+    "docs": "الوثائق",
+    "about": "حول",
+    "wiki": "ويكي",
+    "tools": "الأدوات",
+    "guides": "أدلة SSDLC",
+    "apiDocs": "وثائق API",
+    "getStarted": "ابدأ الآن",
+    "changeLanguage": "تغيير اللغة",
+    "languagesAvailable": "لغات متاحة"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "مختبرات الأمان",
+      "title": "أتقن ثغرات الويب",
+      "teaser": "تعلم تحديد واستغلال أهم ثغرات OWASP Top 10",
+      "cta": "استكشف المختبرات"
+    },
+    "slide2": {
+      "subtitle": "مختبر AI Red Team",
+      "title": "اخترق أنظمة الذكاء الاصطناعي",
+      "teaser": "أتقن تقنيات حقن البرومبت المتقدمة وكسر الحماية والهجمات العدائية",
+      "cta": "تدرب في مختبر AI"
+    },
+    "goToSlide": "انتقل إلى الشريحة"
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "اختبار الاختراق",
+      "description": "تدريب أمني هجومي مع سيناريوهات هجوم حقيقية"
+    },
+    "dataProtection": {
+      "title": "حماية البيانات",
+      "description": "تعلم التشفير وإدارة المفاتيح وممارسات التخزين الآمن"
+    },
+    "incidentResponse": {
+      "title": "الاستجابة للحوادث",
+      "description": "أتقن تقنيات اكتشاف التهديدات والتحليل والمعالجة"
+    }
+  },
+  "ctaBanner": {
+    "title": "هل أنت مستعد لاختبار مهاراتك الأمنية؟",
+    "button": "ابدأ التدريب"
+  },
+  "about": {
+    "badge": "منصة تدريب المؤسسات",
+    "title": "مختبرات أمان عملية للثغرات الحديثة",
+    "description": "أتقن ثغرات الأمان الحقيقية من خلال الممارسة العملية في بيئة مختبرنا المتحكم بها. من OWASP Top 10 إلى تحديات أمان AI المتقدمة، طور مهارات عملية مهمة في بيئات الإنتاج.",
+    "features": [
+      "14+ سيناريو ثغرات حقيقية",
+      "تغطية كاملة لـ OWASP Top 10",
+      "مختبرات AI Red Team وحقن البرومبت",
+      "بيئة تعلم تفاعلية",
+      "تتبع التقدم والإنجازات",
+      "تدريب أمني على مستوى المؤسسات"
+    ],
+    "button": "استكشف المختبرات",
+    "badgeText": "مختبرات الثغرات",
+    "explore": "استكشف"
+  },
+  "services": {
+    "badge": "ما نقدمه",
+    "title": "خدمات أمن سيبراني قوية لتهديدات اليوم",
+    "description": "احمِ عملك من المخاطر السيبرانية المتطورة باستمرار مع حلولنا الأمنية الشاملة. نقدم اكتشاف متقدم للتهديدات ومراقبة في الوقت الفعلي واستراتيجيات دفاع استباقية مصممة لبنيتك التحتية.",
+    "items": {
+      "sqli": {
+        "title": "حقن SQL",
+        "description": "التلاعب باستعلامات قاعدة البيانات من خلال مدخلات المستخدم غير المتحققة"
+      },
+      "xss": {
+        "title": "البرمجة عبر المواقع",
+        "description": "حقن كود من جانب العميل يمكّن من اختطاف الجلسة"
+      },
+      "brokenAuth": {
+        "title": "المصادقة المعطلة",
+        "description": "آليات مصادقة ضعيفة تسمح بالوصول غير المصرح به"
+      },
+      "dataExposure": {
+        "title": "كشف البيانات الحساسة",
+        "description": "حماية غير كافية للمعلومات الحساسة"
+      },
+      "accessControl": {
+        "title": "التحكم في الوصول المعطل",
+        "description": "تطبيق غير كافٍ لحدود صلاحيات المستخدم"
+      },
+      "misconfig": {
+        "title": "تكوين أمني خاطئ",
+        "description": "تكوينات افتراضية غير آمنة وتقوية غير مكتملة"
+      }
+    },
+    "exploreButton": "استكشف"
+  },
+  "stats": {
+    "scenarios": "سيناريوهات الثغرات",
+    "coverage": "تغطية OWASP",
+    "frameworks": "أطر الامتثال",
+    "cvssScore": "متوسط نقاط CVSS",
+    "vulnerabilityLabs": "مختبرات الثغرات",
+    "threatDetection": "اكتشاف التهديدات",
+    "securityDashboard": "لوحة معلومات الأمان",
+    "securityAlerts": "تنبيهات الأمان"
+  },
+  "aiLab": {
+    "badge": "مختبر جديد",
+    "title": "مختبر AI Red Team",
+    "description": "تعلم مهاجمة والدفاع عن أنظمة AI باستخدام {promptInjection} و{jailbreaking} وتقنيات {redTeaming} المتقدمة.",
+    "promptInjection": "حقن البرومبت",
+    "jailbreaking": "كسر الحماية",
+    "redTeaming": "الفريق الأحمر",
+    "stats": {
+      "levels": "المستويات",
+      "points": "النقاط",
+      "badges": "الشارات"
+    },
+    "button": "ابدأ التدريب",
+    "features": {
+      "jailbreak": {
+        "title": "كسر حماية الأمان",
+        "description": "تجاوز فلاتر المحتوى وقيود AI"
+      },
+      "extraction": {
+        "title": "استخراج البرومبت",
+        "description": "تقنيات لسرقة برومبت النظام والبيانات السرية"
+      },
+      "adversarial": {
+        "title": "الهجمات العدائية",
+        "description": "إرباك النماذج باستخدام الترميز والهجمات متعددة الخطوات"
+      }
+    }
+  },
+  "footer": {
+    "description": "منصة تدريب الأمن السيبراني للمحترفين وفرق الأمان.",
+    "labs": {
+      "title": "المختبرات",
+      "items": {
+        "sqli": "حقن SQL",
+        "xss": "البرمجة عبر المواقع",
+        "auth": "المصادقة المعطلة",
+        "sensitiveData": "البيانات الحساسة",
+        "aiLab": "مختبر AI Red Team"
+      }
+    },
+    "resources": {
+      "title": "الموارد",
+      "items": {
+        "docs": "الوثائق",
+        "guides": "الأدلة",
+        "blog": "المدونة",
+        "support": "الدعم"
+      }
+    },
+    "copyright": "Aitana.cloud - منصة تدريب الأمن السيبراني",
+    "terms": "الشروط",
+    "privacy": "الخصوصية",
+    "warning": "للأغراض التعليمية فقط",
+    "vulnerableByDesign": "هذا التطبيق ضعيف بالتصميم - للأغراض التعليمية فقط"
+  },
+  "wiki": {
+    "title": "ويكي الأمان",
+    "subtitle": "قاعدة المعرفة",
+    "description": "تعلم المفاهيم الأساسية لأمن الويب والثغرات الشائعة وتقنيات الاستغلال المستخدمة في مكافآت الثغرات واختبار الاختراق المحترف.",
+    "searchPlaceholder": "البحث في المقالات...",
+    "readArticle": "اقرأ المقال",
+    "readTime": "دقيقة للقراءة",
+    "stats": {
+      "articles": "المقالات",
+      "codeExamples": "أمثلة الكود",
+      "bugBountyTechniques": "تقنيات مكافآت الثغرات",
+      "translations": "ترجمات EN"
+    },
+    "categories": {
+      "fundamentos": "الأساسيات",
+      "vulnerabilidades": "الثغرات",
+      "defensas": "الدفاعات",
+      "herramientas": "الأدوات",
+      "bugBounty": "مكافآت الثغرات"
+    },
+    "levels": {
+      "estudiante": "طالب",
+      "juniorDeveloper": "مطور مبتدئ",
+      "pentester": "مختبر اختراق",
+      "securityExpert": "خبير أمني"
+    },
+    "cta": {
+      "title": "مستعد للتدرب؟",
+      "description": "طبق ما تعلمته في مختبراتنا التفاعلية مع ثغرات حقيقية.",
+      "goToLabs": "انتقل إلى المختبرات",
+      "viewApiDocs": "عرض وثائق API"
+    },
+    "filterByRole": "تصفية حسب الدور",
+    "allLevels": "جميع المستويات",
+    "contentUnderConstruction": "المحتوى قيد الإنشاء",
+    "articlePlanned": "هذا المقال مخطط له لكن المحتوى لم يُكتب بعد.",
+    "topic": "الموضوع",
+    "level": "المستوى",
+    "category": "الفئة",
+    "backToWiki": "العودة إلى الويكي",
+    "inThisArticle": "في هذا المقال",
+    "by": "بواسطة",
+    "lastUpdated": "آخر تحديث",
+    "availableIn": "متاح بـ",
+    "contentInSpanishOnly": "المحتوى متاح بالإسبانية فقط",
+    "workingOnTranslations": "نحن نعمل على الترجمات.",
+    "useBrowserTranslation": "استخدم ميزة الترجمة في متصفحك أو قم بزيارة",
+    "spanishVersion": "النسخة الإسبانية"
+  },
+  "labs": {
+    "title": "مختبرات الأمان",
+    "subtitle": "تدريب عملي",
+    "description": "تدرب مع ثغرات حقيقية في بيئة متحكم بها وآمنة.",
+    "difficulty": {
+      "easy": "سهل",
+      "medium": "متوسط",
+      "hard": "صعب",
+      "expert": "خبير"
+    },
+    "startLab": "ابدأ المختبر",
+    "viewDetails": "عرض التفاصيل",
+    "completed": "مكتمل",
+    "inProgress": "قيد التنفيذ",
+    "notStarted": "لم يبدأ",
+    "sqli": {
+      "title": "حقن SQL",
+      "description": "تعلم اكتشاف واستغلال ثغرات حقن SQL في تطبيقات الويب.",
+      "searchLabel": "مصطلح البحث:",
+      "searchPlaceholder": "أدخل بحثك...",
+      "searching": "جاري البحث...",
+      "search": "بحث",
+      "payloadExamples": "أمثلة الحمولة:",
+      "results": "النتائج:",
+      "criticalVulnerability": "ثغرة حرجة",
+      "vulnerabilityDescription": "هذا التطبيق ضعيف عمداً لحقن SQL. استخدمه للأغراض التعليمية فقط.",
+      "examples": {
+        "normal": "بحث عادي",
+        "basic": "حقن SQL أساسي",
+        "comment": "تعليق SQL",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "البرمجة عبر المواقع (XSS)",
+      "description": "أتقن تقنيات XSS المنعكس والمخزن والمبني على DOM.",
+      "payloadLabel": "حمولة XSS:",
+      "payloadPlaceholder": "أدخل حمولة XSS الخاصة بك...",
+      "testing": "جاري الاختبار...",
+      "test": "اختبار",
+      "reflectInput": "عكس المدخل في الاستجابة (XSS منعكس)",
+      "payloadExamples": "أمثلة حمولة XSS:",
+      "results": "النتائج:",
+      "examples": {
+        "alertBasic": "تنبيه أساسي",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "المصادقة المعطلة",
+      "description": "استغل الثغرات في آليات المصادقة وإدارة الجلسات.",
+      "email": "البريد الإلكتروني:",
+      "password": "كلمة المرور:",
+      "loggingIn": "جاري تسجيل الدخول...",
+      "login": "تسجيل الدخول",
+      "defaultCredentials": "بيانات الاعتماد الافتراضية (ثغرة):"
+    },
+    "commandInjection": {
+      "title": "حقن الأوامر",
+      "description": "تنفيذ أوامر نظام التشغيل من خلال مدخلات غير متحققة.",
+      "examples": {
+        "listFiles": "سرد الملفات",
+        "viewFiles": "عرض محتوى الملفات",
+        "systemInfo": "معلومات النظام"
+      }
+    },
+    "common": {
+      "apiEndpoint": "نقطة نهاية API:",
+      "testing": "جاري الاختبار...",
+      "test": "اختبار",
+      "execute": "تنفيذ",
+      "exploitationExamples": "أمثلة الاستغلال:",
+      "apiResponse": "استجابة API:",
+      "status": "الحالة:",
+      "severity": {
+        "critical": "حرج",
+        "high": "عالي",
+        "medium": "متوسط",
+        "low": "منخفض"
+      },
+      "viewFullApiDocs": "عرض وثائق API الكاملة",
+      "errorExecutingQuery": "خطأ في تنفيذ الاستعلام",
+      "errorExecutingTest": "خطأ في تنفيذ الاختبار"
+    }
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "all": "الكل",
+    "none": "لا شيء",
+    "yes": "نعم",
+    "no": "لا",
+    "or": "أو",
+    "and": "و",
+    "of": "من",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "الشهادات",
+    "title": "ماذا يقول مستخدمونا",
+    "description": "محترفو الأمان من جميع أنحاء العالم يثقون في منصتنا."
+  },
+  "chatbot": {
+    "vulnerableMode": "الوضع الضعيف نشط - حاول استخراج معلومات حساسة أو جعله يكشف برومبت نظامه.",
+    "normalMode": "الوضع العادي - مساعد آمن للوائح الأمان.",
+    "errorResponse": "خطأ في الاستجابة"
+  }
+}

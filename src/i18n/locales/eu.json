@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "Hasiera",
+    "labs": "Laborategiak",
+    "docs": "Dokumentazioa",
+    "about": "Honi buruz",
+    "wiki": "Wiki",
+    "tools": "Tresnak",
+    "guides": "SSDLC Gidak",
+    "apiDocs": "API Dokumentazioa",
+    "getStarted": "Hasi",
+    "changeLanguage": "Hizkuntza aldatu",
+    "languagesAvailable": "hizkuntza erabilgarri"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "Segurtasun Laborategiak",
+      "title": "Menperatu Web Ahultasunak",
+      "teaser": "Ikasi OWASP Top 10-ko ahultasun kritikoenak identifikatzen eta ustiatzen",
+      "cta": "Laborategiak Arakatu"
+    },
+    "slide2": {
+      "subtitle": "AI Red Team Lab",
+      "title": "Hackeatu Adimen Artifizialeko Sistemak",
+      "teaser": "Menperatu prompt injection, jailbreaking eta eraso aurkariko teknika aurreratuak",
+      "cta": "AI Lab-en Entrenatu"
+    },
+    "goToSlide": "Diapositibara joan"
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "Sartze Probak",
+      "description": "Segurtasun ofentsiboko entrenamendua mundu errealeko eraso eszenatokiekin"
+    },
+    "dataProtection": {
+      "title": "Datuen Babesa",
+      "description": "Ikasi enkriptazioa, gako kudeaketa eta biltegiratzeko praktika seguruak"
+    },
+    "incidentResponse": {
+      "title": "Gertakariei Erantzuna",
+      "description": "Menperatu mehatxuen detekzio, analisi eta konponketa teknikak"
+    }
+  },
+  "ctaBanner": {
+    "title": "Prest al zaude zure Segurtasun Gaitasunak Probatzeko?",
+    "button": "Entrenamendua Hasi"
+  },
+  "about": {
+    "badge": "Enpresa Entrenamendu Plataforma",
+    "title": "Ahultasun Modernoentzako Segurtasun Laborategi Praktikoak",
+    "description": "Menperatu mundu errealeko segurtasun ahultasunak gure laborategi ingurune kontrolatuan praktika praktikoaren bidez. OWASP Top 10-etik AI segurtasun erronka aurreratuetara, garatu garrantzia duten trebetasun praktikoak produkzio inguruneetan.",
+    "features": [
+      "14+ Mundu Errealeko Ahultasun Eszenatoki",
+      "OWASP Top 10 Estaldura Osoa",
+      "AI Red Team eta Prompt Injection Laborategiak",
+      "Ikaskuntza Ingurune Interaktiboa",
+      "Aurrerapen eta Lorpen Jarraipena",
+      "Enpresa Mailako Segurtasun Entrenamendua"
+    ],
+    "button": "Laborategiak Arakatu",
+    "badgeText": "Ahultasun Laborategiak",
+    "explore": "Arakatu"
+  },
+  "services": {
+    "badge": "Zer Eskaintzen Dugun",
+    "title": "Gaur Egungo Mehatxuetarako Zibersegurtasun Zerbitzu Sendoak",
+    "description": "Babestu zure negozioa etengabe eboluzionatzen diren ziber arriskuetatik gure muturretik muturrerako segurtasun soluzioekin. Mehatxu detekzio aurreratua, denbora errealeko monitorizazioa eta zure azpiegiturarako egokitutako defentsa estrategia proaktiboak eskaintzen ditugu.",
+    "items": {
+      "sqli": {
+        "title": "SQL Injection",
+        "description": "Datu-base kontsulten manipulazioa balidatu gabeko erabiltzaile sarreraren bidez"
+      },
+      "xss": {
+        "title": "Cross-Site Scripting",
+        "description": "Bezero aldeko kode injekzioa saio bahiketa ahalbidetuz"
+      },
+      "brokenAuth": {
+        "title": "Autentifikazio Hautsia",
+        "description": "Baimendu gabeko sarbidea ahalbidetzen duten autentifikazio mekanismo ahulak"
+      },
+      "dataExposure": {
+        "title": "Datu Sentikorraren Esposizioa",
+        "description": "Informazio sentikorren babes desegokia"
+      },
+      "accessControl": {
+        "title": "Sarbide Kontrol Hautsia",
+        "description": "Erabiltzaile baimen mugen aplikazio eskasa"
+      },
+      "misconfig": {
+        "title": "Segurtasun Konfigurazio Okerra",
+        "description": "Lehenetsitako konfigurazio ez seguruak eta gogortzea osatu gabe"
+      }
+    },
+    "exploreButton": "Arakatu"
+  },
+  "stats": {
+    "scenarios": "Ahultasun Eszenatokiak",
+    "coverage": "OWASP Estaldura",
+    "frameworks": "Betetze Esparruak",
+    "cvssScore": "Batez Besteko CVSS Puntuazioa",
+    "vulnerabilityLabs": "Ahultasun Laborategiak",
+    "threatDetection": "Mehatxu Detekzioa",
+    "securityDashboard": "Segurtasun Panela",
+    "securityAlerts": "Segurtasun Alertak"
+  },
+  "aiLab": {
+    "badge": "LABORATEGI BERRIA",
+    "title": "AI Red Team Lab",
+    "description": "Ikasi AI sistemak erasotzen eta defendatzen {promptInjection}, {jailbreaking} eta {redTeaming} teknika aurreratuekin.",
+    "promptInjection": "prompt injection",
+    "jailbreaking": "jailbreaking",
+    "redTeaming": "red teaming",
+    "stats": {
+      "levels": "Mailak",
+      "points": "Puntuak",
+      "badges": "Badges"
+    },
+    "button": "Entrenamendua Hasi",
+    "features": {
+      "jailbreak": {
+        "title": "Segurtasun Jailbreak",
+        "description": "Eduki iragazkien eta AI murrizketen bypass-a"
+      },
+      "extraction": {
+        "title": "Prompt Erauzketa",
+        "description": "System prompt-ak eta datu sekretuak lapurtzeko teknikak"
+      },
+      "adversarial": {
+        "title": "Eraso Aurkariak",
+        "description": "Nahastu modeloak encoding eta urrats anitzeko erasoekin"
+      }
+    }
+  },
+  "footer": {
+    "description": "Zibersegurtasun entrenamendu plataforma profesional eta segurtasun taldeentzat.",
+    "labs": {
+      "title": "Laborategiak",
+      "items": {
+        "sqli": "SQL Injection",
+        "xss": "Cross-Site Scripting",
+        "auth": "Autentifikazio Hautsia",
+        "sensitiveData": "Datu Sentikorrak",
+        "aiLab": "AI Red Team Lab"
+      }
+    },
+    "resources": {
+      "title": "Baliabideak",
+      "items": {
+        "docs": "Dokumentazioa",
+        "guides": "Gidak",
+        "blog": "Bloga",
+        "support": "Laguntza"
+      }
+    },
+    "copyright": "Aitana.cloud - Zibersegurtasun Entrenamendu Plataforma",
+    "terms": "Baldintzak",
+    "privacy": "Pribatutasuna",
+    "warning": "Heziketa Helburuetarako Bakarrik",
+    "vulnerableByDesign": "Aplikazio hau diseinuz ahula da - Heziketa helburuetarako bakarrik"
+  },
+  "wiki": {
+    "title": "Segurtasun Wiki",
+    "subtitle": "Ezagutza Basea",
+    "description": "Ikasi web segurtasunaren oinarrizko kontzeptuak, ahultasun arruntak eta bug bounty eta pentesting profesionalean erabilitako ustiapen teknikak.",
+    "searchPlaceholder": "Artikuluak bilatu...",
+    "readArticle": "Artikulua irakurri",
+    "readTime": "min irakurketa",
+    "stats": {
+      "articles": "Artikuluak",
+      "codeExamples": "Kode Adibideak",
+      "bugBountyTechniques": "Bug Bounty Teknikak",
+      "translations": "EN Itzulpenak"
+    },
+    "categories": {
+      "fundamentos": "Oinarriak",
+      "vulnerabilidades": "Ahultasunak",
+      "defensas": "Defentsak",
+      "herramientas": "Tresnak",
+      "bugBounty": "Bug Bounty"
+    },
+    "levels": {
+      "estudiante": "Ikaslea",
+      "juniorDeveloper": "Junior Garatzailea",
+      "pentester": "Pentester",
+      "securityExpert": "Segurtasun Aditu"
+    },
+    "cta": {
+      "title": "Prest praktikatzeko?",
+      "description": "Aplikatu ikasitakoa gure laborategi interaktiboetan benetako ahultasunekin.",
+      "goToLabs": "Laborategietara joan",
+      "viewApiDocs": "API Docs ikusi"
+    },
+    "filterByRole": "Rolez iragazi",
+    "allLevels": "Maila guztiak",
+    "contentUnderConstruction": "Edukia Eraikuntzan",
+    "articlePlanned": "Artikulu hau aurreikusita dago baina edukia oraindik ez da idatzi.",
+    "topic": "Gaia",
+    "level": "Maila",
+    "category": "Kategoria",
+    "backToWiki": "Wikira itzuli",
+    "inThisArticle": "Artikulu honetan",
+    "by": "Egilea",
+    "lastUpdated": "Azken eguneratzea",
+    "availableIn": "Eskuragarri",
+    "contentInSpanishOnly": "Edukia gaztelaniaz bakarrik eskuragarri",
+    "workingOnTranslations": "Itzulpenetan lanean gaude.",
+    "useBrowserTranslation": "Erabili zure nabigatzailearen itzulpen funtzioa edo bisitatu",
+    "spanishVersion": "gaztelaniazko bertsioa"
+  },
+  "labs": {
+    "title": "Segurtasun Laborategiak",
+    "subtitle": "Entrenamendu Praktikoa",
+    "description": "Praktikatu benetako ahultasunekin ingurune kontrolatu eta seguru batean.",
+    "difficulty": {
+      "easy": "Erraza",
+      "medium": "Ertaina",
+      "hard": "Zaila",
+      "expert": "Aditua"
+    },
+    "startLab": "Laborategia Hasi",
+    "viewDetails": "Xehetasunak Ikusi",
+    "completed": "Osatuta",
+    "inProgress": "Abian",
+    "notStarted": "Hasi Gabe",
+    "sqli": {
+      "title": "SQL Injection",
+      "description": "Ikasi web aplikazioetan SQL injection ahultasunak detektatzen eta ustiatzen.",
+      "searchLabel": "Bilaketa terminoa:",
+      "searchPlaceholder": "Sartu zure bilaketa...",
+      "searching": "Bilatzen...",
+      "search": "Bilatu",
+      "payloadExamples": "Payload adibideak:",
+      "results": "Emaitzak:",
+      "criticalVulnerability": "Ahultasun Kritikoa",
+      "vulnerabilityDescription": "Aplikazio hau nahita SQL Injection-erako ahula da. Heziketa helburuetarako bakarrik erabili.",
+      "examples": {
+        "normal": "Bilaketa arrunta",
+        "basic": "Oinarrizko SQL Injection",
+        "comment": "SQL Iruzkina",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "Cross-Site Scripting (XSS)",
+      "description": "Menperatu reflected, stored eta DOM-based XSS teknikak.",
+      "payloadLabel": "XSS Payload:",
+      "payloadPlaceholder": "Sartu zure XSS payload...",
+      "testing": "Probatzen...",
+      "test": "Probatu",
+      "reflectInput": "Sarrera erantzunean islatu (Reflected XSS)",
+      "payloadExamples": "XSS payload adibideak:",
+      "results": "Emaitzak:",
+      "examples": {
+        "alertBasic": "Oinarrizko Alert",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "Autentifikazio Hautsia",
+      "description": "Ustiatu autentifikazio mekanismoetan eta saio kudeaketan dauden ahultasunak.",
+      "email": "Email:",
+      "password": "Pasahitza:",
+      "loggingIn": "Saioa hasten...",
+      "login": "Saioa hasi",
+      "defaultCredentials": "Lehenetsitako kredentzialak (ahultasuna):"
+    },
+    "commandInjection": {
+      "title": "Komando Injekzioa",
+      "description": "Sistema eragilearen komandoen exekuzioa balidatu gabeko sarreren bidez.",
+      "examples": {
+        "listFiles": "Fitxategiak zerrendatu",
+        "viewFiles": "Fitxategi edukia ikusi",
+        "systemInfo": "Sistema informazioa"
+      }
+    },
+    "common": {
+      "apiEndpoint": "API Endpoint:",
+      "testing": "Probatzen...",
+      "test": "Probatu",
+      "execute": "Exekutatu",
+      "exploitationExamples": "Ustiapen adibideak:",
+      "apiResponse": "API Erantzuna:",
+      "status": "Egoera:",
+      "severity": {
+        "critical": "Kritikoa",
+        "high": "Altua",
+        "medium": "Ertaina",
+        "low": "Baxua"
+      },
+      "viewFullApiDocs": "API Dokumentazio Osoa Ikusi",
+      "errorExecutingQuery": "Errorea kontsulta exekutatzean",
+      "errorExecutingTest": "Errorea proba exekutatzean"
+    }
+  },
+  "common": {
+    "loading": "Kargatzen...",
+    "error": "Errorea",
+    "success": "Arrakasta",
+    "cancel": "Utzi",
+    "confirm": "Berretsi",
+    "save": "Gorde",
+    "delete": "Ezabatu",
+    "edit": "Editatu",
+    "view": "Ikusi",
+    "close": "Itxi",
+    "back": "Atzera",
+    "next": "Hurrengoa",
+    "previous": "Aurrekoa",
+    "search": "Bilatu",
+    "filter": "Iragazi",
+    "sort": "Ordenatu",
+    "all": "Guztiak",
+    "none": "Bat ere ez",
+    "yes": "Bai",
+    "no": "Ez",
+    "or": "edo",
+    "and": "eta",
+    "of": "-tik",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "Testigantzak",
+    "title": "Gure Erabiltzaileek Esaten Dutena",
+    "description": "Mundu osoko segurtasun profesionalek gure plataforman fidatzen dira."
+  },
+  "chatbot": {
+    "vulnerableMode": "Modu Ahula Aktibo - Saiatu informazio sentikorra erauzten edo sistema prompt-a ezagutarazten.",
+    "normalMode": "Modu Normala - Segurtasun araudientzako laguntzaile segurua.",
+    "errorResponse": "Errorea erantzunean"
+  }
+}

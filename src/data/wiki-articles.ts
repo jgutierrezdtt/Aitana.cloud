@@ -684,6 +684,332 @@ export const bugBountyArticles: WikiArticle[] = [
 ];
 
 // ============================================================================
+// CEH - CERTIFIED ETHICAL HACKER (20 artículos - Nivel: Pentester)
+// Basado en el programa de certificación CEH v12
+// ============================================================================
+
+export const cehArticles: WikiArticle[] = [
+  // --- Módulo 1: Introduction to Ethical Hacking ---
+  {
+    id: 'ceh-ethical-hacking-intro',
+    slug: 'ceh-ethical-hacking-intro',
+    category: 'fundamentos',
+    title: 'Introducción al Ethical Hacking (CEH)',
+    description: 'Conceptos fundamentales de ethical hacking, terminología, metodologías y marco legal según el programa CEH.',
+    level: 'Estudiante',
+    readTime: '18 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'blue',
+    tags: ['CEH', 'Ethical Hacking', 'Metodología', 'Fundamentos'],
+    relatedArticles: ['owasp-top-10', 'ceh-footprinting']
+  },
+
+  // --- Módulo 2: Footprinting and Reconnaissance ---
+  {
+    id: 'ceh-footprinting',
+    slug: 'ceh-footprinting',
+    category: 'herramientas',
+    title: 'Footprinting y Reconocimiento (CEH)',
+    description: 'Técnicas OSINT, whois, DNS enumeration, y recopilación de información pasiva y activa.',
+    level: 'Pentester',
+    readTime: '25 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'purple',
+    cvssScore: 5.3,
+    tags: ['CEH', 'OSINT', 'Reconocimiento', 'DNS', 'Whois'],
+    relatedArticles: ['ceh-scanning-networks', 'ct-log-monitoring']
+  },
+
+  // --- Módulo 3: Scanning Networks ---
+  {
+    id: 'ceh-scanning-networks',
+    slug: 'ceh-scanning-networks',
+    category: 'herramientas',
+    title: 'Escaneo de Redes (CEH)',
+    description: 'Uso de Nmap, descubrimiento de hosts, escaneo de puertos, detección de OS y evasión de firewalls.',
+    level: 'Pentester',
+    readTime: '28 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'purple',
+    cvssScore: 6.1,
+    tags: ['CEH', 'Nmap', 'Port Scanning', 'Network Discovery', 'OS Fingerprinting'],
+    relatedArticles: ['ceh-footprinting', 'ceh-enumeration']
+  },
+
+  // --- Módulo 4: Enumeration ---
+  {
+    id: 'ceh-enumeration',
+    slug: 'ceh-enumeration',
+    category: 'herramientas',
+    title: 'Enumeración de Servicios (CEH)',
+    description: 'Enumeración de NetBIOS, SNMP, LDAP, NTP, SMTP y extracción de usuarios, grupos y recursos compartidos.',
+    level: 'Pentester',
+    readTime: '22 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'purple',
+    cvssScore: 6.5,
+    tags: ['CEH', 'Enumeración', 'NetBIOS', 'SNMP', 'LDAP', 'Active Directory'],
+    relatedArticles: ['ceh-scanning-networks', 'ceh-system-hacking']
+  },
+
+  // --- Módulo 5: Vulnerability Analysis ---
+  {
+    id: 'ceh-vulnerability-analysis',
+    slug: 'ceh-vulnerability-analysis',
+    category: 'herramientas',
+    title: 'Análisis de Vulnerabilidades (CEH)',
+    description: 'Uso de Nessus, OpenVAS y Qualys para identificar vulnerabilidades. CVE, CVSS y priorización de riesgos.',
+    level: 'Pentester',
+    readTime: '24 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'purple',
+    cvssScore: 7.0,
+    tags: ['CEH', 'Vulnerability Scanning', 'Nessus', 'CVE', 'CVSS'],
+    relatedArticles: ['ceh-enumeration', 'owasp-top-10']
+  },
+
+  // --- Módulo 6: System Hacking ---
+  {
+    id: 'ceh-system-hacking',
+    slug: 'ceh-system-hacking',
+    category: 'bug-bounty',
+    title: 'System Hacking (CEH)',
+    description: 'Técnicas de escalada de privilegios, cracking de contraseñas, keyloggers y ocultación de rastros.',
+    level: 'Pentester',
+    readTime: '30 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 9.0,
+    tags: ['CEH', 'Privilege Escalation', 'Password Cracking', 'Persistence', 'Post-Exploitation'],
+    relatedArticles: ['ceh-enumeration', 'ceh-malware']
+  },
+
+  // --- Módulo 7: Malware Threats ---
+  {
+    id: 'ceh-malware',
+    slug: 'ceh-malware',
+    category: 'vulnerabilidades',
+    title: 'Amenazas de Malware (CEH)',
+    description: 'Tipos de malware: troyanos, virus, gusanos, ransomware. Análisis estático y dinámico de malware.',
+    level: 'Pentester',
+    readTime: '26 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'red',
+    cvssScore: 8.5,
+    tags: ['CEH', 'Malware', 'Trojans', 'Ransomware', 'Análisis de Malware'],
+    relatedArticles: ['ceh-system-hacking', 'ceh-evading-ids']
+  },
+
+  // --- Módulo 8: Sniffing ---
+  {
+    id: 'ceh-sniffing',
+    slug: 'ceh-sniffing',
+    category: 'vulnerabilidades',
+    title: 'Sniffing de Red (CEH)',
+    description: 'Captura de tráfico con Wireshark, ataques ARP poisoning, MAC flooding y contramedidas.',
+    level: 'Pentester',
+    readTime: '20 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'red',
+    cvssScore: 7.4,
+    tags: ['CEH', 'Sniffing', 'Wireshark', 'ARP Poisoning', 'MitM'],
+    relatedArticles: ['mitm-non-http', 'ceh-session-hijacking']
+  },
+
+  // --- Módulo 9: Social Engineering ---
+  {
+    id: 'ceh-social-engineering',
+    slug: 'ceh-social-engineering',
+    category: 'vulnerabilidades',
+    title: 'Ingeniería Social (CEH)',
+    description: 'Phishing, spear phishing, vishing, pretexting y técnicas de manipulación psicológica.',
+    level: 'Pentester',
+    readTime: '22 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'red',
+    cvssScore: 8.2,
+    tags: ['CEH', 'Social Engineering', 'Phishing', 'Vishing', 'Human Hacking'],
+    relatedArticles: ['homograph-attacks', 'ceh-dos']
+  },
+
+  // --- Módulo 10: Denial-of-Service ---
+  {
+    id: 'ceh-dos',
+    slug: 'ceh-dos',
+    category: 'vulnerabilidades',
+    title: 'Ataques DoS y DDoS (CEH)',
+    description: 'Tipos de ataques de denegación de servicio, botnets, amplificación y técnicas de mitigación.',
+    level: 'Pentester',
+    readTime: '18 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'red',
+    cvssScore: 7.5,
+    tags: ['CEH', 'DoS', 'DDoS', 'Botnet', 'Amplification'],
+    relatedArticles: ['ceh-social-engineering', 'ceh-session-hijacking']
+  },
+
+  // --- Módulo 11: Session Hijacking ---
+  {
+    id: 'ceh-session-hijacking',
+    slug: 'ceh-session-hijacking',
+    category: 'bug-bounty',
+    title: 'Session Hijacking (CEH)',
+    description: 'Robo de sesiones TCP, predicción de tokens, hijacking de cookies y contramedidas.',
+    level: 'Pentester',
+    readTime: '20 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 8.8,
+    tags: ['CEH', 'Session Hijacking', 'Token Prediction', 'Cookie Theft'],
+    relatedArticles: ['jwt-attacks', 'cookies-sesiones']
+  },
+
+  // --- Módulo 12: Evading IDS, Firewalls, and Honeypots ---
+  {
+    id: 'ceh-evading-ids',
+    slug: 'ceh-evading-ids',
+    category: 'bug-bounty',
+    title: 'Evasión de IDS y Firewalls (CEH)',
+    description: 'Técnicas para evadir sistemas de detección de intrusiones, firewalls y honeypots.',
+    level: 'Pentester',
+    readTime: '24 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 7.8,
+    tags: ['CEH', 'IDS Evasion', 'Firewall Bypass', 'Honeypot', 'Obfuscation'],
+    relatedArticles: ['ceh-malware', 'utf8-smuggling']
+  },
+
+  // --- Módulo 13: Hacking Web Servers ---
+  {
+    id: 'ceh-web-servers',
+    slug: 'ceh-web-servers',
+    category: 'bug-bounty',
+    title: 'Hacking de Servidores Web (CEH)',
+    description: 'Ataques a Apache, Nginx, IIS. Explotación de misconfigurations, directory traversal y defacement.',
+    level: 'Pentester',
+    readTime: '26 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 8.6,
+    tags: ['CEH', 'Web Server', 'Apache', 'Nginx', 'IIS', 'Directory Traversal'],
+    relatedArticles: ['ceh-web-apps', 'ssrf-pdf-renderers']
+  },
+
+  // --- Módulo 14: Hacking Web Applications ---
+  {
+    id: 'ceh-web-apps',
+    slug: 'ceh-web-apps',
+    category: 'bug-bounty',
+    title: 'Hacking de Aplicaciones Web (CEH)',
+    description: 'OWASP Top 10 en profundidad: XSS, CSRF, broken authentication, file upload vulnerabilities.',
+    level: 'Pentester',
+    readTime: '30 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 9.1,
+    tags: ['CEH', 'Web App Security', 'OWASP', 'XSS', 'CSRF', 'File Upload'],
+    relatedArticles: ['xss', 'csrf', 'owasp-top-10']
+  },
+
+  // --- Módulo 15: SQL Injection (CEH Deep Dive) ---
+  {
+    id: 'ceh-sql-injection',
+    slug: 'ceh-sql-injection',
+    category: 'bug-bounty',
+    title: 'SQL Injection Avanzada (CEH)',
+    description: 'Técnicas avanzadas de SQLi: blind injection, out-of-band, second-order injection y WAF bypass.',
+    level: 'Pentester',
+    readTime: '28 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 9.8,
+    tags: ['CEH', 'SQL Injection', 'Blind SQLi', 'WAF Bypass', 'Second-Order'],
+    relatedArticles: ['sql-injection', 'sql-injection-avanzada']
+  },
+
+  // --- Módulo 16: Hacking Wireless Networks ---
+  {
+    id: 'ceh-wireless',
+    slug: 'ceh-wireless',
+    category: 'bug-bounty',
+    title: 'Hacking de Redes Wireless (CEH)',
+    description: 'Ataques a WEP/WPA/WPA2/WPA3, evil twin, deauthentication y cracking con Aircrack-ng.',
+    level: 'Pentester',
+    readTime: '25 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 8.4,
+    tags: ['CEH', 'Wireless', 'WiFi', 'WPA2', 'Aircrack-ng', 'Evil Twin'],
+    relatedArticles: ['ceh-mobile', 'ssl-pinning-bypass']
+  },
+
+  // --- Módulo 17: Hacking Mobile Platforms ---
+  {
+    id: 'ceh-mobile',
+    slug: 'ceh-mobile',
+    category: 'bug-bounty',
+    title: 'Hacking de Plataformas Móviles (CEH)',
+    description: 'Vulnerabilidades en Android e iOS, rooting/jailbreaking, análisis de APK/IPA y OWASP Mobile Top 10.',
+    level: 'Pentester',
+    readTime: '28 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 8.7,
+    tags: ['CEH', 'Mobile Security', 'Android', 'iOS', 'APK Analysis', 'OWASP Mobile'],
+    relatedArticles: ['ssl-pinning-bypass', 'broken-integrity-checks']
+  },
+
+  // --- Módulo 18: IoT and OT Hacking ---
+  {
+    id: 'ceh-iot-ot',
+    slug: 'ceh-iot-ot',
+    category: 'bug-bounty',
+    title: 'Hacking de IoT y OT (CEH)',
+    description: 'Vulnerabilidades en dispositivos IoT, protocolos industriales SCADA/ICS y superficie de ataque.',
+    level: 'Security Expert',
+    readTime: '26 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 9.2,
+    tags: ['CEH', 'IoT', 'OT', 'SCADA', 'ICS', 'Industrial'],
+    relatedArticles: ['ceh-mobile', 'ceh-cloud']
+  },
+
+  // --- Módulo 19: Cloud Computing ---
+  {
+    id: 'ceh-cloud',
+    slug: 'ceh-cloud',
+    category: 'bug-bounty',
+    title: 'Cloud Security (CEH)',
+    description: 'Ataques a AWS, Azure, GCP. Misconfiguraciones de S3, IAM bypass y container escape.',
+    level: 'Pentester',
+    readTime: '30 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'orange',
+    cvssScore: 9.0,
+    tags: ['CEH', 'Cloud', 'AWS', 'Azure', 'GCP', 'Container', 'S3 Misconfiguration'],
+    relatedArticles: ['cloud-metadata-ssrf', 'firebase-misconfiguration']
+  },
+
+  // --- Módulo 20: Cryptography ---
+  {
+    id: 'ceh-cryptography',
+    slug: 'ceh-cryptography',
+    category: 'fundamentos',
+    title: 'Criptografía para Pentesters (CEH)',
+    description: 'Fundamentos criptográficos, PKI, hashing, cifrado simétrico/asimétrico y ataques criptográficos.',
+    level: 'Pentester',
+    readTime: '24 minutos',
+    lastUpdated: 'Enero 2026',
+    categoryColor: 'blue',
+    cvssScore: 7.5,
+    tags: ['CEH', 'Cryptography', 'PKI', 'Hashing', 'Encryption'],
+    relatedArticles: ['https-ssl-tls', 'weak-cryptography']
+  },
+];
+
+// ============================================================================
 // DEFENSAS (Nivel: Junior Developer)
 // ============================================================================
 
@@ -747,6 +1073,7 @@ export const allArticles: WikiArticle[] = [
   ...fundamentosArticles,
   ...vulnerabilidadesArticles,
   ...bugBountyArticles,
+  ...cehArticles,
   ...defensasArticles,
   ...herramientasArticles,
 ];
@@ -783,6 +1110,7 @@ export const wikiStats = {
     fundamentos: fundamentosArticles.length,
     vulnerabilidades: vulnerabilidadesArticles.length,
     bugBounty: bugBountyArticles.length,
+    ceh: cehArticles.length,
     defensas: defensasArticles.length,
     herramientas: herramientasArticles.length,
   },

@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "홈",
+    "labs": "실습실",
+    "docs": "문서",
+    "about": "소개",
+    "wiki": "위키",
+    "tools": "도구",
+    "guides": "SSDLC 가이드",
+    "apiDocs": "API 문서",
+    "getStarted": "시작하기",
+    "changeLanguage": "언어 변경",
+    "languagesAvailable": "개 언어 사용 가능"
+  },
+  "hero": {
+    "slide1": {
+      "subtitle": "보안 실습실",
+      "title": "웹 취약점 마스터",
+      "teaser": "OWASP Top 10의 가장 중요한 취약점을 식별하고 악용하는 방법을 배우세요",
+      "cta": "실습실 탐색"
+    },
+    "slide2": {
+      "subtitle": "AI 레드팀 실습실",
+      "title": "인공지능 시스템 해킹",
+      "teaser": "고급 프롬프트 인젝션, 탈옥 및 적대적 공격 기술을 마스터하세요",
+      "cta": "AI 실습실에서 훈련"
+    },
+    "goToSlide": "슬라이드로 이동"
+  },
+  "heroFeatures": {
+    "penetrationTesting": {
+      "title": "침투 테스트",
+      "description": "실제 공격 시나리오로 공격적 보안 훈련"
+    },
+    "dataProtection": {
+      "title": "데이터 보호",
+      "description": "암호화, 키 관리 및 안전한 저장 관행 학습"
+    },
+    "incidentResponse": {
+      "title": "사고 대응",
+      "description": "위협 탐지, 분석 및 복구 기술 마스터"
+    }
+  },
+  "ctaBanner": {
+    "title": "보안 기술을 테스트할 준비가 되셨나요?",
+    "button": "훈련 시작"
+  },
+  "about": {
+    "badge": "기업 교육 플랫폼",
+    "title": "현대 취약점을 위한 실습 보안 실습실",
+    "description": "통제된 실습실 환경에서의 실습을 통해 실제 보안 취약점을 마스터하세요. OWASP Top 10부터 고급 AI 보안 챌린지까지, 프로덕션 환경에서 중요한 실용적인 기술을 개발합니다.",
+    "features": [
+      "14개 이상의 실제 취약점 시나리오",
+      "완전한 OWASP Top 10 커버리지",
+      "AI 레드팀 및 프롬프트 인젝션 실습실",
+      "대화형 학습 환경",
+      "진행 상황 및 성과 추적",
+      "엔터프라이즈 수준의 보안 교육"
+    ],
+    "button": "실습실 탐색",
+    "badgeText": "취약점 실습실",
+    "explore": "탐색"
+  },
+  "services": {
+    "badge": "제공 서비스",
+    "title": "오늘날의 위협에 대한 강력한 사이버보안 서비스",
+    "description": "엔드투엔드 보안 솔루션으로 끊임없이 진화하는 사이버 위험으로부터 비즈니스를 보호하세요. 고급 위협 탐지, 실시간 모니터링 및 인프라에 맞춤화된 선제적 방어 전략을 제공합니다.",
+    "items": {
+      "sqli": {
+        "title": "SQL 인젝션",
+        "description": "검증되지 않은 사용자 입력을 통한 데이터베이스 쿼리 조작"
+      },
+      "xss": {
+        "title": "크로스사이트 스크립팅",
+        "description": "세션 하이재킹을 가능하게 하는 클라이언트 측 코드 주입"
+      },
+      "brokenAuth": {
+        "title": "인증 취약점",
+        "description": "무단 액세스를 허용하는 약한 인증 메커니즘"
+      },
+      "dataExposure": {
+        "title": "민감한 데이터 노출",
+        "description": "민감한 정보의 부적절한 보호"
+      },
+      "accessControl": {
+        "title": "액세스 제어 취약점",
+        "description": "사용자 권한 경계의 불충분한 적용"
+      },
+      "misconfig": {
+        "title": "보안 구성 오류",
+        "description": "안전하지 않은 기본 구성 및 불완전한 강화"
+      }
+    },
+    "exploreButton": "탐색"
+  },
+  "stats": {
+    "scenarios": "취약점 시나리오",
+    "coverage": "OWASP 커버리지",
+    "frameworks": "규정 준수 프레임워크",
+    "cvssScore": "평균 CVSS 점수",
+    "vulnerabilityLabs": "취약점 실습실",
+    "threatDetection": "위협 탐지",
+    "securityDashboard": "보안 대시보드",
+    "securityAlerts": "보안 경고"
+  },
+  "aiLab": {
+    "badge": "새 실습실",
+    "title": "AI 레드팀 실습실",
+    "description": "{promptInjection}, {jailbreaking} 및 고급 {redTeaming} 기술로 AI 시스템을 공격하고 방어하는 방법을 배우세요.",
+    "promptInjection": "프롬프트 인젝션",
+    "jailbreaking": "탈옥",
+    "redTeaming": "레드 티밍",
+    "stats": {
+      "levels": "레벨",
+      "points": "포인트",
+      "badges": "배지"
+    },
+    "button": "훈련 시작",
+    "features": {
+      "jailbreak": {
+        "title": "보안 탈옥",
+        "description": "콘텐츠 필터 및 AI 제한 우회"
+      },
+      "extraction": {
+        "title": "프롬프트 추출",
+        "description": "시스템 프롬프트 및 비밀 데이터를 훔치는 기술"
+      },
+      "adversarial": {
+        "title": "적대적 공격",
+        "description": "인코딩 및 다단계 공격으로 모델 혼란"
+      }
+    }
+  },
+  "footer": {
+    "description": "전문가 및 보안 팀을 위한 사이버보안 교육 플랫폼.",
+    "labs": {
+      "title": "실습실",
+      "items": {
+        "sqli": "SQL 인젝션",
+        "xss": "크로스사이트 스크립팅",
+        "auth": "인증 취약점",
+        "sensitiveData": "민감한 데이터",
+        "aiLab": "AI 레드팀 실습실"
+      }
+    },
+    "resources": {
+      "title": "리소스",
+      "items": {
+        "docs": "문서",
+        "guides": "가이드",
+        "blog": "블로그",
+        "support": "지원"
+      }
+    },
+    "copyright": "Aitana.cloud - 사이버보안 교육 플랫폼",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침",
+    "warning": "교육 목적으로만 사용",
+    "vulnerableByDesign": "이 애플리케이션은 의도적으로 취약합니다 - 교육 목적으로만 사용"
+  },
+  "wiki": {
+    "title": "보안 위키",
+    "subtitle": "지식 베이스",
+    "description": "버그 바운티 및 전문 침투 테스트에서 사용되는 웹 보안의 기본 개념, 일반적인 취약점 및 악용 기술을 배웁니다.",
+    "searchPlaceholder": "기사 검색...",
+    "readArticle": "기사 읽기",
+    "readTime": "분 소요",
+    "stats": {
+      "articles": "기사",
+      "codeExamples": "코드 예제",
+      "bugBountyTechniques": "버그 바운티 기술",
+      "translations": "EN 번역"
+    },
+    "categories": {
+      "fundamentos": "기초",
+      "vulnerabilidades": "취약점",
+      "defensas": "방어",
+      "herramientas": "도구",
+      "bugBounty": "버그 바운티"
+    },
+    "levels": {
+      "estudiante": "학생",
+      "juniorDeveloper": "주니어 개발자",
+      "pentester": "펜테스터",
+      "securityExpert": "보안 전문가"
+    },
+    "cta": {
+      "title": "연습할 준비가 되셨나요?",
+      "description": "실제 취약점이 있는 대화형 실습실에서 배운 내용을 적용하세요.",
+      "goToLabs": "실습실로 이동",
+      "viewApiDocs": "API 문서 보기"
+    },
+    "filterByRole": "역할별 필터",
+    "allLevels": "모든 레벨",
+    "contentUnderConstruction": "콘텐츠 제작 중",
+    "articlePlanned": "이 기사는 계획되어 있지만 콘텐츠가 아직 작성되지 않았습니다.",
+    "topic": "주제",
+    "level": "레벨",
+    "category": "카테고리",
+    "backToWiki": "위키로 돌아가기",
+    "inThisArticle": "이 기사에서",
+    "by": "작성자",
+    "lastUpdated": "마지막 업데이트",
+    "availableIn": "사용 가능 언어",
+    "contentInSpanishOnly": "콘텐츠는 스페인어로만 제공됩니다",
+    "workingOnTranslations": "번역 작업 중입니다.",
+    "useBrowserTranslation": "브라우저의 번역 기능을 사용하거나",
+    "spanishVersion": "스페인어 버전"
+  },
+  "labs": {
+    "title": "보안 실습실",
+    "subtitle": "실습 교육",
+    "description": "통제되고 안전한 환경에서 실제 취약점을 연습합니다.",
+    "difficulty": {
+      "easy": "쉬움",
+      "medium": "중간",
+      "hard": "어려움",
+      "expert": "전문가"
+    },
+    "startLab": "실습 시작",
+    "viewDetails": "상세 보기",
+    "completed": "완료됨",
+    "inProgress": "진행 중",
+    "notStarted": "시작 안 함",
+    "sqli": {
+      "title": "SQL 인젝션",
+      "description": "웹 애플리케이션에서 SQL 인젝션 취약점을 탐지하고 악용하는 방법을 배웁니다.",
+      "searchLabel": "검색어:",
+      "searchPlaceholder": "검색어 입력...",
+      "searching": "검색 중...",
+      "search": "검색",
+      "payloadExamples": "페이로드 예제:",
+      "results": "결과:",
+      "criticalVulnerability": "심각한 취약점",
+      "vulnerabilityDescription": "이 애플리케이션은 의도적으로 SQL 인젝션에 취약합니다. 교육 목적으로만 사용하세요.",
+      "examples": {
+        "normal": "일반 검색",
+        "basic": "기본 SQL 인젝션",
+        "comment": "SQL 주석",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "크로스사이트 스크립팅 (XSS)",
+      "description": "반사형, 저장형 및 DOM 기반 XSS 기술을 마스터합니다.",
+      "payloadLabel": "XSS 페이로드:",
+      "payloadPlaceholder": "XSS 페이로드 입력...",
+      "testing": "테스트 중...",
+      "test": "테스트",
+      "reflectInput": "응답에 입력 반영 (반사형 XSS)",
+      "payloadExamples": "XSS 페이로드 예제:",
+      "results": "결과:",
+      "examples": {
+        "alertBasic": "기본 Alert",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "인증 취약점",
+      "description": "인증 메커니즘 및 세션 관리의 취약점을 악용합니다.",
+      "email": "이메일:",
+      "password": "비밀번호:",
+      "loggingIn": "로그인 중...",
+      "login": "로그인",
+      "defaultCredentials": "기본 자격 증명 (취약점):"
+    },
+    "commandInjection": {
+      "title": "명령 인젝션",
+      "description": "검증되지 않은 입력을 통한 운영 체제 명령 실행.",
+      "examples": {
+        "listFiles": "파일 목록",
+        "viewFiles": "파일 내용 보기",
+        "systemInfo": "시스템 정보"
+      }
+    },
+    "common": {
+      "apiEndpoint": "API 엔드포인트:",
+      "testing": "테스트 중...",
+      "test": "테스트",
+      "execute": "실행",
+      "exploitationExamples": "악용 예제:",
+      "apiResponse": "API 응답:",
+      "status": "상태:",
+      "severity": {
+        "critical": "심각",
+        "high": "높음",
+        "medium": "중간",
+        "low": "낮음"
+      },
+      "viewFullApiDocs": "전체 API 문서 보기",
+      "errorExecutingQuery": "쿼리 실행 오류",
+      "errorExecutingTest": "테스트 실행 오류"
+    }
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류",
+    "success": "성공",
+    "cancel": "취소",
+    "confirm": "확인",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "view": "보기",
+    "close": "닫기",
+    "back": "뒤로",
+    "next": "다음",
+    "previous": "이전",
+    "search": "검색",
+    "filter": "필터",
+    "sort": "정렬",
+    "all": "모두",
+    "none": "없음",
+    "yes": "예",
+    "no": "아니오",
+    "or": "또는",
+    "and": "그리고",
+    "of": "의",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "후기",
+    "title": "사용자들의 평가",
+    "description": "전 세계 보안 전문가들이 우리 플랫폼을 신뢰합니다."
+  },
+  "chatbot": {
+    "vulnerableMode": "취약 모드 활성화 - 민감한 정보를 추출하거나 시스템 프롬프트를 공개하도록 해보세요.",
+    "normalMode": "일반 모드 - 안전한 보안 규정 어시스턴트.",
+    "errorResponse": "응답 오류"
+  }
+}

@@ -3,7 +3,14 @@
     "home": "Home",
     "labs": "Labs",
     "docs": "Documentation",
-    "about": "About"
+    "about": "About",
+    "wiki": "Wiki",
+    "tools": "Tools",
+    "guides": "SSDLC Guides",
+    "apiDocs": "API Docs",
+    "getStarted": "Get Started",
+    "changeLanguage": "Change language",
+    "languagesAvailable": "languages available"
   },
   "hero": {
     "slide1": {
@@ -17,7 +24,8 @@
       "title": "Hack Artificial Intelligence Systems",
       "teaser": "Master advanced prompt injection, jailbreaking and adversarial attack techniques",
       "cta": "Train in AI Lab"
-    }
+    },
+    "goToSlide": "Go to slide"
   },
   "heroFeatures": {
     "penetrationTesting": {
@@ -39,23 +47,24 @@
   },
   "about": {
     "badge": "Enterprise Training Platform",
-    "title": "Hands-On Security Labs for Modern Vulnerabilities",
+    "title": "Hands-on Security Labs for Modern Vulnerabilities",
     "description": "Master real-world security vulnerabilities through hands-on practice in our controlled lab environment. From OWASP Top 10 to advanced AI security challenges, develop practical skills that matter in production environments.",
     "features": [
       "14+ Real-World Vulnerability Scenarios",
       "Complete OWASP Top 10 Coverage",
       "AI Red Team and Prompt Injection Labs",
       "Interactive Learning Environment",
-      "Progress Tracking and Achievements",
-      "Enterprise-Grade Security Training"
+      "Progress and Achievement Tracking",
+      "Enterprise-Level Security Training"
     ],
     "button": "Explore Labs",
-    "badgeText": "Vulnerability Labs"
+    "badgeText": "Vulnerability Labs",
+    "explore": "Explore"
   },
   "services": {
     "badge": "What We Provide",
     "title": "Robust Cybersecurity Services for Today's Threats",
-    "description": "Protect your business from evolving cyber risks with our end-to-end security solutions. We offer advanced threat detection, real-time monitoring, and proactive defense strategies tailored to your infrastructure.",
+    "description": "Protect your business from ever-evolving cyber risks with our end-to-end security solutions. We offer advanced threat detection, real-time monitoring and proactive defense strategies tailored to your infrastructure.",
     "items": {
       "sqli": {
         "title": "SQL Injection",
@@ -88,7 +97,11 @@
     "scenarios": "Vulnerability Scenarios",
     "coverage": "OWASP Coverage",
     "frameworks": "Compliance Frameworks",
-    "cvssScore": "Average CVSS Score"
+    "cvssScore": "Average CVSS Score",
+    "vulnerabilityLabs": "Vulnerability Labs",
+    "threatDetection": "Threat Detection",
+    "securityDashboard": "Security Dashboard",
+    "securityAlerts": "Security Alerts"
   },
   "aiLab": {
     "badge": "NEW LAB",
@@ -142,6 +155,179 @@
     "copyright": "Aitana.cloud - Cybersecurity Training Platform",
     "terms": "Terms",
     "privacy": "Privacy",
-    "warning": "For Educational Purposes Only"
+    "warning": "For Educational Purposes Only",
+    "vulnerableByDesign": "This application is vulnerable by design - For educational purposes only"
+  },
+  "wiki": {
+    "title": "Security Wiki",
+    "subtitle": "Knowledge Base",
+    "description": "Learn the fundamental concepts of web security, common vulnerabilities and exploitation techniques used in bug bounty and professional pentesting.",
+    "searchPlaceholder": "Search articles...",
+    "readArticle": "Read article",
+    "readTime": "min read",
+    "stats": {
+      "articles": "Articles",
+      "codeExamples": "Code Examples",
+      "bugBountyTechniques": "Bug Bounty Techniques",
+      "translations": "EN Translations"
+    },
+    "categories": {
+      "fundamentos": "Fundamentals",
+      "vulnerabilidades": "Vulnerabilities",
+      "defensas": "Defenses",
+      "herramientas": "Tools",
+      "bugBounty": "Bug Bounty"
+    },
+    "levels": {
+      "estudiante": "Student",
+      "juniorDeveloper": "Junior Developer",
+      "pentester": "Pentester",
+      "securityExpert": "Security Expert"
+    },
+    "cta": {
+      "title": "Ready to practice?",
+      "description": "Apply what you've learned in our interactive labs with real vulnerabilities.",
+      "goToLabs": "Go to Labs",
+      "viewApiDocs": "View API Docs"
+    },
+    "filterByRole": "Filter by role",
+    "allLevels": "All levels",
+    "contentUnderConstruction": "Content Under Construction",
+    "articlePlanned": "This article is planned but the content has not been written yet.",
+    "topic": "Topic",
+    "level": "Level",
+    "category": "Category",
+    "backToWiki": "Back to Wiki",
+    "inThisArticle": "In this article",
+    "by": "By",
+    "lastUpdated": "Last updated",
+    "availableIn": "Available in",
+    "contentInSpanishOnly": "Content available in Spanish only",
+    "workingOnTranslations": "We are working on translations.",
+    "useBrowserTranslation": "Use your browser's translation feature or visit the",
+    "spanishVersion": "Spanish version"
+  },
+  "labs": {
+    "title": "Security Labs",
+    "subtitle": "Hands-on Training",
+    "description": "Practice with real vulnerabilities in a controlled and secure environment.",
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard",
+      "expert": "Expert"
+    },
+    "startLab": "Start Lab",
+    "viewDetails": "View Details",
+    "completed": "Completed",
+    "inProgress": "In Progress",
+    "notStarted": "Not Started",
+    "sqli": {
+      "title": "SQL Injection",
+      "description": "Learn to detect and exploit SQL injection vulnerabilities in web applications.",
+      "searchLabel": "Search term:",
+      "searchPlaceholder": "Enter your search...",
+      "searching": "Searching...",
+      "search": "Search",
+      "payloadExamples": "Payload examples:",
+      "results": "Results:",
+      "criticalVulnerability": "Critical Vulnerability",
+      "vulnerabilityDescription": "This application is intentionally vulnerable to SQL Injection. Use it for educational purposes only.",
+      "examples": {
+        "normal": "Normal search",
+        "basic": "Basic SQL Injection",
+        "comment": "SQL Comment",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "Cross-Site Scripting (XSS)",
+      "description": "Master reflected, stored and DOM-based XSS techniques.",
+      "payloadLabel": "XSS Payload:",
+      "payloadPlaceholder": "Enter your XSS payload...",
+      "testing": "Testing...",
+      "test": "Test",
+      "reflectInput": "Reflect input in response (Reflected XSS)",
+      "payloadExamples": "XSS payload examples:",
+      "results": "Results:",
+      "examples": {
+        "alertBasic": "Basic Alert",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "Broken Authentication",
+      "description": "Exploit vulnerabilities in authentication mechanisms and session management.",
+      "email": "Email:",
+      "password": "Password:",
+      "loggingIn": "Logging in...",
+      "login": "Login",
+      "defaultCredentials": "Default credentials (vulnerability):"
+    },
+    "commandInjection": {
+      "title": "Command Injection",
+      "description": "Operating system command execution through unvalidated inputs.",
+      "examples": {
+        "listFiles": "List files",
+        "viewFiles": "View file contents",
+        "systemInfo": "System information"
+      }
+    },
+    "common": {
+      "apiEndpoint": "API Endpoint:",
+      "testing": "Testing...",
+      "test": "Test",
+      "execute": "Execute",
+      "exploitationExamples": "Exploitation examples:",
+      "apiResponse": "API Response:",
+      "status": "Status:",
+      "severity": {
+        "critical": "Critical",
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "viewFullApiDocs": "View Full API Documentation",
+      "errorExecutingQuery": "Error executing query",
+      "errorExecutingTest": "Error executing test"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and",
+    "of": "of",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What Our Users Say",
+    "description": "Security professionals from around the world trust our platform."
+  },
+  "chatbot": {
+    "vulnerableMode": "Vulnerable Mode Active - Try to extract sensitive information or make it reveal its system prompt.",
+    "normalMode": "Normal Mode - Secure security regulations assistant.",
+    "errorResponse": "Error in response"
   }
 }

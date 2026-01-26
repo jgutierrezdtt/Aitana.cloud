@@ -3,7 +3,14 @@
     "home": "Accueil",
     "labs": "Laboratoires",
     "docs": "Documentation",
-    "about": "À propos"
+    "about": "À propos",
+    "wiki": "Wiki",
+    "tools": "Outils",
+    "guides": "Guides SSDLC",
+    "apiDocs": "Docs API",
+    "getStarted": "Commencer",
+    "changeLanguage": "Changer de langue",
+    "languagesAvailable": "langues disponibles"
   },
   "hero": {
     "slide1": {
@@ -17,7 +24,8 @@
       "title": "Hackez les Systèmes d'Intelligence Artificielle",
       "teaser": "Maîtrisez les techniques avancées d'injection de prompt, jailbreaking et attaques adversariales",
       "cta": "S'entraîner au Laboratoire AI"
-    }
+    },
+    "goToSlide": "Aller à la diapositive"
   },
   "heroFeatures": {
     "penetrationTesting": {
@@ -50,7 +58,8 @@
       "Formation en Sécurité de Niveau Entreprise"
     ],
     "button": "Explorer les Laboratoires",
-    "badgeText": "Laboratoires de Vulnérabilité"
+    "badgeText": "Laboratoires de Vulnérabilité",
+    "explore": "Explorer"
   },
   "services": {
     "badge": "Ce Que Nous Offrons",
@@ -88,7 +97,11 @@
     "scenarios": "Scénarios de Vulnérabilité",
     "coverage": "Couverture OWASP",
     "frameworks": "Cadres de Conformité",
-    "cvssScore": "Score CVSS Moyen"
+    "cvssScore": "Score CVSS Moyen",
+    "vulnerabilityLabs": "Laboratoires de Vulnérabilité",
+    "threatDetection": "Détection de Menaces",
+    "securityDashboard": "Tableau de Bord Sécurité",
+    "securityAlerts": "Alertes de Sécurité"
   },
   "aiLab": {
     "badge": "NOUVEAU LABORATOIRE",
@@ -142,6 +155,179 @@
     "copyright": "Aitana.cloud - Plateforme de Formation en Cybersécurité",
     "terms": "Conditions",
     "privacy": "Confidentialité",
-    "warning": "À des Fins Éducatives Uniquement"
+    "warning": "À des Fins Éducatives Uniquement",
+    "vulnerableByDesign": "Cette application est vulnérable par conception - À des fins éducatives uniquement"
+  },
+  "wiki": {
+    "title": "Wiki Sécurité",
+    "subtitle": "Base de Connaissances",
+    "description": "Apprenez les concepts fondamentaux de la sécurité web, les vulnérabilités courantes et les techniques d'exploitation utilisées dans le bug bounty et le pentesting professionnel.",
+    "searchPlaceholder": "Rechercher des articles...",
+    "readArticle": "Lire l'article",
+    "readTime": "min de lecture",
+    "stats": {
+      "articles": "Articles",
+      "codeExamples": "Exemples de Code",
+      "bugBountyTechniques": "Techniques Bug Bounty",
+      "translations": "Traductions EN"
+    },
+    "categories": {
+      "fundamentos": "Fondamentaux",
+      "vulnerabilidades": "Vulnérabilités",
+      "defensas": "Défenses",
+      "herramientas": "Outils",
+      "bugBounty": "Bug Bounty"
+    },
+    "levels": {
+      "estudiante": "Étudiant",
+      "juniorDeveloper": "Développeur Junior",
+      "pentester": "Pentester",
+      "securityExpert": "Expert en Sécurité"
+    },
+    "cta": {
+      "title": "Prêt à pratiquer?",
+      "description": "Appliquez ce que vous avez appris dans nos laboratoires interactifs avec de vraies vulnérabilités.",
+      "goToLabs": "Aller aux Laboratoires",
+      "viewApiDocs": "Voir Docs API"
+    },
+    "filterByRole": "Filtrer par rôle",
+    "allLevels": "Tous les niveaux",
+    "contentUnderConstruction": "Contenu en Construction",
+    "articlePlanned": "Cet article est prévu mais le contenu n'a pas encore été rédigé.",
+    "topic": "Sujet",
+    "level": "Niveau",
+    "category": "Catégorie",
+    "backToWiki": "Retour au Wiki",
+    "inThisArticle": "Dans cet article",
+    "by": "Par",
+    "lastUpdated": "Dernière mise à jour",
+    "availableIn": "Disponible en",
+    "contentInSpanishOnly": "Contenu disponible en espagnol uniquement",
+    "workingOnTranslations": "Nous travaillons sur les traductions.",
+    "useBrowserTranslation": "Utilisez la fonction de traduction de votre navigateur ou visitez la",
+    "spanishVersion": "version espagnole"
+  },
+  "labs": {
+    "title": "Laboratoires de Sécurité",
+    "subtitle": "Formation Pratique",
+    "description": "Pratiquez avec de vraies vulnérabilités dans un environnement contrôlé et sécurisé.",
+    "difficulty": {
+      "easy": "Facile",
+      "medium": "Moyen",
+      "hard": "Difficile",
+      "expert": "Expert"
+    },
+    "startLab": "Démarrer le Laboratoire",
+    "viewDetails": "Voir les Détails",
+    "completed": "Terminé",
+    "inProgress": "En Cours",
+    "notStarted": "Non Commencé",
+    "sqli": {
+      "title": "Injection SQL",
+      "description": "Apprenez à détecter et exploiter les vulnérabilités d'injection SQL dans les applications web.",
+      "searchLabel": "Terme de recherche:",
+      "searchPlaceholder": "Entrez votre recherche...",
+      "searching": "Recherche en cours...",
+      "search": "Rechercher",
+      "payloadExamples": "Exemples de payload:",
+      "results": "Résultats:",
+      "criticalVulnerability": "Vulnérabilité Critique",
+      "vulnerabilityDescription": "Cette application est intentionnellement vulnérable à l'injection SQL. Utilisez-la uniquement à des fins éducatives.",
+      "examples": {
+        "normal": "Recherche normale",
+        "basic": "Injection SQL basique",
+        "comment": "Commentaire SQL",
+        "union": "UNION SELECT"
+      }
+    },
+    "xss": {
+      "title": "Cross-Site Scripting (XSS)",
+      "description": "Maîtrisez les techniques XSS réfléchi, stocké et basé sur le DOM.",
+      "payloadLabel": "Payload XSS:",
+      "payloadPlaceholder": "Entrez votre payload XSS...",
+      "testing": "Test en cours...",
+      "test": "Tester",
+      "reflectInput": "Refléter l'entrée dans la réponse (XSS Réfléchi)",
+      "payloadExamples": "Exemples de payload XSS:",
+      "results": "Résultats:",
+      "examples": {
+        "alertBasic": "Alert Basique",
+        "imgOnerror": "Img onerror",
+        "svgOnload": "SVG onload",
+        "inputAutofocus": "Input autofocus"
+      }
+    },
+    "auth": {
+      "title": "Authentification Cassée",
+      "description": "Exploitez les vulnérabilités dans les mécanismes d'authentification et la gestion de session.",
+      "email": "Email:",
+      "password": "Mot de passe:",
+      "loggingIn": "Connexion...",
+      "login": "Se connecter",
+      "defaultCredentials": "Identifiants par défaut (vulnérabilité):"
+    },
+    "commandInjection": {
+      "title": "Injection de Commande",
+      "description": "Exécution de commandes du système d'exploitation via des entrées non validées.",
+      "examples": {
+        "listFiles": "Lister les fichiers",
+        "viewFiles": "Voir le contenu des fichiers",
+        "systemInfo": "Informations système"
+      }
+    },
+    "common": {
+      "apiEndpoint": "Point d'accès API:",
+      "testing": "Test en cours...",
+      "test": "Tester",
+      "execute": "Exécuter",
+      "exploitationExamples": "Exemples d'exploitation:",
+      "apiResponse": "Réponse API:",
+      "status": "Statut:",
+      "severity": {
+        "critical": "Critique",
+        "high": "Élevé",
+        "medium": "Moyen",
+        "low": "Faible"
+      },
+      "viewFullApiDocs": "Voir la Documentation API Complète",
+      "errorExecutingQuery": "Erreur lors de l'exécution de la requête",
+      "errorExecutingTest": "Erreur lors de l'exécution du test"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "all": "Tous",
+    "none": "Aucun",
+    "yes": "Oui",
+    "no": "Non",
+    "or": "ou",
+    "and": "et",
+    "of": "de",
+    "env": "ENV"
+  },
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Ce Que Disent Nos Utilisateurs",
+    "description": "Des professionnels de la sécurité du monde entier font confiance à notre plateforme."
+  },
+  "chatbot": {
+    "vulnerableMode": "Mode Vulnérable Actif - Essayez d'extraire des informations sensibles ou de lui faire révéler son prompt système.",
+    "normalMode": "Mode Normal - Assistant sécurisé pour les réglementations de sécurité.",
+    "errorResponse": "Erreur dans la réponse"
   }
 }
